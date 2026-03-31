@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://db17yrwpekw5g"]
+
+[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_5hgqv"]
+[ext_resource type="Script" uid="uid://cjy3a4jlba1gs" path="res://scenes/second_mode.gd" id="1_jopi1"]
+
+[node name="SecondMode" type="Node2D" unique_id=1266931056]
+script = ExtResource("1_jopi1")
+
+[node name="UI" type="Control" parent="." unique_id=1619222131]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="UI" unique_id=990835115]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0.627451, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI" unique_id=192962529]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ButtonBack" type="TextureButton" parent="UI/HBoxContainer" unique_id=169980622]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_5hgqv")
+
+[node name="NormalModeDone" type="TextureButton" parent="UI/HBoxContainer" unique_id=1300192804]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_5hgqv")
+
+[connection signal="pressed" from="UI/HBoxContainer/ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="UI/HBoxContainer/NormalModeDone" to="." method="_on_normal_mode_done_pressed"]

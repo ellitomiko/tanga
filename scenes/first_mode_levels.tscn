@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://bcwv1lyvgcpcn"]
+
+[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_dml4m"]
+[ext_resource type="Script" uid="uid://cmbk21obour64" path="res://scenes/first_mode_levels.gd" id="1_yydtg"]
+[ext_resource type="Texture2D" uid="uid://7y872lpm13aw" path="res://test_textures/Group 832.png" id="6_jayyj"]
+
+[node name="FirstModeLevels" type="Control" unique_id=1910592087]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_yydtg")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=785322310]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0.627451, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=37106664]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1759915116]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="TopBar" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1508454735]
+layout_mode = 2
+
+[node name="ButtonBack" type="TextureButton" parent="MarginContainer/VBoxContainer/TopBar" unique_id=1100254131]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_dml4m")
+
+[node name="GridMargin" type="MarginContainer" parent="MarginContainer/VBoxContainer" unique_id=1720289506]
+layout_mode = 2
+theme_override_constants/margin_top = -60
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/GridMargin" unique_id=1598558187]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 5
+
+[node name="BottomBar" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=420606201]
+layout_mode = 2
+
+[node name="ButtonPrev" type="TextureButton" parent="MarginContainer/VBoxContainer/BottomBar" unique_id=233527697]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture_normal = ExtResource("6_jayyj")
+
+[node name="ButtonNext" type="TextureButton" parent="MarginContainer/VBoxContainer/BottomBar" unique_id=206245406]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+texture_normal = ExtResource("6_jayyj")
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/TopBar/ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BottomBar/ButtonPrev" to="." method="_on_button_prev_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BottomBar/ButtonNext" to="." method="_on_button_next_pressed"]

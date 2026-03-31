@@ -1,0 +1,77 @@
+[gd_scene format=3 uid="uid://dr3uvux44qfnl"]
+
+[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_1sk5j"]
+[ext_resource type="Script" uid="uid://caqhmn136plm4" path="res://scenes/modes_scene.gd" id="1_cuq34"]
+
+[node name="ModesScene" type="Control" unique_id=953614436]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cuq34")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1156096960]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0.627451, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1566779559]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="ButtonBack" type="TextureButton" parent="VBoxContainer" unique_id=718729711]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_1sk5j")
+
+[node name="GridMargin" type="MarginContainer" parent="VBoxContainer" unique_id=701051356]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer/GridMargin" unique_id=563951363]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 6
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 2
+
+[node name="ButtonFirst" type="TextureButton" parent="VBoxContainer/GridMargin/GridContainer" unique_id=658849099]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_1sk5j")
+
+[node name="ButtonSecond" type="TextureButton" parent="VBoxContainer/GridMargin/GridContainer" unique_id=430264210]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_1sk5j")
+
+[node name="ButtonThird" type="TextureButton" parent="VBoxContainer/GridMargin/GridContainer" unique_id=906672513]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_1sk5j")
+
+[node name="ButtonFourth" type="TextureButton" parent="VBoxContainer/GridMargin/GridContainer" unique_id=268781923]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_1sk5j")
+
+[connection signal="pressed" from="VBoxContainer/ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="VBoxContainer/GridMargin/GridContainer/ButtonFirst" to="." method="_on_button_first_pressed"]
+[connection signal="pressed" from="VBoxContainer/GridMargin/GridContainer/ButtonSecond" to="." method="_on_button_second_pressed"]
+[connection signal="pressed" from="VBoxContainer/GridMargin/GridContainer/ButtonThird" to="." method="_on_button_third_pressed"]
+[connection signal="pressed" from="VBoxContainer/GridMargin/GridContainer/ButtonFourth" to="." method="_on_button_fourth_pressed"]

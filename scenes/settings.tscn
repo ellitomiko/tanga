@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://f2ciry40j27j"]
+
+[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_5p8wc"]
+[ext_resource type="Script" uid="uid://djtx4tw1x6n6f" path="res://scenes/settings.gd" id="1_gjs24"]
+[ext_resource type="Texture2D" uid="uid://b7ggs1kuc3x6d" path="res://test_textures/ButtonSmolRound_Idle.png" id="3_am25x"]
+[ext_resource type="Texture2D" uid="uid://ckso4o8fdlakh" path="res://test_textures/ButtonSmolRound_Pressed.png" id="4_4ppmf"]
+[ext_resource type="Texture2D" uid="uid://30lsgle5a7lh" path="res://test_textures/ButtonSmolRound_IdleMinus.png" id="6_1g033"]
+[ext_resource type="Texture2D" uid="uid://ctp5f6yma8mvv" path="res://test_textures/ButtonSmolRound_PressedMinus.png" id="7_01roj"]
+[ext_resource type="PackedScene" uid="uid://sf1w0fh01byc" path="res://scenes/error.tscn" id="7_83j8s"]
+
+[node name="Settings" type="Control" unique_id=1294501319]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gjs24")
+metadata/_edit_lock_ = true
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=647678335]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0.627451, 1)
+metadata/_edit_lock_ = true
+
+[node name="ButtonBack" type="TextureButton" parent="." unique_id=1078974352]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 1
+anchors_preset = -1
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 128.0
+offset_bottom = 128.0
+scale = Vector2(0.7, 0.7)
+texture_normal = ExtResource("1_5p8wc")
+
+[node name="ButtonError" type="TextureButton" parent="." unique_id=174708696]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -128.0
+offset_right = 64.0
+offset_bottom = -93.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("1_5p8wc")
+
+[node name="ButtonMusic" type="TextureButton" parent="." unique_id=430536223]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.31500003
+anchor_top = 0.37300003
+anchor_right = 0.31500003
+anchor_bottom = 0.37300003
+offset_left = -61.80005
+offset_top = -69.84003
+offset_right = 61.19995
+offset_bottom = 70.15997
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("3_am25x")
+texture_pressed = ExtResource("4_4ppmf")
+
+[node name="ButtonSound" type="TextureButton" parent="." unique_id=71744453]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.587
+anchor_top = 0.36400002
+anchor_right = 0.587
+anchor_bottom = 0.36400002
+offset_left = -56.04004
+offset_top = -66.120026
+offset_right = 66.95996
+offset_bottom = 73.879974
+grow_horizontal = 2
+grow_vertical = 2
+toggle_mode = true
+texture_normal = ExtResource("6_1g033")
+texture_pressed = ExtResource("7_01roj")
+
+[node name="Label" type="Label" parent="." unique_id=1089164976]
+modulate = Color(0.09411765, 0.09411765, 1, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -82.5
+offset_top = 40.0
+offset_right = 82.5
+offset_bottom = 42.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "Настройки"
+
+[node name="Error" parent="." unique_id=1431724330 instance=ExtResource("7_83j8s")]
+visible = false
+layout_mode = 1
+
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="ButtonError" to="." method="_on_button_error_pressed"]
+[connection signal="toggled" from="ButtonMusic" to="." method="_on_button_music_toggled"]
+[connection signal="toggled" from="ButtonSound" to="." method="_on_button_sound_toggled"]

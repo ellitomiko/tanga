@@ -1,0 +1,5 @@
+.godot/
+.import/
+export.cfg
+*.translation
+mono_crash.*.json

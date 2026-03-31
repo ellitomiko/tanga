@@ -1,0 +1,67 @@
+[gd_scene format=3 uid="uid://dguqup4p7ydfx"]
+
+[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_hx3vx"]
+[ext_resource type="Script" uid="uid://dwv7xccmj3kbc" path="res://scenes/about.gd" id="1_j4mam"]
+
+[node name="About" type="Control" unique_id=579549483]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_j4mam")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=65649437]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0.627451, 1)
+
+[node name="ButtonBack" type="TextureButton" parent="." unique_id=103679879]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 1
+anchors_preset = -1
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 128.0
+offset_bottom = 128.0
+scale = Vector2(0.7, 0.7)
+texture_normal = ExtResource("1_hx3vx")
+
+[node name="Label" type="Label" parent="." unique_id=2022019973]
+modulate = Color(0.09411765, 0.09411765, 1, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.078
+anchor_right = 0.5
+anchor_bottom = 0.078
+offset_left = -42.0
+offset_top = -17.240005
+offset_right = 47.0
+offset_bottom = 24.759995
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "О нас"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=234842944]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.156
+anchor_top = 0.245
+anchor_right = 0.156
+anchor_bottom = 0.245
+offset_left = -2.5200195
+offset_top = -12.600006
+offset_right = 1035.48
+offset_bottom = 489.4
+theme_override_colors/default_color = Color(0.10802444, 0.7055569, 0.7355578, 1)
+theme_override_font_sizes/normal_font_size = 28
+text = "Основная цель игры — упростить восприятие  и освоение тригонометрических функций за счёт визуализации, интерактивности и игровых механик. В отличие от традиционных методов обучения,  игра предлагает пользователю не просто изучать формулы, а взаимодействовать с ними  в динамической и наглядной форме."
+
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]

@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://cl3o3pna42pnp"]
+
+[ext_resource type="Script" uid="uid://bnnqd30tl5myp" path="res://level_button.gd" id="1_6g3el"]
+[ext_resource type="Texture2D" uid="uid://eyn386eouicu" path="res://test_textures/ButtonLevel1_Idle.png" id="2_ium1h"]
+[ext_resource type="Texture2D" uid="uid://bs5ebycn12r0" path="res://test_textures/ButtonLevel1_Pressed.png" id="3_nfgsp"]
+[ext_resource type="Texture2D" uid="uid://ddll15obgjhqe" path="res://test_textures/ButtonLevel1_Hovered.png" id="4_b0rp6"]
+
+[node name="LevelButton" type="Control" unique_id=1320403800]
+custom_minimum_size = Vector2(187, 180)
+layout_mode = 3
+anchor_right = 0.098000005
+anchor_bottom = 0.16700001
+offset_right = -1.1600037
+offset_bottom = -0.36001587
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_6g3el")
+
+[node name="ButtonMain" type="TextureButton" parent="." unique_id=1180725020]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture_normal = ExtResource("2_ium1h")
+texture_pressed = ExtResource("3_nfgsp")
+texture_hover = ExtResource("4_b0rp6")
+
+[node name="LabelNumber" type="Label" parent="." unique_id=1535160936]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 100
+text = "0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="ButtonMain" to="." method="_on_button_main_pressed"]

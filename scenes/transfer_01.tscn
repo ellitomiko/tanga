@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://ba424tkex5v8e"]
+
+[ext_resource type="PackedScene" uid="uid://bh4w0aiiwat7a" path="res://scenes/fade_transition.tscn" id="1_2h7jv"]
+[ext_resource type="Script" uid="uid://me7uhi2a53k7" path="res://scenes/transfer_01.gd" id="1_nrsh3"]
+[ext_resource type="VideoStream" uid="uid://cmcu52pvrykjw" path="res://test_textures/video_2026-03-16_18-50-32.ogv" id="3_gnxj1"]
+
+[node name="Transfer01" type="Control" unique_id=882375215]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nrsh3")
+
+[node name="FadeTransition" parent="." unique_id=758172421 instance=ExtResource("1_2h7jv")]
+visible = false
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="FadeTimer" type="Timer" parent="FadeTransition" unique_id=255904009]
+
+[node name="AnimationVideo" type="VideoStreamPlayer" parent="." unique_id=1251613783]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("3_gnxj1")
+
+[connection signal="timeout" from="FadeTransition/FadeTimer" to="." method="_on_timer_timeout"]
+[connection signal="finished" from="AnimationVideo" to="." method="_on_animation_video_finished"]

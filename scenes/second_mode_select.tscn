@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://bybitcil5iwup"]
+
+[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_6it4k"]
+[ext_resource type="Script" uid="uid://hg4v6qmpj2q2" path="res://scenes/second_mode_select.gd" id="1_8a7iy"]
+
+[node name="SecondModeSelect" type="Control" unique_id=1383160602]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8a7iy")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=212352025]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0.627451, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1296599034]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = -20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ButtonBack" type="TextureButton" parent="VBoxContainer" unique_id=118727607]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_6it4k")
+
+[node name="RowMargin" type="MarginContainer" parent="VBoxContainer" unique_id=1363392103]
+layout_mode = 2
+
+[node name="ModesRow" type="HBoxContainer" parent="VBoxContainer/RowMargin" unique_id=1249133929]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="ButtonNormalMode" type="TextureButton" parent="VBoxContainer/RowMargin/ModesRow" unique_id=1881011233]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_6it4k")
+
+[node name="ButtonEndlessMode" type="TextureButton" parent="VBoxContainer/RowMargin/ModesRow" unique_id=1830753920]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_6it4k")
+
+[connection signal="pressed" from="VBoxContainer/ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="VBoxContainer/RowMargin/ModesRow/ButtonNormalMode" to="." method="_on_button_normal_mode_pressed"]
+[connection signal="pressed" from="VBoxContainer/RowMargin/ModesRow/ButtonEndlessMode" to="." method="_on_button_endless_mode_pressed"]
