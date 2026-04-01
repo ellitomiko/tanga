@@ -2,6 +2,21 @@
 
 [ext_resource type="Script" uid="uid://4e81bq4faa4f" path="res://scenes/first_mode.gd" id="1_kk6cn"]
 [ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="2_u1w8i"]
+[ext_resource type="Theme" uid="uid://drtxptosfvx06" path="res://scenes/main.tres" id="3_o1iot"]
+[ext_resource type="Texture2D" uid="uid://b66dahplobmpo" path="res://test_textures/mode1/Line.png" id="4_ef7rg"]
+[ext_resource type="Texture2D" uid="uid://dsv6pxniglm3t" path="res://test_textures/mode1/RightSideTexture.png" id="5_4d5og"]
+[ext_resource type="PackedScene" uid="uid://bqrp5iwxxghbu" path="res://scenes/tanga_first.tscn" id="6_ef7rg"]
+[ext_resource type="Script" uid="uid://8bt7y6en7xnc" path="res://scenes/exit_door.gd" id="7_275jl"]
+[ext_resource type="Texture2D" uid="uid://f1ed6u7g7x6c" path="res://test_textures/Button_Pressed_Text_Begin.png" id="8_7hiht"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ef7rg"]
+size = Vector2(810, 128)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vt4w2"]
+size = Vector2(35, 280)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_275jl"]
+size = Vector2(75, 174)
 
 [node name="FirstMode" type="Node2D" unique_id=1240071043]
 script = ExtResource("1_kk6cn")
@@ -46,19 +61,42 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 1, 0.627451, 1)
 
+[node name="ButtonHint" type="TextureButton" parent="UI" unique_id=1749319249]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 812.0
+offset_top = 17.0
+offset_right = 940.0
+offset_bottom = 145.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+texture_normal = ExtResource("2_u1w8i")
+
+[node name="ButtonPause" type="TextureButton" parent="UI" unique_id=1698446620]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 0
+offset_left = 21.0
+offset_top = 23.0
+offset_right = 1841.0
+offset_bottom = 151.0
+texture_normal = ExtResource("2_u1w8i")
+
 [node name="InfoBox" type="VBoxContainer" parent="UI" unique_id=59685151]
+visible = false
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 1.0
 offset_left = 50.0
-offset_top = 50.0
+offset_top = 187.0
 offset_right = -50.0
+offset_bottom = 597.0
 grow_horizontal = 2
-
-[node name="ButtonBack" type="TextureButton" parent="UI/InfoBox" unique_id=1698446620]
-modulate = Color(0.12941177, 1, 1, 1)
-layout_mode = 2
-texture_normal = ExtResource("2_u1w8i")
 
 [node name="LabelLevelId" type="Label" parent="UI/InfoBox" unique_id=1709258322]
 layout_mode = 2
@@ -84,4 +122,153 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 30
 text = "Function"
 
-[connection signal="pressed" from="UI/InfoBox/ButtonBack" to="." method="_on_button_back_pressed"]
+[node name="LabelFill" type="Label" parent="UI/InfoBox" unique_id=1185205797]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "---------"
+
+[node name="LabelFormula" type="Label" parent="UI/InfoBox" unique_id=367916793]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "---------"
+
+[node name="LabelSideLabels" type="Label" parent="UI/InfoBox" unique_id=697758288]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "---------"
+
+[node name="LabelMapping" type="Label" parent="UI/InfoBox" unique_id=418167099]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "---------"
+
+[node name="LabelSolution" type="Label" parent="UI/InfoBox" unique_id=1942168064]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+text = "---------"
+
+[node name="Objects" type="Node2D" parent="." unique_id=368770128]
+
+[node name="EquationHolder" type="Node2D" parent="Objects" unique_id=593865018]
+z_index = 1
+position = Vector2(774, 222)
+
+[node name="EquationLeft" type="Label" parent="Objects/EquationHolder" unique_id=832525230]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -334.0
+offset_top = -34.5
+offset_right = -20.0
+offset_bottom = 34.5
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("3_o1iot")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "func + angle ="
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="EquationRight" type="Node2D" parent="Objects/EquationHolder" unique_id=1434130622]
+
+[node name="Line" type="Sprite2D" parent="Objects/EquationHolder/EquationRight" unique_id=1017699401]
+position = Vector2(301, 4)
+texture = ExtResource("4_ef7rg")
+
+[node name="UpContainer" type="Sprite2D" parent="Objects/EquationHolder/EquationRight" unique_id=1707994964]
+position = Vector2(299, -40)
+texture = ExtResource("5_4d5og")
+
+[node name="EquationUpContainer" type="Label" parent="Objects/EquationHolder/EquationRight/UpContainer" unique_id=1719615498]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -450.5
+offset_top = -70.5
+offset_right = -116.5
+offset_bottom = -1.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_o1iot")
+theme_override_colors/font_color = Color(0.4392157, 0.4392157, 0.4392157, 1)
+theme_override_font_sizes/font_size = 30
+text = "ответ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Area2D" type="Area2D" parent="Objects/EquationHolder/EquationRight/UpContainer" unique_id=1919262961]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/EquationHolder/EquationRight/UpContainer/Area2D" unique_id=1626424023]
+position = Vector2(4, -24)
+shape = SubResource("RectangleShape2D_ef7rg")
+
+[node name="DownContainer" type="Sprite2D" parent="Objects/EquationHolder/EquationRight" unique_id=547026217]
+position = Vector2(299, 48)
+texture = ExtResource("5_4d5og")
+
+[node name="EquationDownContainer" type="Label" parent="Objects/EquationHolder/EquationRight/DownContainer" unique_id=726805874]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -450.5
+offset_top = -70.0
+offset_right = -116.5
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("3_o1iot")
+theme_override_colors/font_color = Color(0.4392157, 0.4392157, 0.4392157, 1)
+theme_override_font_sizes/font_size = 30
+text = "ответ"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Area2D" type="Area2D" parent="Objects/EquationHolder/EquationRight/DownContainer" unique_id=743926220]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/EquationHolder/EquationRight/DownContainer/Area2D" unique_id=1337132481]
+position = Vector2(0, 34)
+shape = SubResource("RectangleShape2D_ef7rg")
+
+[node name="TriangleHolder" type="Node2D" parent="Objects" unique_id=838894092]
+position = Vector2(639, 769)
+
+[node name="TangaFirst" parent="Objects" unique_id=371982454 instance=ExtResource("6_ef7rg")]
+z_index = 5
+position = Vector2(71, 503)
+
+[node name="ExitDoor" type="StaticBody2D" parent="Objects" unique_id=1357079925]
+position = Vector2(1774, 426)
+script = ExtResource("7_275jl")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Objects/ExitDoor" unique_id=1195542752]
+position = Vector2(0, 133)
+rotation = 1.5707964
+scale = Vector2(0.55999017, 0.22330745)
+texture = ExtResource("8_7hiht")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/ExitDoor" unique_id=2121333412]
+position = Vector2(-2.5, 129)
+shape = SubResource("RectangleShape2D_vt4w2")
+
+[node name="ExitArea" type="Area2D" parent="Objects" unique_id=994653383]
+position = Vector2(1898, 500)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/ExitArea" unique_id=503616161]
+position = Vector2(28, 9)
+shape = SubResource("RectangleShape2D_275jl")
+
+[connection signal="pressed" from="UI/ButtonHint" to="." method="_on_button_hint_pressed"]
+[connection signal="pressed" from="UI/ButtonPause" to="." method="_on_button_pause_pressed"]

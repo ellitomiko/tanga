@@ -1,0 +1,79 @@
+[gd_scene format=3 uid="uid://cdy0rxkvx1p1d"]
+
+[ext_resource type="Script" path="res://pause_screen.gd" id="1_qeunj"]
+[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="2_hr2n2"]
+
+[node name="PauseScreen" type="CanvasLayer" unique_id=731743010]
+script = ExtResource("1_qeunj")
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=103433752]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.19215687)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1836342654]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 180.0
+offset_top = 180.0
+offset_right = -180.0
+offset_bottom = -180.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 0.627451, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=134984421]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 200
+
+[node name="ButtonBack" type="TextureButton" parent="MarginContainer" unique_id=854500390]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+texture_normal = ExtResource("2_hr2n2")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1543323502]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+
+[node name="ButtonLevelMenu" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=1931405374]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = ExtResource("2_hr2n2")
+
+[node name="ButtonSettings" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=836930339]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = ExtResource("2_hr2n2")
+
+[node name="ButtonRestart" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=1707145162]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+texture_normal = ExtResource("2_hr2n2")
+
+[connection signal="pressed" from="MarginContainer/ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/ButtonLevelMenu" to="." method="_on_button_level_menu_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/ButtonSettings" to="." method="_on_button_settings_pressed"]
+[connection signal="pressed" from="MarginContainer/HBoxContainer/ButtonRestart" to="." method="_on_button_restart_pressed"]

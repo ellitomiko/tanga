@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://drtxptosfvx06"]
+
+[ext_resource type="FontFile" uid="uid://dfpubi83yv2cv" path="res://fonts_test/MPLUSRounded1c-ExtraBold.ttf" id="1_5xdy8"]
+
+[resource]
+default_font = ExtResource("1_5xdy8")
+default_font_size = 38

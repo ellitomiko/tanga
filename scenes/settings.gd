@@ -7,8 +7,16 @@ func _ready() -> void:
 	error_overlay.hide()
 
 
+
 func _on_button_back_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
+	var target_scene = Global.settings_return_scene_path
+	
+	if target_scene == "":
+		target_scene = "res://scenes/main_menu.tscn"
+	
+	print(target_scene)
+	get_tree().change_scene_to_file(target_scene)
+
 
 func _on_button_error_pressed() -> void:
 	error_overlay.show()

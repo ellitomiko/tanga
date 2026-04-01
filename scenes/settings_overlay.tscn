@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://curxhanbiud0u"]
+
+[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_k2a7k"]
+[ext_resource type="Script" uid="uid://dhdquuolxcfp8" path="res://scenes/settings_overlay.gd" id="1_vrm5l"]
+[ext_resource type="Texture2D" uid="uid://b7ggs1kuc3x6d" path="res://test_textures/ButtonSmolRound_Idle.png" id="2_vrm5l"]
+[ext_resource type="Texture2D" uid="uid://ckso4o8fdlakh" path="res://test_textures/ButtonSmolRound_Pressed.png" id="3_62dua"]
+[ext_resource type="Texture2D" uid="uid://30lsgle5a7lh" path="res://test_textures/ButtonSmolRound_IdleMinus.png" id="4_nodkk"]
+[ext_resource type="Texture2D" uid="uid://ctp5f6yma8mvv" path="res://test_textures/ButtonSmolRound_PressedMinus.png" id="5_bnndt"]
+[ext_resource type="PackedScene" uid="uid://sf1w0fh01byc" path="res://scenes/error.tscn" id="6_3v7sp"]
+
+[node name="SettingsOverlay" type="CanvasLayer" unique_id=438864840]
+script = ExtResource("1_vrm5l")
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=18845720]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0.19215687)
+
+[node name="ColorRect3" type="ColorRect" parent="." unique_id=1907693941]
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 180.0
+offset_top = 180.0
+offset_right = -180.0
+offset_bottom = -180.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(1, 1, 0.627451, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1920875681]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 200
+theme_override_constants/margin_top = 200
+theme_override_constants/margin_right = 200
+theme_override_constants/margin_bottom = 200
+
+[node name="ButtonBack" type="TextureButton" parent="MarginContainer" unique_id=533739278]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+texture_normal = ExtResource("1_k2a7k")
+
+[node name="Label" type="Label" parent="MarginContainer" unique_id=2031425927]
+modulate = Color(0.09411765, 0.09411765, 1, 1)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "Настройки"
+
+[node name="ButtonMusic" type="TextureButton" parent="MarginContainer" unique_id=1604693509]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+toggle_mode = true
+texture_normal = ExtResource("2_vrm5l")
+texture_pressed = ExtResource("3_62dua")
+
+[node name="ButtonSound" type="TextureButton" parent="MarginContainer" unique_id=1149001499]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+toggle_mode = true
+texture_normal = ExtResource("4_nodkk")
+texture_pressed = ExtResource("5_bnndt")
+
+[node name="ButtonError" type="TextureButton" parent="MarginContainer" unique_id=2035279359]
+modulate = Color(0.12941177, 1, 1, 1)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 8
+texture_normal = ExtResource("1_k2a7k")
+
+[node name="Error" parent="MarginContainer" unique_id=1431724330 instance=ExtResource("6_3v7sp")]
+visible = false
+layout_mode = 2
+
+[connection signal="pressed" from="MarginContainer/ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="toggled" from="MarginContainer/ButtonMusic" to="." method="_on_button_music_toggled"]
+[connection signal="toggled" from="MarginContainer/ButtonSound" to="." method="_on_button_sound_toggled"]
+[connection signal="pressed" from="MarginContainer/ButtonError" to="." method="_on_button_error_pressed"]
