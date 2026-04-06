@@ -62,364 +62,358 @@ modulate = Color(0.12941177, 1, 1, 1)
 layout_mode = 2
 texture_normal = ExtResource("1_5hgqv")
 
-[node name="Objects" type="Node2D" parent="." unique_id=2042816511]
-position = Vector2(141, 250)
+[node name="ObjectsCircle" type="Node2D" parent="." unique_id=2042816511]
+position = Vector2(462, 206)
 scale = Vector2(0.5, 0.5)
+metadata/_edit_group_ = true
 
-[node name="Outline" type="Node2D" parent="Objects" unique_id=1426074019]
+[node name="Outline" type="Node2D" parent="ObjectsCircle" unique_id=1426074019]
 position = Vector2(801, 658)
 
-[node name="Links" type="Node2D" parent="Objects/Outline" unique_id=1626890630]
-visible = false
+[node name="Links" type="Node2D" parent="ObjectsCircle/Outline" unique_id=1626890630]
 
-[node name="Link30" type="Sprite2D" parent="Objects/Outline/Links" unique_id=1340056831]
+[node name="Link30" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=1340056831]
 position = Vector2(220, -126)
 texture = ExtResource("3_38o57")
 
-[node name="Link45" type="Sprite2D" parent="Objects/Outline/Links" unique_id=1245269930]
+[node name="Link45" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=1245269930]
 position = Vector2(176, -180)
 texture = ExtResource("4_i3k4g")
 
-[node name="Link60" type="Sprite2D" parent="Objects/Outline/Links" unique_id=2055606451]
+[node name="Link60" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=2055606451]
 position = Vector2(122, -222)
 texture = ExtResource("5_ujg3q")
 
-[node name="Link120" type="Sprite2D" parent="Objects/Outline/Links" unique_id=1365005526]
+[node name="Link120" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=1365005526]
 position = Vector2(-129, -222)
 texture = ExtResource("5_ujg3q")
 flip_h = true
 
-[node name="Link135" type="Sprite2D" parent="Objects/Outline/Links" unique_id=1528014319]
+[node name="Link135" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=1528014319]
 position = Vector2(-182, -182)
 texture = ExtResource("4_i3k4g")
 flip_h = true
 
-[node name="Link150" type="Sprite2D" parent="Objects/Outline/Links" unique_id=2043903988]
+[node name="Link150" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=2043903988]
 position = Vector2(-224, -126)
 texture = ExtResource("3_38o57")
 flip_h = true
 
-[node name="Link210" type="Sprite2D" parent="Objects/Outline/Links" unique_id=99087385]
+[node name="Link210" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=99087385]
 position = Vector2(-226.5, 128)
 texture = ExtResource("3_38o57")
 flip_h = true
 flip_v = true
 
-[node name="Link225" type="Sprite2D" parent="Objects/Outline/Links" unique_id=2137000065]
+[node name="Link225" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=2137000065]
 position = Vector2(-184.5, 181)
 texture = ExtResource("4_i3k4g")
 flip_h = true
 flip_v = true
 
-[node name="Link240" type="Sprite2D" parent="Objects/Outline/Links" unique_id=1415658142]
+[node name="Link240" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=1415658142]
 position = Vector2(-131.5, 222)
 texture = ExtResource("5_ujg3q")
 flip_h = true
 flip_v = true
 
-[node name="Link300" type="Sprite2D" parent="Objects/Outline/Links" unique_id=620244957]
+[node name="Link300" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=620244957]
 position = Vector2(123, 222)
 texture = ExtResource("5_ujg3q")
 flip_v = true
 
-[node name="Link315" type="Sprite2D" parent="Objects/Outline/Links" unique_id=474325238]
+[node name="Link315" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=474325238]
 position = Vector2(179, 181)
 texture = ExtResource("4_i3k4g")
 flip_v = true
 
-[node name="Link330" type="Sprite2D" parent="Objects/Outline/Links" unique_id=1043544136]
+[node name="Link330" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=1043544136]
 position = Vector2(216, 128)
 texture = ExtResource("3_38o57")
 flip_v = true
 
-[node name="TgctgAxis" type="Sprite2D" parent="Objects/Outline" unique_id=1906414626]
+[node name="TgctgAxis" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1906414626]
 position = Vector2(0, -4)
 texture = ExtResource("6_53ctk")
 
-[node name="Circle" type="Sprite2D" parent="Objects/Outline" unique_id=1121911207]
+[node name="Circle" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1121911207]
 texture = ExtResource("7_dnmx4")
 
-[node name="Quater1Lines" type="Sprite2D" parent="Objects/Outline" unique_id=1669811109]
+[node name="Quater1Lines" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1669811109]
 position = Vector2(214, -219)
 texture = ExtResource("8_2byp0")
 
-[node name="Quater2Lines" type="Sprite2D" parent="Objects/Outline" unique_id=1690069079]
+[node name="Quater2Lines" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1690069079]
 position = Vector2(-222, -219)
 texture = ExtResource("8_2byp0")
 flip_h = true
 
-[node name="Quater3Lines" type="Sprite2D" parent="Objects/Outline" unique_id=1799942445]
+[node name="Quater3Lines" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1799942445]
 position = Vector2(-222, 220)
 texture = ExtResource("8_2byp0")
 flip_h = true
 flip_v = true
 
-[node name="Quater4Lines" type="Sprite2D" parent="Objects/Outline" unique_id=1343024026]
+[node name="Quater4Lines" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1343024026]
 position = Vector2(214, 217)
 texture = ExtResource("8_2byp0")
 flip_v = true
 
-[node name="TgConnector1" type="Sprite2D" parent="Objects/Outline" unique_id=786491310]
+[node name="TgConnector1" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=786491310]
 position = Vector2(660, -377)
 texture = ExtResource("9_uml81")
 
-[node name="TgConnector-1" type="Sprite2D" parent="Objects/Outline" unique_id=298217855]
+[node name="TgConnector-1" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=298217855]
 position = Vector2(-668, -377)
 texture = ExtResource("9_uml81")
 flip_h = true
 
-[node name="TgConnector-2" type="Sprite2D" parent="Objects/Outline" unique_id=1444965811]
+[node name="TgConnector-2" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1444965811]
 position = Vector2(-434, -432)
 texture = ExtResource("10_2pjt2")
 flip_h = true
 
-[node name="TgConnector3" type="Sprite2D" parent="Objects/Outline" unique_id=392498367]
+[node name="TgConnector3" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=392498367]
 position = Vector2(262, -471)
 texture = ExtResource("11_7t2b2")
 
-[node name="TgConnector-3" type="Sprite2D" parent="Objects/Outline" unique_id=622321589]
+[node name="TgConnector-3" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=622321589]
 position = Vector2(-269, -471)
 texture = ExtResource("11_7t2b2")
 flip_h = true
 
-[node name="CtgConnector1" type="Sprite2D" parent="Objects/Outline" unique_id=1168544260]
+[node name="CtgConnector1" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1168544260]
 position = Vector2(373, -665)
 texture = ExtResource("12_juuw0")
 
-[node name="CtgConnector-1" type="Sprite2D" parent="Objects/Outline" unique_id=909819640]
+[node name="CtgConnector-1" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=909819640]
 position = Vector2(373, 663)
 texture = ExtResource("12_juuw0")
 flip_v = true
 
-[node name="CtgConnector3" type="Sprite2D" parent="Objects/Outline" unique_id=520865403]
+[node name="CtgConnector3" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=520865403]
 position = Vector2(471, -270)
 texture = ExtResource("13_ersj0")
 
-[node name="CtgConnector-2" type="Sprite2D" parent="Objects/Outline" unique_id=423225412]
+[node name="CtgConnector-2" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=423225412]
 position = Vector2(428, 432)
 texture = ExtResource("10_2pjt2")
 flip_v = true
 
-[node name="CtgConnector-3" type="Sprite2D" parent="Objects/Outline" unique_id=1489259115]
+[node name="CtgConnector-3" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1489259115]
 position = Vector2(471, 269)
 texture = ExtResource("13_ersj0")
 flip_v = true
 
-[node name="CtgTgConnector2" type="Sprite2D" parent="Objects/Outline" unique_id=20458850]
+[node name="CtgTgConnector2" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=20458850]
 position = Vector2(428, -433)
 texture = ExtResource("10_2pjt2")
 
-[node name="Answers" type="Node2D" parent="Objects" unique_id=45698603]
-
-[node name="0" type="Node2D" parent="Objects/Answers" unique_id=1363186230]
+[node name="Answers" type="Node2D" parent="ObjectsCircle" unique_id=45698603]
 visible = false
 
-[node name="Answer0_tg" type="Sprite2D" parent="Objects/Answers/0" unique_id=1642509534]
+[node name="0" type="Node2D" parent="ObjectsCircle/Answers" unique_id=1363186230]
+
+[node name="Answer0_tg" type="Sprite2D" parent="ObjectsCircle/Answers/0" unique_id=1642509534]
 position = Vector2(798, 158)
 texture = ExtResource("14_ee6yn")
 
-[node name="Answer0" type="Sprite2D" parent="Objects/Answers/0" unique_id=72386642]
+[node name="Answer0" type="Sprite2D" parent="ObjectsCircle/Answers/0" unique_id=72386642]
 position = Vector2(798, 655)
 texture = ExtResource("14_ee6yn")
 
-[node name="Answer0_ctg" type="Sprite2D" parent="Objects/Answers/0" unique_id=587354029]
+[node name="Answer0_ctg" type="Sprite2D" parent="ObjectsCircle/Answers/0" unique_id=587354029]
 position = Vector2(1301, 658)
 texture = ExtResource("14_ee6yn")
 
-[node name="1" type="Node2D" parent="Objects/Answers" unique_id=82028043]
-visible = false
+[node name="1" type="Node2D" parent="ObjectsCircle/Answers" unique_id=82028043]
 
-[node name="Answer1_sin_90" type="Sprite2D" parent="Objects/Answers/1" unique_id=1824806486]
+[node name="Answer1_sin_90" type="Sprite2D" parent="ObjectsCircle/Answers/1" unique_id=1824806486]
 position = Vector2(799, 404)
 texture = ExtResource("15_cobwy")
 
-[node name="Answer1_cos_0" type="Sprite2D" parent="Objects/Answers/1" unique_id=1470736073]
+[node name="Answer1_cos_0" type="Sprite2D" parent="ObjectsCircle/Answers/1" unique_id=1470736073]
 position = Vector2(1051, 657)
 rotation = 1.5707964
 texture = ExtResource("15_cobwy")
 
-[node name="Answer1_tg_45" type="Sprite2D" parent="Objects/Answers/1" unique_id=104547381]
+[node name="Answer1_tg_45" type="Sprite2D" parent="ObjectsCircle/Answers/1" unique_id=104547381]
 position = Vector2(1303, 404)
 texture = ExtResource("15_cobwy")
 
-[node name="Answer1_ctg_45" type="Sprite2D" parent="Objects/Answers/1" unique_id=2002344283]
+[node name="Answer1_ctg_45" type="Sprite2D" parent="ObjectsCircle/Answers/1" unique_id=2002344283]
 position = Vector2(1051, 151)
 rotation = 1.5707964
 texture = ExtResource("15_cobwy")
 
-[node name="Answer-1_sin_270" type="Sprite2D" parent="Objects/Answers/1" unique_id=1346556374]
+[node name="Answer-1_sin_270" type="Sprite2D" parent="ObjectsCircle/Answers/1" unique_id=1346556374]
 position = Vector2(799, 912)
 texture = ExtResource("15_cobwy")
 
-[node name="Answer-1_cos_180" type="Sprite2D" parent="Objects/Answers/1" unique_id=609105861]
+[node name="Answer-1_cos_180" type="Sprite2D" parent="ObjectsCircle/Answers/1" unique_id=609105861]
 position = Vector2(546, 657)
 rotation = 1.5707964
 texture = ExtResource("15_cobwy")
 
-[node name="Answer-1_tg_315" type="Sprite2D" parent="Objects/Answers/1" unique_id=288678748]
+[node name="Answer-1_tg_315" type="Sprite2D" parent="ObjectsCircle/Answers/1" unique_id=288678748]
 position = Vector2(1303, 909)
 texture = ExtResource("15_cobwy")
 
-[node name="Answer-1_ctg_135" type="Sprite2D" parent="Objects/Answers/1" unique_id=1416450824]
+[node name="Answer-1_ctg_135" type="Sprite2D" parent="ObjectsCircle/Answers/1" unique_id=1416450824]
 position = Vector2(544, 151)
 rotation = 1.5707964
 texture = ExtResource("15_cobwy")
 
-[node name="1_2" type="Node2D" parent="Objects/Answers" unique_id=2042152814]
-visible = false
+[node name="1_2" type="Node2D" parent="ObjectsCircle/Answers" unique_id=2042152814]
 
-[node name="Answer1_2_sin_30" type="Sprite2D" parent="Objects/Answers/1_2" unique_id=644795313]
+[node name="Answer1_2_sin_30" type="Sprite2D" parent="ObjectsCircle/Answers/1_2" unique_id=644795313]
 position = Vector2(1237, 533)
 texture = ExtResource("16_0om8d")
 
-[node name="Answer1_2_sin_150" type="Sprite2D" parent="Objects/Answers/1_2" unique_id=1853929769]
+[node name="Answer1_2_sin_150" type="Sprite2D" parent="ObjectsCircle/Answers/1_2" unique_id=1853929769]
 position = Vector2(357, 533)
 texture = ExtResource("16_0om8d")
 
-[node name="Answer-1_2_sin_210" type="Sprite2D" parent="Objects/Answers/1_2" unique_id=1878558258]
+[node name="Answer-1_2_sin_210" type="Sprite2D" parent="ObjectsCircle/Answers/1_2" unique_id=1878558258]
 position = Vector2(357, 780)
 texture = ExtResource("16_0om8d")
 
-[node name="Answer-1_2_sin_330" type="Sprite2D" parent="Objects/Answers/1_2" unique_id=847917747]
+[node name="Answer-1_2_sin_330" type="Sprite2D" parent="ObjectsCircle/Answers/1_2" unique_id=847917747]
 position = Vector2(1237, 780)
 texture = ExtResource("16_0om8d")
 
-[node name="Answer1_2_cos_60" type="Sprite2D" parent="Objects/Answers/1_2" unique_id=2128704379]
+[node name="Answer1_2_cos_60" type="Sprite2D" parent="ObjectsCircle/Answers/1_2" unique_id=2128704379]
 position = Vector2(923, 217)
 rotation = 1.5707964
 texture = ExtResource("16_0om8d")
 
-[node name="Answer-1_2_cos_120" type="Sprite2D" parent="Objects/Answers/1_2" unique_id=972665679]
+[node name="Answer-1_2_cos_120" type="Sprite2D" parent="ObjectsCircle/Answers/1_2" unique_id=972665679]
 position = Vector2(671, 217)
 rotation = 1.5707964
 texture = ExtResource("16_0om8d")
 
-[node name="Answer-1_2_cos_240" type="Sprite2D" parent="Objects/Answers/1_2" unique_id=68721462]
+[node name="Answer-1_2_cos_240" type="Sprite2D" parent="ObjectsCircle/Answers/1_2" unique_id=68721462]
 position = Vector2(671, 1095)
 rotation = 1.5707964
 texture = ExtResource("16_0om8d")
 
-[node name="Answer1_2_cos_300" type="Sprite2D" parent="Objects/Answers/1_2" unique_id=711950026]
+[node name="Answer1_2_cos_300" type="Sprite2D" parent="ObjectsCircle/Answers/1_2" unique_id=711950026]
 position = Vector2(923, 1095)
 rotation = 1.5707964
 texture = ExtResource("16_0om8d")
 
-[node name="sqr2_2" type="Node2D" parent="Objects/Answers" unique_id=260351111]
-visible = false
+[node name="sqr2_2" type="Node2D" parent="ObjectsCircle/Answers" unique_id=260351111]
 
-[node name="Answer_sqr2_2_sin_45" type="Sprite2D" parent="Objects/Answers/sqr2_2" unique_id=1227262554]
+[node name="Answer_sqr2_2_sin_45" type="Sprite2D" parent="ObjectsCircle/Answers/sqr2_2" unique_id=1227262554]
 position = Vector2(1158, 477)
 texture = ExtResource("17_3bcne")
 
-[node name="Answer_sqr2_2_sin_135" type="Sprite2D" parent="Objects/Answers/sqr2_2" unique_id=1017026596]
+[node name="Answer_sqr2_2_sin_135" type="Sprite2D" parent="ObjectsCircle/Answers/sqr2_2" unique_id=1017026596]
 position = Vector2(440, 477)
 texture = ExtResource("17_3bcne")
 
-[node name="Answer-sqr2_2_sin_225" type="Sprite2D" parent="Objects/Answers/sqr2_2" unique_id=1710864142]
+[node name="Answer-sqr2_2_sin_225" type="Sprite2D" parent="ObjectsCircle/Answers/sqr2_2" unique_id=1710864142]
 position = Vector2(440, 835)
 texture = ExtResource("17_3bcne")
 
-[node name="Answer-sqr2_2_sin_315" type="Sprite2D" parent="Objects/Answers/sqr2_2" unique_id=194504221]
+[node name="Answer-sqr2_2_sin_315" type="Sprite2D" parent="ObjectsCircle/Answers/sqr2_2" unique_id=194504221]
 position = Vector2(1158, 835)
 texture = ExtResource("17_3bcne")
 
-[node name="Answer_sqr2_2_cos_45" type="Sprite2D" parent="Objects/Answers/sqr2_2" unique_id=570938838]
+[node name="Answer_sqr2_2_cos_45" type="Sprite2D" parent="ObjectsCircle/Answers/sqr2_2" unique_id=570938838]
 position = Vector2(978, 296)
 rotation = 1.5707964
 texture = ExtResource("17_3bcne")
 
-[node name="Answer-sqr2_2_cos_135" type="Sprite2D" parent="Objects/Answers/sqr2_2" unique_id=747731034]
+[node name="Answer-sqr2_2_cos_135" type="Sprite2D" parent="ObjectsCircle/Answers/sqr2_2" unique_id=747731034]
 position = Vector2(618, 296)
 rotation = 1.5707964
 texture = ExtResource("17_3bcne")
 
-[node name="Answer-sqr2_2_cos_225" type="Sprite2D" parent="Objects/Answers/sqr2_2" unique_id=1403956267]
+[node name="Answer-sqr2_2_cos_225" type="Sprite2D" parent="ObjectsCircle/Answers/sqr2_2" unique_id=1403956267]
 position = Vector2(618, 1014)
 rotation = 1.5707964
 texture = ExtResource("17_3bcne")
 
-[node name="Answer_sqr2_2_cos_315" type="Sprite2D" parent="Objects/Answers/sqr2_2" unique_id=1327585549]
+[node name="Answer_sqr2_2_cos_315" type="Sprite2D" parent="ObjectsCircle/Answers/sqr2_2" unique_id=1327585549]
 position = Vector2(977, 1014)
 rotation = 1.5707964
 texture = ExtResource("17_3bcne")
 
-[node name="sqr3_2" type="Node2D" parent="Objects/Answers" unique_id=917559040]
-visible = false
+[node name="sqr3_2" type="Node2D" parent="ObjectsCircle/Answers" unique_id=917559040]
 
-[node name="Answer_sqr3_2_sin_60" type="Sprite2D" parent="Objects/Answers/sqr3_2" unique_id=679477143]
+[node name="Answer_sqr3_2_sin_60" type="Sprite2D" parent="ObjectsCircle/Answers/sqr3_2" unique_id=679477143]
 position = Vector2(1049, 435)
 texture = ExtResource("18_fdj2n")
 
-[node name="Answer_sqr3_2_sin_120" type="Sprite2D" parent="Objects/Answers/sqr3_2" unique_id=706446764]
+[node name="Answer_sqr3_2_sin_120" type="Sprite2D" parent="ObjectsCircle/Answers/sqr3_2" unique_id=706446764]
 position = Vector2(545, 435)
 texture = ExtResource("18_fdj2n")
 
-[node name="Answer-sqr3_2_sin_240" type="Sprite2D" parent="Objects/Answers/sqr3_2" unique_id=2072784606]
+[node name="Answer-sqr3_2_sin_240" type="Sprite2D" parent="ObjectsCircle/Answers/sqr3_2" unique_id=2072784606]
 position = Vector2(545, 876)
 texture = ExtResource("18_fdj2n")
 
-[node name="Answer-sqr3_2_sin_300" type="Sprite2D" parent="Objects/Answers/sqr3_2" unique_id=897093841]
+[node name="Answer-sqr3_2_sin_300" type="Sprite2D" parent="ObjectsCircle/Answers/sqr3_2" unique_id=897093841]
 position = Vector2(1049, 876)
 texture = ExtResource("18_fdj2n")
 
-[node name="Answer_sqr3_2_cos_30" type="Sprite2D" parent="Objects/Answers/sqr3_2" unique_id=1806834137]
+[node name="Answer_sqr3_2_cos_30" type="Sprite2D" parent="ObjectsCircle/Answers/sqr3_2" unique_id=1806834137]
 position = Vector2(1017, 406)
 rotation = 1.5707964
 texture = ExtResource("18_fdj2n")
 
-[node name="Answer_sqr3_2_cos_330" type="Sprite2D" parent="Objects/Answers/sqr3_2" unique_id=1149560643]
+[node name="Answer_sqr3_2_cos_330" type="Sprite2D" parent="ObjectsCircle/Answers/sqr3_2" unique_id=1149560643]
 position = Vector2(1017, 912)
 rotation = 1.5707964
 texture = ExtResource("18_fdj2n")
 
-[node name="Answer-sqr3_2_cos_150" type="Sprite2D" parent="Objects/Answers/sqr3_2" unique_id=1473197587]
+[node name="Answer-sqr3_2_cos_150" type="Sprite2D" parent="ObjectsCircle/Answers/sqr3_2" unique_id=1473197587]
 position = Vector2(579, 406)
 rotation = 1.5707964
 texture = ExtResource("18_fdj2n")
 
-[node name="Answer-sqr3_2_cos_210" type="Sprite2D" parent="Objects/Answers/sqr3_2" unique_id=2029336544]
+[node name="Answer-sqr3_2_cos_210" type="Sprite2D" parent="ObjectsCircle/Answers/sqr3_2" unique_id=2029336544]
 position = Vector2(579, 912)
 rotation = 1.5707964
 texture = ExtResource("18_fdj2n")
 
-[node name="1_sqr3" type="Node2D" parent="Objects/Answers" unique_id=1785820706]
-visible = false
+[node name="1_sqr3" type="Node2D" parent="ObjectsCircle/Answers" unique_id=1785820706]
 
-[node name="Answer_1_sqr3_tg_30_210" type="Sprite2D" parent="Objects/Answers/1_sqr3" unique_id=22585958]
+[node name="Answer_1_sqr3_tg_30_210" type="Sprite2D" parent="ObjectsCircle/Answers/1_sqr3" unique_id=22585958]
 position = Vector2(1305, 510)
 texture = ExtResource("19_r3135")
 
-[node name="Answer-1_sqr3_tg_150_330" type="Sprite2D" parent="Objects/Answers/1_sqr3" unique_id=814788633]
+[node name="Answer-1_sqr3_tg_150_330" type="Sprite2D" parent="ObjectsCircle/Answers/1_sqr3" unique_id=814788633]
 position = Vector2(1305, 802)
 texture = ExtResource("19_r3135")
 
-[node name="Answer_1_sqr3_сtg_60_240" type="Sprite2D" parent="Objects/Answers/1_sqr3" unique_id=1995483323]
+[node name="Answer_1_sqr3_сtg_60_240" type="Sprite2D" parent="ObjectsCircle/Answers/1_sqr3" unique_id=1995483323]
 position = Vector2(939, 153)
 rotation = 1.5707964
 texture = ExtResource("19_r3135")
 
-[node name="Answer-1_sqr3_сtg_120_300" type="Sprite2D" parent="Objects/Answers/1_sqr3" unique_id=211564629]
+[node name="Answer-1_sqr3_сtg_120_300" type="Sprite2D" parent="ObjectsCircle/Answers/1_sqr3" unique_id=211564629]
 position = Vector2(657, 153)
 rotation = 1.5707964
 texture = ExtResource("19_r3135")
 
-[node name="sqr3" type="Node2D" parent="Objects/Answers" unique_id=1733142947]
-visible = false
+[node name="sqr3" type="Node2D" parent="ObjectsCircle/Answers" unique_id=1733142947]
 
-[node name="Answer_sqr3_tg_60_240" type="Sprite2D" parent="Objects/Answers/sqr3" unique_id=1996299092]
+[node name="Answer_sqr3_tg_60_240" type="Sprite2D" parent="ObjectsCircle/Answers/sqr3" unique_id=1996299092]
 position = Vector2(1302, 213)
 texture = ExtResource("20_jepjo")
 
-[node name="Answer-sqr3_tg_120_300" type="Sprite2D" parent="Objects/Answers/sqr3" unique_id=2042031275]
+[node name="Answer-sqr3_tg_120_300" type="Sprite2D" parent="ObjectsCircle/Answers/sqr3" unique_id=2042031275]
 position = Vector2(1302, 1100)
 texture = ExtResource("20_jepjo")
 
-[node name="Answer_sqr3_ctg_30_210" type="Sprite2D" parent="Objects/Answers/sqr3" unique_id=1145104304]
+[node name="Answer_sqr3_ctg_30_210" type="Sprite2D" parent="ObjectsCircle/Answers/sqr3" unique_id=1145104304]
 position = Vector2(1241, 152)
 rotation = 1.5707964
 texture = ExtResource("20_jepjo")
 
-[node name="Answer-sqr3_ctg_150_330" type="Sprite2D" parent="Objects/Answers/sqr3" unique_id=1637303704]
+[node name="Answer-sqr3_ctg_150_330" type="Sprite2D" parent="ObjectsCircle/Answers/sqr3" unique_id=1637303704]
 position = Vector2(354, 152)
 rotation = 1.5707964
 texture = ExtResource("20_jepjo")
