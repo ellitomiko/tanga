@@ -3,14 +3,14 @@ extends Control
 @onready var grid: GridContainer = $MarginContainer/VBoxContainer/GridMargin/GridContainer
 @onready var button_prev = $MarginContainer/VBoxContainer/BottomBar/ButtonPrev
 @onready var button_next = $MarginContainer/VBoxContainer/BottomBar/ButtonNext
-const LEVEL_BUTTON_SCENE = preload('res://scenes/level_button.tscn')
+const LEVEL_BUTTON_SCENE = preload('res://scenes/FirstMode/level_button.tscn')
 
 var current_page: int = 0
 var levels_per_page: int = 20
 
 #BACK button
 func _on_button_back_pressed() -> void:
-	get_tree().change_scene_to_file('res://scenes/modes_scene.tscn')
+	get_tree().change_scene_to_file('res://scenes/MainUI/modes_scene.tscn')
 
 func _ready() -> void:
 	update_page()
@@ -78,4 +78,3 @@ func _on_button_next_pressed() -> void:
 func _on_level_button_pressed(level_data: Dictionary) -> void:
 	Global.current_mode1_level_data = level_data
 	print("CLICK:", level_data)
-	get_tree().change_scene_to_file('res://scenes/first_mode.tscn')

@@ -9,7 +9,7 @@ var music_bus := AudioServer.get_bus_index("Music")
 var sound_bus := AudioServer.get_bus_index("Sound")
 
 
-var settings_return_scene_path: String = "res://scenes/main_menu.tscn"
+var settings_return_scene_path: String = "res://scenes/MainUI/main_menu.tscn"
 
 
 func set_music_enabled(enabled: bool) -> void:

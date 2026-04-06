@@ -25,7 +25,7 @@ extends Node2D
 @onready var exit_area: Area2D = $Objects/ExitArea
 
 
-const TRIANGLE_SCENE = preload("res://scenes/triangle_first_mode.tscn")
+const TRIANGLE_SCENE = preload('res://scenes/FirstMode/triangle_first_mode.tscn')
 
 var current_level_data: Dictionary = {}
 var current_triangle_labels: Dictionary = {}
@@ -37,11 +37,11 @@ var placed_bottom_block = null
 var magnet_radius: float = 90.0
 var current_slot_target: String = ""
 
-var win_screen_scene = preload("res://scenes/first_mode_win.tscn")
+var win_screen_scene = preload("res://scenes/FirstMode/first_mode_win.tscn")
 var current_win_screen = null
 var win_screen_shown: bool = false
 
-var pause_screen_scene = preload("res://scenes/pause_screen.tscn")
+var pause_screen_scene = preload('res://scenes/FirstMode/pause_screen.tscn')
 var current_pause_screen = null
 
 func _input(event):
@@ -451,7 +451,7 @@ func _on_win_level_menu_pressed() -> void:
 		current_win_screen = null
 	
 	print("GO TO LEVEL MENU")
-	get_tree().change_scene_to_file("res://scenes/first_mode_levels.tscn")
+	get_tree().change_scene_to_file("res://scenes/FirstMode/first_mode_levels.tscn")
 	# потом сюда поставим change_scene_to_file("res://....tscn")
 
 func _on_win_next_level_pressed() -> void:
@@ -479,7 +479,7 @@ func go_to_next_mode1_level() -> void:
 	Global.current_mode1_level_data = Global.mode1levels_data[next_id - 1]
 	
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://scenes/first_mode.tscn")
+	get_tree().change_scene_to_file("res://scenes/FirstMode/first_mode.tscn")
 
 
 func toggle_pause() -> void:
@@ -526,7 +526,7 @@ func _on_pause_restart() -> void:
 func _on_pause_level_menu() -> void:
 	#print("LEVEL MENU SIGNAL CAUGHT")
 	get_tree().paused = false
-	get_tree().change_scene_to_file("res://scenes/first_mode_levels.tscn")
+	get_tree().change_scene_to_file("res://scenes/FirstMode/first_mode_levels.tscn")
 
 func _on_button_pause_pressed() -> void:
 	open_pause()

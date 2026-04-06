@@ -13,8 +13,8 @@ func setup_mode_ui() -> void:
 		normal_mode_done.visible = false
 
 func _on_button_back_pressed() -> void:
-	get_tree().change_scene_to_file("res://scenes/second_mode_select.tscn")
+	get_tree().change_scene_to_file("res://scenes/SecondMode/second_mode_select.tscn")
 
 func _on_normal_mode_done_pressed() -> void:
 	Global.second_mode_endless_unlocked = true
-	get_tree().change_scene_to_file("res://scenes/second_mode_select.tscn")
+	get_tree().change_scene_to_file("res://scenes/SecondMode/second_mode_select.tscn")

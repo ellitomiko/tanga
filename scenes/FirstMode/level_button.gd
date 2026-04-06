@@ -25,3 +25,4 @@ func set_locked(is_locked: bool) -> void:
 #Передаем сигнал от кнопки в пареметр, чтобы передать в другую сцену
 func _on_button_main_pressed() -> void:
 	level_pressed.emit(level_data)
+	get_tree().change_scene_to_file('res://scenes/FirstMode/first_mode.tscn')

@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://bcwv1lyvgcpcn"]
 
 [ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_dml4m"]
-[ext_resource type="Script" uid="uid://cmbk21obour64" path="res://scenes/first_mode_levels.gd" id="1_yydtg"]
+[ext_resource type="Script" uid="uid://cmbk21obour64" path="res://scenes/FirstMode/first_mode_levels.gd" id="1_yydtg"]
 [ext_resource type="Texture2D" uid="uid://7y872lpm13aw" path="res://test_textures/Group 832.png" id="6_jayyj"]
 
 [node name="FirstModeLevels" type="Control" unique_id=1910592087]

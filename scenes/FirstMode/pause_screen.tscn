@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cdy0rxkvx1p1d"]
 
-[ext_resource type="Script" path="res://pause_screen.gd" id="1_qeunj"]
+[ext_resource type="Script" uid="uid://b7gvfhvpmgnda" path="res://scenes/FirstMode/pause_screen.gd" id="1_qeunj"]
 [ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="2_hr2n2"]
 
 [node name="PauseScreen" type="CanvasLayer" unique_id=731743010]
