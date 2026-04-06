@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bqrp5iwxxghbu"]
 
-[ext_resource type="Script" uid="uid://dks7yo5mnad18" path="res://scenes/tanga_first.gd" id="1_g2els"]
+[ext_resource type="Script" uid="uid://dks7yo5mnad18" path="res://scenes/FirstMode/tanga_first.gd" id="1_g2els"]
 [ext_resource type="Texture2D" uid="uid://b1uh4swmylxdd" path="res://test_textures/mode1/tanga.png" id="2_qhqgy"]
 
 [node name="TangaFirst" type="CharacterBody2D" unique_id=371982454]

@@ -1,12 +1,12 @@
 [gd_scene format=3 uid="uid://c6i7is8bbg2o1"]
 
-[ext_resource type="Script" uid="uid://4e81bq4faa4f" path="res://scenes/first_mode.gd" id="1_kk6cn"]
+[ext_resource type="Script" uid="uid://4e81bq4faa4f" path="res://scenes/FirstMode/first_mode.gd" id="1_kk6cn"]
 [ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="2_u1w8i"]
 [ext_resource type="Theme" uid="uid://drtxptosfvx06" path="res://scenes/main.tres" id="3_o1iot"]
 [ext_resource type="Texture2D" uid="uid://b66dahplobmpo" path="res://test_textures/mode1/Line.png" id="4_ef7rg"]
 [ext_resource type="Texture2D" uid="uid://dsv6pxniglm3t" path="res://test_textures/mode1/RightSideTexture.png" id="5_4d5og"]
-[ext_resource type="PackedScene" uid="uid://bqrp5iwxxghbu" path="res://scenes/tanga_first.tscn" id="6_ef7rg"]
-[ext_resource type="Script" uid="uid://8bt7y6en7xnc" path="res://scenes/exit_door.gd" id="7_275jl"]
+[ext_resource type="PackedScene" uid="uid://bqrp5iwxxghbu" path="res://scenes/FirstMode/tanga_first.tscn" id="6_ef7rg"]
+[ext_resource type="Script" uid="uid://8bt7y6en7xnc" path="res://scenes/FirstMode/exit_door.gd" id="7_275jl"]
 [ext_resource type="Texture2D" uid="uid://f1ed6u7g7x6c" path="res://test_textures/Button_Pressed_Text_Begin.png" id="8_7hiht"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ef7rg"]
@@ -71,7 +71,7 @@ anchor_bottom = 0.5
 offset_left = 812.0
 offset_top = 17.0
 offset_right = 940.0
-offset_bottom = 145.0
+offset_bottom = -395.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 8
@@ -83,7 +83,7 @@ modulate = Color(0.12941177, 1, 1, 1)
 layout_mode = 0
 offset_left = 21.0
 offset_top = 23.0
-offset_right = 1841.0
+offset_right = 149.0
 offset_bottom = 151.0
 texture_normal = ExtResource("2_u1w8i")
 
