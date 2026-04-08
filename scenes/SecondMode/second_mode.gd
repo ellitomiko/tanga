@@ -41,10 +41,9 @@ var circle_angles: Array[int] = [
 
 var current_order_index: int = 0
 var mode2_normal_order = [
-	1, 2, 5, 6, 9, 10, 13, 14,
+	5, 6, 9, 14, 10, 13, 1, 2, 17, 18,
 	7, 8, 11, 12, 15, 16,
-	17, 18, 21, 22, 25,
-	19,
+	21, 22, 25, 19,
 	26, 29, 30, 20, 23, 24, 27, 28, 31, 32,
 	33, 34, 35, 36, 37, 38, 41, 42, 39, 40, 43, 44, 45, 46, 47, 48,
 	49, 50, 51, 52, 53, 54, 57, 58, 55, 56, 59, 60, 61, 62, 63, 64,
@@ -172,11 +171,6 @@ func hide_all_value_buttons() -> void:
 	button_no_answer.visible = false
 
 func show_buttons_for_current_level() -> void:
-	
-	#--------------
-	#ДЕБАГ
-	
-	
 	print("=== show_buttons_for_current_level ===")
 	hide_all_value_buttons()
 
@@ -185,40 +179,27 @@ func show_buttons_for_current_level() -> void:
 		return
 
 	print("current_level_data = ", current_level_data)
+
 	var func_name: String = current_level_data.get("func", "")
 	var angle: int = current_angle
-	
-	print("display angle from mouse = ", current_angle)
-	print("correct angle from level = ", current_level_data.get("angle", -1))
-	
 	var value: String = current_level_data.get("value", "")
 	var group: String = get_function_group(func_name)
+	var level_id: int = current_level_data.get("id", 0)
 
+	print("display angle from mouse = ", current_angle)
+	print("correct angle from level = ", current_level_data.get("angle", -1))
 	print("func_name = ", func_name)
 	print("angle = ", angle)
 	print("value = ", value)
 	print("group = ", group)
-	
-	#--------------
-	
-	
-	hide_all_value_buttons()
-
-	if current_level_data.is_empty():
-		return
-
-	#var func_name: String = current_level_data.get("func", "")
-	#var angle: int = current_level_data.get("angle", -1)
-	#var value: String = current_level_data.get("value", "")
-	#var group: String = get_function_group(func_name)
-
+	print("level_id = ", level_id)
 
 	if not buttons_map.has(angle):
 		print("buttons_map has NO angle: ", angle)
 		return
 
 	print("buttons_map[angle] keys = ", buttons_map[angle].keys())
-	
+
 	match group:
 		"sin_cos":
 			show_button_if_exists(angle, "sin")
@@ -228,8 +209,11 @@ func show_buttons_for_current_level() -> void:
 			show_button_if_exists(angle, "tg")
 			show_button_if_exists(angle, "ctg")
 
-	if value == "no_value":
+	if value == "no_value" and level_id >= 19:
 		button_no_answer.visible = true
+		print("SHOW NO ANSWER BUTTON")
+		print("button_no_answer.visible = ", button_no_answer.visible)
+		print("button_no_answer.is_visible_in_tree() = ", button_no_answer.is_visible_in_tree())
 
 
 func show_button_if_exists(angle: int, func_name: String) -> void:

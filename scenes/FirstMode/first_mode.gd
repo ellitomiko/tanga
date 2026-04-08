@@ -14,6 +14,7 @@ extends Node2D
 @onready var equation_down_container: Label = $Objects/EquationHolder/EquationRight/DownContainer/EquationDownContainer
 @onready var top_slot: Area2D = $Objects/EquationHolder/EquationRight/UpContainer/Area2D
 @onready var bottom_slot: Area2D = $Objects/EquationHolder/EquationRight/DownContainer/Area2D
+@onready var lock: Sprite2D = $Objects/Lock
 
 
 @onready var top_slot_label: Label = $Objects/EquationHolder/EquationRight/UpContainer/EquationUpContainer
@@ -296,6 +297,7 @@ func check_answer() -> void:
 	
 	if player_top == correct.get("top", "") and player_bottom == correct.get("bottom", ""):
 		print("CORRECT ANSWER")
+		lock.texture = preload("res://test_textures/mode1/lock_done.png")
 		
 		if exit_door != null:
 			exit_door.open_exit()

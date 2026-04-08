@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://kgaqjeooaqyr"]
 
-[ext_resource type="Texture2D" uid="uid://brva7kwdxhqfs" path="res://test_textures/mode1/alfa.png" id="1_4s46w"]
-[ext_resource type="Script" uid="uid://cyvtilmk5af2x" path="res://scenes/triangle_first_mode.gd" id="1_i27b0"]
+[ext_resource type="Script" uid="uid://cyvtilmk5af2x" path="res://scenes/FirstMode/triangle_first_mode.gd" id="1_i27b0"]
 [ext_resource type="Texture2D" uid="uid://hnplhg7bav3s" path="res://test_textures/mode1/horizontal_adjacent.png" id="2_fml4n"]
-[ext_resource type="Texture2D" uid="uid://baa23uttl25qp" path="res://test_textures/mode1/beta.png" id="3_jojk4"]
+[ext_resource type="Texture2D" uid="uid://dpio6llk6is13" path="res://test_textures/mode1/Group 909.png" id="2_quatt"]
+[ext_resource type="Texture2D" uid="uid://dug2u6l42780e" path="res://test_textures/mode1/Group 913.png" id="3_8ga4v"]
 [ext_resource type="Texture2D" uid="uid://bvv5hggtf3b08" path="res://test_textures/mode1/vertical_opposite.png" id="3_kyveq"]
 [ext_resource type="Texture2D" uid="uid://di24kjc4lhkp7" path="res://test_textures/mode1/hypotenuse.png" id="4_0kcou"]
 [ext_resource type="Texture2D" uid="uid://cq52ix6343xp1" path="res://test_textures/mode1/big_block.png" id="5_o14ms"]
 [ext_resource type="Texture2D" uid="uid://cu1chq06851rn" path="res://test_textures/mode1/medium_block.png" id="7_jojk4"]
 [ext_resource type="Texture2D" uid="uid://83kme85xowkp" path="res://test_textures/mode1/small_block.png" id="8_icedi"]
-[ext_resource type="Script" uid="uid://ys66pqcskxv4" path="res://scenes/block_logic.gd" id="8_ihthu"]
+[ext_resource type="Script" uid="uid://ys66pqcskxv4" path="res://scenes/FirstMode/block_logic.gd" id="8_ihthu"]
 [ext_resource type="Theme" uid="uid://drtxptosfvx06" path="res://scenes/main.tres" id="8_jojk4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_icedi"]
@@ -31,19 +31,21 @@ size = Vector2(387, 70.99999)
 size = Vector2(439, 122.99999)
 
 [node name="TriangleFirstMode" type="Node2D" unique_id=1712465406]
+scale = Vector2(0.72496724, 0.72496724)
 script = ExtResource("1_i27b0")
 
 [node name="Alfa" type="Sprite2D" parent="." unique_id=543697157]
 z_index = 1
-position = Vector2(213, 39.143433)
-texture = ExtResource("1_4s46w")
-metadata/_edit_lock_ = true
+position = Vector2(247.00002, 50.000004)
+rotation = 0.045309015
+scale = Vector2(0.61742425, 0.61742425)
+texture = ExtResource("2_quatt")
 
 [node name="Beta" type="Sprite2D" parent="." unique_id=1116658785]
 z_index = 1
-position = Vector2(-95, -114)
-texture = ExtResource("3_jojk4")
-metadata/_edit_lock_ = true
+position = Vector2(-108.00001, -162)
+scale = Vector2(0.6363636, 0.59448814)
+texture = ExtResource("3_8ga4v")
 
 [node name="Horizontal" type="Sprite2D" parent="." unique_id=889694665]
 z_index = 1

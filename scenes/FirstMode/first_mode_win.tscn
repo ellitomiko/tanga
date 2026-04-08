@@ -1,71 +1,74 @@
 [gd_scene format=3 uid="uid://b1cvrdbo4wk3p"]
 
-[ext_resource type="Script" uid="uid://ccbmd0i0gfj3" path="res://scenes/first_mode_win.gd" id="1_36clk"]
-[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_1005x"]
+[ext_resource type="Script" uid="uid://ccbmd0i0gfj3" path="res://scenes/FirstMode/first_mode_win.gd" id="1_36clk"]
+[ext_resource type="Texture2D" uid="uid://c6jh57my07ymo" path="res://test_textures/mode1/вы прошли.png" id="2_pt4dq"]
+[ext_resource type="Texture2D" uid="uid://bqshetf4waq4c" path="res://test_textures/mode1/Group 961.png" id="3_g7mok"]
+[ext_resource type="Texture2D" uid="uid://cjg1fei4hon0v" path="res://test_textures/mode1/Group 864.png" id="4_spq4h"]
+[ext_resource type="Texture2D" uid="uid://dhnbt11gt4pqg" path="res://test_textures/mode1/Group 861.png" id="5_73o2p"]
+[ext_resource type="Texture2D" uid="uid://c5u72qtbm8pvy" path="res://test_textures/mode1/Group 867.png" id="6_lh883"]
 
 [node name="FirstModeWin" type="CanvasLayer" unique_id=170598896]
 script = ExtResource("1_36clk")
 
-[node name="ColorRect2" type="ColorRect" parent="." unique_id=151029175]
+[node name="ColorRect2" type="TextureRect" parent="." unique_id=1035605135]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-color = Color(0, 0, 0, 0.19215687)
+texture = ExtResource("2_pt4dq")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=2060377995]
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 180.0
-offset_top = 180.0
-offset_right = -180.0
-offset_bottom = -180.0
+[node name="ColorRect" type="TextureRect" parent="." unique_id=416720822]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -604.0
+offset_top = -385.5
+offset_right = 604.0
+offset_bottom = 321.5
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
-color = Color(1, 1, 0.627451, 1)
-
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1138857717]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 200
-theme_override_constants/margin_top = 200
-theme_override_constants/margin_right = 200
-theme_override_constants/margin_bottom = 200
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1478812541]
-layout_mode = 2
 size_flags_horizontal = 4
-size_flags_vertical = 4
+mouse_filter = 2
+texture = ExtResource("3_g7mok")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1478812541]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -492.5
+offset_top = 93.5
+offset_right = 492.5
+offset_bottom = 242.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
 theme_override_constants/separation = 20
 
-[node name="ButtonLevelMenu" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=1759423512]
-modulate = Color(0.12941177, 1, 1, 1)
+[node name="ButtonLevelMenu" type="TextureButton" parent="HBoxContainer" unique_id=1759423512]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
-texture_normal = ExtResource("1_1005x")
+texture_normal = ExtResource("4_spq4h")
 
-[node name="ButtonRestart" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=304052693]
-modulate = Color(0.12941177, 1, 1, 1)
+[node name="ButtonRestart" type="TextureButton" parent="HBoxContainer" unique_id=304052693]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
-texture_normal = ExtResource("1_1005x")
+texture_normal = ExtResource("5_73o2p")
 
-[node name="ButtonNextLevel" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=1858716926]
-modulate = Color(0.12941177, 1, 1, 1)
+[node name="ButtonNextLevel" type="TextureButton" parent="HBoxContainer" unique_id=1858716926]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
-texture_normal = ExtResource("1_1005x")
+texture_normal = ExtResource("6_lh883")
 
-[connection signal="pressed" from="MarginContainer/HBoxContainer/ButtonLevelMenu" to="." method="_on_button_level_menu_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/ButtonRestart" to="." method="_on_button_restart_pressed"]
-[connection signal="pressed" from="MarginContainer/HBoxContainer/ButtonNextLevel" to="." method="_on_button_next_level_pressed"]
+[connection signal="pressed" from="HBoxContainer/ButtonLevelMenu" to="." method="_on_button_level_menu_pressed"]
+[connection signal="pressed" from="HBoxContainer/ButtonRestart" to="." method="_on_button_restart_pressed"]
+[connection signal="pressed" from="HBoxContainer/ButtonNextLevel" to="." method="_on_button_next_level_pressed"]

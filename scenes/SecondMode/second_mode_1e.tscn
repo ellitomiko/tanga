@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://s246wfv84fq3"]
+
+[ext_resource type="Script" uid="uid://cj54wb23j6kbg" path="res://scenes/SecondMode/second_mode_1e.gd" id="1_lgsop"]
+[ext_resource type="Texture2D" uid="uid://p7gnm1t2s4l2" path="res://test_textures/mode2/Frame 123.png" id="2_4b8dn"]
+
+[sub_resource type="Theme" id="Theme_t7o3x"]
+
+[node name="SecondMode1E" type="Control" unique_id=154504845]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_lgsop")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1199322406]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Function" type="Label" parent="HBoxContainer" unique_id=1200569668]
+layout_mode = 2
+theme = SubResource("Theme_t7o3x")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "func"
+
+[node name="Angle" type="Label" parent="HBoxContainer" unique_id=538662039]
+layout_mode = 2
+theme = SubResource("Theme_t7o3x")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "-"
+
+[node name="Degree" type="Label" parent="HBoxContainer" unique_id=1704352269]
+layout_mode = 2
+theme = SubResource("Theme_t7o3x")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "°"
+
+[node name="AngleCover" type="TextureRect" parent="HBoxContainer" unique_id=1510695813]
+layout_mode = 2
+texture = ExtResource("2_4b8dn")
+
+[node name="Equal" type="Label" parent="HBoxContainer" unique_id=1691360886]
+layout_mode = 2
+theme = SubResource("Theme_t7o3x")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "="
+
+[node name="Value" type="Label" parent="HBoxContainer" unique_id=1863137549]
+layout_mode = 2
+theme = SubResource("Theme_t7o3x")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "1"
+
+[node name="ValueCover" type="TextureRect" parent="HBoxContainer" unique_id=310570346]
+layout_mode = 2
+texture = ExtResource("2_4b8dn")

@@ -1,20 +1,16 @@
 [gd_scene format=3 uid="uid://bqrp5iwxxghbu"]
 
 [ext_resource type="Script" uid="uid://dks7yo5mnad18" path="res://scenes/FirstMode/tanga_first.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://b1uh4swmylxdd" path="res://test_textures/mode1/tanga.png" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://c4myn1ckbak5y" path="res://test_textures/mode1/freepik__cute-cartoon-mouse-mascot-based-on-provided-silhou__17635 1.png" id="2_7vy5q"]
 
 [node name="TangaFirst" type="CharacterBody2D" unique_id=371982454]
 script = ExtResource("1_g2els")
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1535010379]
-position = Vector2(-65.11865, 25.132568)
-rotation = 1.9467256
-polygon = PackedVector2Array(-81, 15, -78, 5, -65, -32, -53, -57, -41, -59, -24, -52, -12, -43, -2, -37, 11, -37, 21, -30, 27, -21, 26, -11, 23, -5, 28, 0, 30, 16, 27, 32, 21, 41, 11, 54, 5, 57, 10, 62, 28, 66, 44, 62, 34, 70, 5, 69, -7, 60, -20, 63, -34, 62, -47, 56, -56, 49, -63, 40, -67, 29, -75, 27, -78, 21)
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=1984045407]
+polygon = PackedVector2Array(0, -49, -17, -48, -32, -42, -44, -34, -52, -23, -56, -12, -70, -15, -78, -13, -88, -6, -90, 2, -77, -2, -67, -3, -58, 0, -54, 12, -50, 22, -37, 34, -21, 42, -1, 43, 1, 57, 7, 67, 12, 72, 17, 74, 26, 73, 33, 65, 36, 56, 38, 49, 47, 47, 58, 41, 70, 32, 79, 21, 85, 9, 87, -8, 81, -24, 71, -36, 61, -44, 49, -50, 39, -54, 35, -68, 29, -77, 19, -82, 11, -79, 5, -70, 1, -60)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=261570839]
-position = Vector2(-65.11865, 25.132568)
-rotation = 1.9467256
-texture = ExtResource("2_qhqgy")
+texture = ExtResource("2_7vy5q")
 
 [node name="CarryMarker" type="Marker2D" parent="." unique_id=845056427]
 position = Vector2(-52, -1)
