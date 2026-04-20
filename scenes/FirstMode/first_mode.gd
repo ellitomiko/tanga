@@ -10,8 +10,7 @@ extends Node2D
 @onready var label_side_labels: Label = $UI/InfoBox/LabelSideLabels
 @onready var triangle_holder: Node2D = $Objects/TriangleHolder
 @onready var equation_left: Label = $Objects/EquationHolder/EquationLeft
-@onready var equation_up_container: Label = $Objects/EquationHolder/EquationRight/UpContainer/EquationUpContainer
-@onready var equation_down_container: Label = $Objects/EquationHolder/EquationRight/DownContainer/EquationDownContainer
+
 @onready var top_slot: Area2D = $Objects/EquationHolder/EquationRight/UpContainer/Area2D
 @onready var bottom_slot: Area2D = $Objects/EquationHolder/EquationRight/DownContainer/Area2D
 @onready var lock: Sprite2D = $Objects/Lock
@@ -236,8 +235,8 @@ func setup_equation() -> void:
 	
 	equation_left.text = build_equation_left_text(func_name, angle)
 	hint_visible = false
-	equation_up_container.text = "ответ"
-	equation_down_container.text = "ответ"
+	top_slot_label.text = "ответ"
+	bottom_slot_label.text = "ответ"
 
 
 func build_equation_left_text(func_name: String, angle: String) -> String:
@@ -255,8 +254,8 @@ func get_angle_symbol(angle: String) -> String:
 
 func update_equation_hint() -> void:
 	if not hint_visible:
-		equation_up_container.text = "ответ"
-		equation_down_container.text = "ответ"
+		top_slot_label.text = "ответ"
+		bottom_slot_label.text = "ответ"
 		return
 	
 	var task_data = current_level_data.get("task_data", {})
@@ -267,8 +266,8 @@ func update_equation_hint() -> void:
 	var top = formula.get("top", "")
 	var bottom = formula.get("bottom", "")
 	
-	equation_up_container.text = role_to_russian(top)
-	equation_down_container.text = role_to_russian(bottom)
+	top_slot_label.text = role_to_russian(top)
+	bottom_slot_label.text = role_to_russian(bottom)
 
 
 func role_to_russian(role: String) -> String:
