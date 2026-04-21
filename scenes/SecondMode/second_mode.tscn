@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_5hgqv"]
 [ext_resource type="Script" uid="uid://cjy3a4jlba1gs" path="res://scenes/SecondMode/second_mode.gd" id="1_jopi1"]
-[ext_resource type="Texture2D" uid="uid://17v1rxtcgs03" path="res://test_textures/mode2/экран режим 2.1.png" id="2_7t2b2"]
+[ext_resource type="Texture2D" uid="uid://p7gnm1t2s4l2" path="res://test_textures/mode2/Frame 123.png" id="2_juuw0"]
 [ext_resource type="Texture2D" uid="uid://btb70qep6dlol" path="res://test_textures/mode2/link1.png" id="3_38o57"]
 [ext_resource type="Texture2D" uid="uid://relyvwuuc3bx" path="res://test_textures/mode1/Group 878.png" id="3_juuw0"]
 [ext_resource type="Texture2D" uid="uid://buesg5yygwlfu" path="res://test_textures/mode2/ButtonCircleCCW.png" id="3_ujg3q"]
@@ -28,6 +28,9 @@
 [ext_resource type="Texture2D" uid="uid://cqvke82tas3th" path="res://test_textures/mode2/mouse2level.png" id="23_53ctk"]
 [ext_resource type="Texture2D" uid="uid://dwbiaa0me6oag" path="res://test_textures/mode2/center_connector.png" id="23_dnmx4"]
 [ext_resource type="Texture2D" uid="uid://b7ggs1kuc3x6d" path="res://test_textures/ButtonSmolRound_Idle.png" id="26_uml81"]
+[ext_resource type="Theme" uid="uid://drtxptosfvx06" path="res://scenes/main.tres" id="29_juuw0"]
+
+[sub_resource type="Theme" id="Theme_ersj0"]
 
 [sub_resource type="Theme" id="Theme_ujg3q"]
 
@@ -65,15 +68,85 @@ grow_horizontal = 2
 grow_vertical = 2
 metadata/_edit_lock_ = true
 
-[node name="ColorRect" type="TextureRect" parent="UI" unique_id=345606455]
+[node name="ColorRect" type="ColorRect" parent="UI" unique_id=7533008]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_7t2b2")
+color = Color(0.8666667, 1, 0.57254905, 1)
 metadata/_edit_lock_ = true
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="UI" unique_id=807256249]
+layout_mode = 0
+offset_left = 1346.0
+offset_top = 232.0
+offset_right = 1546.0
+offset_bottom = 285.0
+metadata/_edit_group_ = true
+
+[node name="Function" type="Label" parent="UI/HBoxContainer2" unique_id=1348400829]
+layout_mode = 2
+theme = SubResource("Theme_ersj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "sin"
+
+[node name="AngleCover" type="TextureRect" parent="UI/HBoxContainer2" unique_id=103567926]
+layout_mode = 2
+texture = ExtResource("2_juuw0")
+
+[node name="Degree" type="Label" parent="UI/HBoxContainer2" unique_id=853201393]
+layout_mode = 2
+theme = SubResource("Theme_ersj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "°"
+
+[node name="Equal" type="Label" parent="UI/HBoxContainer2" unique_id=751217111]
+layout_mode = 2
+theme = SubResource("Theme_ersj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "="
+
+[node name="ValueCover" type="TextureRect" parent="UI/HBoxContainer2" unique_id=911193575]
+layout_mode = 2
+texture = ExtResource("2_juuw0")
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="UI" unique_id=22256973]
+layout_mode = 0
+offset_left = 1347.0
+offset_top = 328.0
+offset_right = 1547.0
+offset_bottom = 381.0
+metadata/_edit_group_ = true
+
+[node name="Function" type="Label" parent="UI/HBoxContainer3" unique_id=794151277]
+layout_mode = 2
+theme = SubResource("Theme_ersj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "sin"
+
+[node name="Angle" type="Label" parent="UI/HBoxContainer3" unique_id=495504124]
+layout_mode = 2
+theme = SubResource("Theme_ersj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "60"
+
+[node name="Degree" type="Label" parent="UI/HBoxContainer3" unique_id=1244431380]
+layout_mode = 2
+theme = SubResource("Theme_ersj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "°"
+
+[node name="Equal" type="Label" parent="UI/HBoxContainer3" unique_id=200028671]
+layout_mode = 2
+theme = SubResource("Theme_ersj0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "="
+
+[node name="ValueCover" type="TextureRect" parent="UI/HBoxContainer3" unique_id=1171071138]
+layout_mode = 2
+texture = ExtResource("2_juuw0")
 
 [node name="HBoxContainer" type="VBoxContainer" parent="UI" unique_id=1406377355]
 layout_mode = 0
@@ -944,6 +1017,27 @@ offset_top = 889.0
 offset_right = 1870.0
 offset_bottom = 1029.0
 texture_normal = ExtResource("26_uml81")
+
+[node name="Node2D" type="Node2D" parent="." unique_id=80687874]
+position = Vector2(1286, 539)
+scale = Vector2(1.2602766, 1.3816996)
+
+[node name="ButtonHoveredTextBegin" type="Sprite2D" parent="." unique_id=469478059]
+modulate = Color(1, 1, 0.6627451, 1)
+position = Vector2(1469, 657)
+scale = Vector2(7.740742, 3.9629629)
+texture = ExtResource("2_juuw0")
+metadata/_edit_group_ = true
+
+[node name="Equal" type="Label" parent="ButtonHoveredTextBegin" unique_id=702687773]
+offset_left = -21.703333
+offset_top = -10.345796
+offset_right = 23.296667
+offset_bottom = 13.654204
+theme = ExtResource("29_juuw0")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 10
+text = "ответить"
 
 [connection signal="pressed" from="UI/HBoxContainer/ButtonPause" to="." method="_on_button_pause_pressed"]
 [connection signal="pressed" from="UI/HBoxContainer/NormalModeDone" to="." method="_on_normal_mode_done_pressed"]

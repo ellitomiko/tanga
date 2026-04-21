@@ -27,15 +27,15 @@ theme = SubResource("Theme_t7o3x")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "-"
 
+[node name="AngleCover" type="TextureRect" parent="HBoxContainer" unique_id=1510695813]
+layout_mode = 2
+texture = ExtResource("2_4b8dn")
+
 [node name="Degree" type="Label" parent="HBoxContainer" unique_id=1704352269]
 layout_mode = 2
 theme = SubResource("Theme_t7o3x")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "°"
-
-[node name="AngleCover" type="TextureRect" parent="HBoxContainer" unique_id=1510695813]
-layout_mode = 2
-texture = ExtResource("2_4b8dn")
 
 [node name="Equal" type="Label" parent="HBoxContainer" unique_id=1691360886]
 layout_mode = 2
