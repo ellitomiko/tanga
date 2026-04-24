@@ -29,6 +29,8 @@
 [ext_resource type="Texture2D" uid="uid://dwbiaa0me6oag" path="res://test_textures/mode2/center_connector.png" id="23_dnmx4"]
 [ext_resource type="Texture2D" uid="uid://b7ggs1kuc3x6d" path="res://test_textures/ButtonSmolRound_Idle.png" id="26_uml81"]
 [ext_resource type="Theme" uid="uid://drtxptosfvx06" path="res://scenes/main.tres" id="29_juuw0"]
+[ext_resource type="Texture2D" uid="uid://c76ctilxmtavb" path="res://test_textures/mode2/Прогресс_бар_белый_фиолетовый.png" id="30_ee6yn"]
+[ext_resource type="Texture2D" uid="uid://byvf71gg1twnj" path="res://test_textures/mode2/Прогресс_бар_фиолетовый.png" id="31_cobwy"]
 
 [sub_resource type="Theme" id="Theme_ersj0"]
 
@@ -53,6 +55,16 @@ height = 303.4
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cobwy"]
 height = 899.89
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0om8d"]
+texture = ExtResource("30_ee6yn")
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3bcne"]
+texture = ExtResource("31_cobwy")
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
 
 [node name="SecondMode" type="Node2D" unique_id=1266931056]
 script = ExtResource("1_jopi1")
@@ -1038,6 +1050,17 @@ theme = ExtResource("29_juuw0")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 10
 text = "ответить"
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1306275150]
+offset_left = 269.0
+offset_top = 1140.0
+offset_right = 1803.0
+offset_bottom = 1238.0
+theme_override_styles/background = SubResource("StyleBoxTexture_0om8d")
+theme_override_styles/fill = SubResource("StyleBoxTexture_3bcne")
+step = 1.0
+value = 50.0
+show_percentage = false
 
 [connection signal="pressed" from="UI/HBoxContainer/ButtonPause" to="." method="_on_button_pause_pressed"]
 [connection signal="pressed" from="UI/HBoxContainer/NormalModeDone" to="." method="_on_normal_mode_done_pressed"]

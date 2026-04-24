@@ -48,6 +48,7 @@ scale = Vector2(0.6363636, 0.59448814)
 texture = ExtResource("3_8ga4v")
 
 [node name="Horizontal" type="Sprite2D" parent="." unique_id=889694665]
+visible = false
 z_index = 1
 position = Vector2(104, 122)
 texture = ExtResource("2_fml4n")

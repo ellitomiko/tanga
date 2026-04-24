@@ -6,7 +6,7 @@ extends Node2D
 
 @export var yes_texture: Texture2D = preload("res://test_textures/mode2/YES.png")
 
-@export var max_speed: float = 220.0
+@export var max_speed: float = 150.0
 @export var acceleration: float = 180.0
 
 var current_speed: float = 0.0

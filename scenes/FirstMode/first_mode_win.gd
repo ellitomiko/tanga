@@ -5,9 +5,9 @@ signal level_menu_pressed
 signal next_level_pressed
 
 
-@onready var button_level_menu: TextureButton = $MarginContainer/HBoxContainer/ButtonLevelMenu
-@onready var button_restart: TextureButton = $MarginContainer/HBoxContainer/ButtonRestart
-@onready var button_next_level: TextureButton = $MarginContainer/HBoxContainer/ButtonNextLevel
+@onready var button_level_menu: TextureButton = $HBoxContainer/ButtonLevelMenu
+@onready var button_restart: TextureButton = $HBoxContainer/ButtonRestart
+@onready var button_next_level: TextureButton = $HBoxContainer/ButtonNextLevel
 
 var is_closing: bool = false
 

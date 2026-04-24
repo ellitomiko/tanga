@@ -21,6 +21,7 @@ offset_right = 2896.0
 offset_bottom = 1080.0
 size_flags_horizontal = 6
 size_flags_vertical = 6
+metadata/_edit_lock_ = true
 
 [node name="ColorRect" type="ColorRect" parent="Control" unique_id=1825701308]
 layout_mode = 1
@@ -89,8 +90,10 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_right = 62.0
-offset_bottom = 935.0
+offset_left = 193.0
+offset_top = 4.0
+offset_right = 255.0
+offset_bottom = 939.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.5577079, 0.41442016, 0.341951, 1)
@@ -100,10 +103,10 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 177.0
-offset_top = 57.0
-offset_right = 242.0
-offset_bottom = 925.0
+offset_left = 370.0
+offset_top = 61.0
+offset_right = 435.0
+offset_bottom = 929.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.5577079, 0.41442016, 0.341951, 1)
@@ -113,19 +116,20 @@ anchors_preset = 14
 anchor_top = 0.5
 anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = 55.0
-offset_top = 734.0
-offset_right = 201.0
-offset_bottom = 913.0
+offset_left = 248.0
+offset_top = 738.0
+offset_right = 394.0
+offset_bottom = 917.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.5577079, 0.41442016, 0.341951, 1)
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MovingObjects" unique_id=137626702]
-offset_left = -299.0
-offset_top = 420.0
-offset_right = -145.0
-offset_bottom = 473.0
+offset_left = -321.0
+offset_top = 334.0
+offset_right = -167.0
+offset_bottom = 387.0
+scale = Vector2(3.1202016, 3.1202016)
 size_flags_horizontal = 4
 size_flags_vertical = 4
 metadata/_edit_group_ = true
@@ -159,7 +163,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "√2/2"
 
 [node name="No" type="Sprite2D" parent="MovingObjects" unique_id=629811293]
-position = Vector2(120, 826)
+position = Vector2(313, 830)
 texture = ExtResource("3_ptdy5")
 
 [node name="ButtonStartGame" type="TextureButton" parent="MovingObjects" unique_id=323539117]
@@ -170,10 +174,11 @@ offset_bottom = 674.0
 texture_normal = ExtResource("4_64wap")
 
 [node name="TextEdit" type="LineEdit" parent="MovingObjects" unique_id=1377279047]
-offset_left = -266.0
-offset_top = 431.0
-offset_right = -197.5
-offset_bottom = 462.0
+offset_left = -236.0
+offset_top = 343.0
+offset_right = -167.5
+offset_bottom = 374.0
+scale = Vector2(2.439457, 4.814015)
 theme_override_colors/font_selected_color = Color(1, 1, 1, 0)
 theme_override_colors/selection_color = Color(0.5019608, 0.5019608, 0.5019608, 0)
 context_menu_enabled = false

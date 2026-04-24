@@ -244,11 +244,12 @@ shape = SubResource("RectangleShape2D_vt4w2")
 position = Vector2(1890, 531)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Objects/ExitArea" unique_id=503616161]
+visible = false
 position = Vector2(-83, 9)
 shape = SubResource("RectangleShape2D_275jl")
 
 [node name="Lock" type="Sprite2D" parent="Objects" unique_id=494880300]
-position = Vector2(1816, 537)
+position = Vector2(1779, 537)
 texture = ExtResource("11_g2no4")
 
 [connection signal="pressed" from="UI/ButtonHint" to="." method="_on_button_hint_pressed"]
