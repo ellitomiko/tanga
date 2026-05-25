@@ -1,12 +1,18 @@
 [gd_scene format=3 uid="uid://c035y00vvw8np"]
 
-[ext_resource type="Script" uid="uid://cm51jgkjttdff" path="res://scenes/main_menu.gd" id="1_ekxnf"]
+[ext_resource type="Script" uid="uid://cm51jgkjttdff" path="res://scenes/MainUI/main_menu.gd" id="1_ekxnf"]
 [ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_l6cm7"]
-[ext_resource type="Texture2D" uid="uid://cryhicrwkot7a" path="res://test_textures/Group 800.png" id="2_rtw2f"]
-[ext_resource type="Texture2D" uid="uid://c2g1jbgtl1f43" path="res://test_textures/Button_Idle_Text_Begin.png" id="3_oa1go"]
-[ext_resource type="Texture2D" uid="uid://f1ed6u7g7x6c" path="res://test_textures/Button_Pressed_Text_Begin.png" id="4_tbmy8"]
-[ext_resource type="Texture2D" uid="uid://0kwgw4wyb4gg" path="res://test_textures/Button_Hovered_Text_Begin.png" id="5_jk1qb"]
-[ext_resource type="PackedScene" uid="uid://bh4w0aiiwat7a" path="res://scenes/fade_transition.tscn" id="7_oa1go"]
+[ext_resource type="Texture2D" uid="uid://b574yej0rutay" path="res://textures/main/start screen.png" id="2_qw0j6"]
+[ext_resource type="Texture2D" uid="uid://ddye5h22147mj" path="res://textures/main/Tanda_inscription.png" id="3_kpklg"]
+[ext_resource type="Texture2D" uid="uid://db0r86le3wkib" path="res://textures/main/menu_bar.png" id="4_e71t5"]
+[ext_resource type="FontFile" uid="uid://cpp2wkddf4etq" path="res://fonts/MPLUSRounded1c-Black.ttf" id="5_fabgi"]
+[ext_resource type="Texture2D" uid="uid://cu062n1cxximw" path="res://textures/main/button_rest.png" id="6_tdt6j"]
+[ext_resource type="Texture2D" uid="uid://cdkxusx6m51ol" path="res://textures/main/button_on_press.png" id="7_l2x3c"]
+[ext_resource type="PackedScene" uid="uid://bh4w0aiiwat7a" path="res://scenes/MainUI/fade_transition.tscn" id="7_oa1go"]
+[ext_resource type="Texture2D" uid="uid://ca4770lfdeg0j" path="res://textures/main/button_on_hover.png" id="8_7a6o3"]
+
+[sub_resource type="Theme" id="Theme_1iljb"]
+default_font = ExtResource("5_fabgi")
 
 [node name="MainMenu" type="Control" unique_id=585533661]
 layout_mode = 3
@@ -17,51 +23,48 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ekxnf")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1215591887]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(1, 1, 0.6784314, 1)
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=911853451]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_qw0j6")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=975101818]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -419.0
-offset_right = 419.0
-offset_bottom = 376.0
-grow_horizontal = 2
-texture = ExtResource("2_rtw2f")
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1168549541]
+layout_mode = 0
+offset_left = 936.0
+offset_right = 1988.0
+offset_bottom = 531.0
+texture = ExtResource("3_kpklg")
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=770371938]
+layout_mode = 0
+offset_left = 1114.0
+offset_top = 539.0
+offset_right = 1752.0
+offset_bottom = 1043.0
+texture = ExtResource("4_e71t5")
 
 [node name="ButtonStart" type="TextureButton" parent="." unique_id=1983458577]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.676
-anchor_right = 0.5
-anchor_bottom = 0.676
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = ExtResource("3_oa1go")
-texture_pressed = ExtResource("4_tbmy8")
-texture_hover = ExtResource("5_jk1qb")
+layout_mode = 0
+offset_left = 895.0
+offset_top = 545.0
+offset_right = 1888.0
+offset_bottom = 755.0
+tooltip_text = "Играть"
+theme = SubResource("Theme_1iljb")
+texture_normal = ExtResource("6_tdt6j")
+texture_pressed = ExtResource("7_l2x3c")
+texture_hover = ExtResource("8_7a6o3")
 
 [node name="ButtonSettings" type="TextureButton" parent="." unique_id=126282195]
-modulate = Color(0.12941177, 1, 1, 1)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 1.0
-anchor_right = 1.0
-offset_left = -128.0
-offset_top = 20.0
-offset_right = -20.0
-offset_bottom = 128.0
-grow_horizontal = 0
-texture_normal = ExtResource("1_l6cm7")
+layout_mode = 0
+offset_left = 888.0
+offset_top = 811.0
+offset_right = 1881.0
+offset_bottom = 1021.0
+texture_normal = ExtResource("6_tdt6j")
+texture_pressed = ExtResource("7_l2x3c")
+texture_hover = ExtResource("8_7a6o3")
 
 [node name="ButtonAbout" type="TextureButton" parent="." unique_id=817043416]
 modulate = Color(0.12941177, 1, 1, 1)
@@ -98,6 +101,10 @@ offset_bottom = 40.0
 visible = false
 layout_mode = 0
 anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
 
 [node name="FadeTimer" type="Timer" parent="FadeTransition" unique_id=1034747796]
 
