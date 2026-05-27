@@ -1,5 +1,35 @@
 extends Node
 
+#ДЛЯ ОТСЛЕЖИВАНИЯ САОГО НАЧАЛА ИГРЫ
+var first_start_pressed: bool = false
+
+
+
+
+
+
+#ДЛЯ ПЕРЕКЛЮЧЕНИЯ МУЗЫКИ
+@onready var main_music: AudioStreamPlayer = $MainMusic
+@onready var first_mode_music: AudioStreamPlayer = $FirstModeMusic
+
+
+func play_main_music() -> void:
+	if first_mode_music.playing:
+		first_mode_music.stop()
+
+	if not main_music.playing:
+		main_music.play()
+
+
+func play_first_mode_music() -> void:
+	if main_music.playing:
+		main_music.stop()
+
+	if not first_mode_music.playing:
+		first_mode_music.play()
+
+
+
 
 #ДЛЯ НАСТРОЕК МУЗЫКИ
 const AUDIO_OFF_DB := -80.0

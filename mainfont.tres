@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://br1sogjcgmnt3"]
+
+[ext_resource type="FontFile" uid="uid://cpp2wkddf4etq" path="res://fonts/MPLUSRounded1c-Black.ttf" id="1_ud50r"]
+
+[resource]
+default_font = ExtResource("1_ud50r")
+default_font_size = 20

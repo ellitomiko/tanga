@@ -3,16 +3,16 @@ extends Control
 
 var first_play: bool = true
 
+func _ready() -> void:
+	Global.play_main_music()
 
 #START button
 func _on_button_start_pressed() -> void:
-	if first_play == false:
-		first_play = true
-		$FadeTransition.show()
-		$FadeTransition/FadeTimer.start()
-		$FadeTransition/AnimationPlayer.play('fade_in')
+	if Global.first_start_pressed == false:
+		Global.first_start_pressed = true
+		get_tree().change_scene_to_file("res://scenes/MainUI/transfer_01.tscn")
 	else:
-		get_tree().change_scene_to_file('res://scenes/MainUI/modes_scene.tscn')
+		get_tree().change_scene_to_file("res://scenes/MainUI/modes_scene.tscn")
 
 func _on_fade_timer_timeout() -> void:
 	get_tree().change_scene_to_file('')

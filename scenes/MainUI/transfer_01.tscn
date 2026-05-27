@@ -1,8 +1,10 @@
 [gd_scene format=3 uid="uid://ba424tkex5v8e"]
 
-[ext_resource type="PackedScene" uid="uid://bh4w0aiiwat7a" path="res://scenes/fade_transition.tscn" id="1_2h7jv"]
-[ext_resource type="Script" uid="uid://me7uhi2a53k7" path="res://scenes/transfer_01.gd" id="1_nrsh3"]
-[ext_resource type="VideoStream" uid="uid://cmcu52pvrykjw" path="res://test_textures/video_2026-03-16_18-50-32.ogv" id="3_gnxj1"]
+[ext_resource type="Script" uid="uid://me7uhi2a53k7" path="res://scenes/MainUI/transfer_01.gd" id="1_nrsh3"]
+[ext_resource type="Texture2D" uid="uid://c5ib5kdo20i0b" path="res://textures/main/кадр 1.png" id="2_kgrpo"]
+[ext_resource type="Texture2D" uid="uid://okowsh5qpf04" path="res://textures/main/кадр 2.png" id="3_ks2lh"]
+[ext_resource type="Texture2D" uid="uid://by6mvrc4nli6o" path="res://textures/main/кадр 3.png" id="4_k8rtq"]
+[ext_resource type="Theme" uid="uid://br1sogjcgmnt3" path="res://mainfont.tres" id="6_0r1xf"]
 
 [node name="Transfer01" type="Control" unique_id=882375215]
 layout_mode = 3
@@ -13,25 +15,59 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_nrsh3")
 
-[node name="FadeTransition" parent="." unique_id=758172421 instance=ExtResource("1_2h7jv")]
-visible = false
-layout_mode = 0
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-grow_horizontal = 1
-grow_vertical = 1
-
-[node name="FadeTimer" type="Timer" parent="FadeTransition" unique_id=255904009]
-
-[node name="AnimationVideo" type="VideoStreamPlayer" parent="." unique_id=1251613783]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=576586936]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-stream = ExtResource("3_gnxj1")
+color = Color(0.3137255, 0.22745098, 0.6509804, 1)
 
-[connection signal="timeout" from="FadeTransition/FadeTimer" to="." method="_on_timer_timeout"]
-[connection signal="finished" from="AnimationVideo" to="." method="_on_animation_video_finished"]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=415622050]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -926.0
+offset_top = -513.5
+offset_right = 926.0
+offset_bottom = 513.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 40
+
+[node name="GridContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1535323563]
+layout_mode = 2
+theme_override_constants/separation = 34
+
+[node name="image1" type="TextureRect" parent="VBoxContainer/GridContainer" unique_id=342449899]
+layout_mode = 2
+texture = ExtResource("2_kgrpo")
+
+[node name="image2" type="TextureRect" parent="VBoxContainer/GridContainer" unique_id=467985412]
+layout_mode = 2
+texture = ExtResource("3_ks2lh")
+
+[node name="image3" type="TextureRect" parent="VBoxContainer" unique_id=414786685]
+layout_mode = 2
+texture = ExtResource("4_k8rtq")
+
+[node name="Label" type="Label" parent="." unique_id=506525749]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -677.0
+offset_top = -102.0
+offset_right = -61.0
+offset_bottom = -48.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("6_0r1xf")
+theme_override_font_sizes/font_size = 38
+text = "Нажмите, чтобы продолжить..."

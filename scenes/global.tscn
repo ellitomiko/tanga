@@ -1,13 +1,19 @@
 [gd_scene format=3 uid="uid://b8nqs8vxaev08"]
 
-[ext_resource type="AudioStream" uid="uid://dpifx7vyi6846" path="res://test_textures/moodmode-no-copyright-music-201745.mp3" id="1_4pk28"]
+[ext_resource type="AudioStream" uid="uid://dpifx7vyi6846" path="res://mode1music.mp3" id="1_4pk28"]
 [ext_resource type="Script" uid="uid://drwcpsdn3j6k0" path="res://scenes/global.gd" id="1_nmxvb"]
+[ext_resource type="AudioStream" uid="uid://b0tolv4a3d65a" path="res://mainmusic.mp3" id="2_nmxvb"]
 
 [node name="Global" type="Node" unique_id=1109777050]
 script = ExtResource("1_nmxvb")
 
-[node name="Music" type="AudioStreamPlayer" parent="." unique_id=844430041]
-stream = ExtResource("1_4pk28")
+[node name="MainMusic" type="AudioStreamPlayer" parent="." unique_id=844430041]
+stream = ExtResource("2_nmxvb")
 autoplay = true
+bus = &"Music"
+parameters/looping = true
+
+[node name="FirstModeMusic" type="AudioStreamPlayer" parent="." unique_id=386499263]
+stream = ExtResource("1_4pk28")
 bus = &"Music"
 parameters/looping = true

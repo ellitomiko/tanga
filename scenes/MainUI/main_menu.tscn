@@ -6,10 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://ddye5h22147mj" path="res://textures/main/Tanda_inscription.png" id="3_kpklg"]
 [ext_resource type="Texture2D" uid="uid://db0r86le3wkib" path="res://textures/main/menu_bar.png" id="4_e71t5"]
 [ext_resource type="FontFile" uid="uid://cpp2wkddf4etq" path="res://fonts/MPLUSRounded1c-Black.ttf" id="5_fabgi"]
-[ext_resource type="Texture2D" uid="uid://cu062n1cxximw" path="res://textures/main/button_rest.png" id="6_tdt6j"]
-[ext_resource type="Texture2D" uid="uid://cdkxusx6m51ol" path="res://textures/main/button_on_press.png" id="7_l2x3c"]
-[ext_resource type="PackedScene" uid="uid://bh4w0aiiwat7a" path="res://scenes/MainUI/fade_transition.tscn" id="7_oa1go"]
-[ext_resource type="Texture2D" uid="uid://ca4770lfdeg0j" path="res://textures/main/button_on_hover.png" id="8_7a6o3"]
+[ext_resource type="Texture2D" uid="uid://csudpowtq6g15" path="res://textures/main/Group 962/Неактивно начать.png" id="6_qw0j6"]
+[ext_resource type="Texture2D" uid="uid://chrn5taiaws6v" path="res://textures/main/Group 962/Нажатие начать.png" id="7_kpklg"]
+[ext_resource type="Texture2D" uid="uid://bhdsn6vdtp767" path="res://textures/main/Group 962/Наведение начать.png" id="8_e71t5"]
+[ext_resource type="Theme" uid="uid://br1sogjcgmnt3" path="res://mainfont.tres" id="9_kpklg"]
 
 [sub_resource type="Theme" id="Theme_1iljb"]
 default_font = ExtResource("5_fabgi")
@@ -19,6 +19,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -2.0
+offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ekxnf")
@@ -32,54 +34,101 @@ texture = ExtResource("2_qw0j6")
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1168549541]
 layout_mode = 0
 offset_left = 936.0
+offset_top = -56.0
 offset_right = 1988.0
-offset_bottom = 531.0
+offset_bottom = 475.0
 texture = ExtResource("3_kpklg")
 
 [node name="TextureRect3" type="TextureRect" parent="." unique_id=770371938]
 layout_mode = 0
 offset_left = 1114.0
-offset_top = 539.0
+offset_top = 492.0
 offset_right = 1752.0
-offset_bottom = 1043.0
+offset_bottom = 1007.0
 texture = ExtResource("4_e71t5")
 
-[node name="ButtonStart" type="TextureButton" parent="." unique_id=1983458577]
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2051750212]
 layout_mode = 0
-offset_left = 895.0
-offset_top = 545.0
-offset_right = 1888.0
-offset_bottom = 755.0
+offset_left = 1147.0
+offset_top = 524.0
+offset_right = 1721.0
+offset_bottom = 952.0
+theme_override_constants/separation = 31
+
+[node name="ButtonStart" type="TextureButton" parent="VBoxContainer" unique_id=1983458577]
+layout_mode = 2
+size_flags_horizontal = 4
 tooltip_text = "Играть"
 theme = SubResource("Theme_1iljb")
-texture_normal = ExtResource("6_tdt6j")
-texture_pressed = ExtResource("7_l2x3c")
-texture_hover = ExtResource("8_7a6o3")
+texture_normal = ExtResource("6_qw0j6")
+texture_pressed = ExtResource("7_kpklg")
+texture_hover = ExtResource("8_e71t5")
 
-[node name="ButtonSettings" type="TextureButton" parent="." unique_id=126282195]
-layout_mode = 0
-offset_left = 888.0
-offset_top = 811.0
-offset_right = 1881.0
-offset_bottom = 1021.0
-texture_normal = ExtResource("6_tdt6j")
-texture_pressed = ExtResource("7_l2x3c")
-texture_hover = ExtResource("8_7a6o3")
-
-[node name="ButtonAbout" type="TextureButton" parent="." unique_id=817043416]
-modulate = Color(0.12941177, 1, 1, 1)
+[node name="Label" type="Label" parent="VBoxContainer/ButtonStart" unique_id=1575747782]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 1.0
+anchors_preset = 14
+anchor_top = 0.5
 anchor_right = 1.0
-offset_left = -128.0
-offset_top = 168.0
-offset_right = -20.0
-offset_bottom = 128.0
-grow_horizontal = 0
-texture_normal = ExtResource("1_l6cm7")
+anchor_bottom = 0.5
+offset_top = -31.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("9_kpklg")
+theme_override_font_sizes/font_size = 34
+text = "Начать"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonSettings" type="TextureButton" parent="VBoxContainer" unique_id=126282195]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = ExtResource("6_qw0j6")
+texture_pressed = ExtResource("7_kpklg")
+texture_hover = ExtResource("8_e71t5")
+
+[node name="Label" type="Label" parent="VBoxContainer/ButtonSettings" unique_id=1258738447]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -31.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("9_kpklg")
+theme_override_font_sizes/font_size = 34
+text = "Настройки"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonAbout" type="TextureButton" parent="VBoxContainer" unique_id=817043416]
+layout_mode = 2
+size_flags_horizontal = 4
+texture_normal = ExtResource("6_qw0j6")
+texture_pressed = ExtResource("7_kpklg")
+texture_hover = ExtResource("8_e71t5")
+
+[node name="Label" type="Label" parent="VBoxContainer/ButtonAbout" unique_id=804275877]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -31.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("9_kpklg")
+theme_override_font_sizes/font_size = 34
+text = "Выйти"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="ButtonExit" type="TextureButton" parent="." unique_id=231553758]
+visible = false
 modulate = Color(0.12941177, 1, 1, 1)
 layout_mode = 1
 anchors_preset = -1
@@ -92,28 +141,11 @@ offset_bottom = -20.0
 grow_vertical = 0
 texture_normal = ExtResource("1_l6cm7")
 
-[node name="Control" type="Control" parent="." unique_id=382653010]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="FadeTransition" parent="." unique_id=758172421 instance=ExtResource("7_oa1go")]
-visible = false
-layout_mode = 0
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-grow_horizontal = 1
-grow_vertical = 1
-
-[node name="FadeTimer" type="Timer" parent="FadeTransition" unique_id=1034747796]
-
-[connection signal="mouse_entered" from="ButtonStart" to="." method="_on_button_start_mouse_entered"]
-[connection signal="pressed" from="ButtonStart" to="." method="_on_button_start_pressed"]
-[connection signal="mouse_entered" from="ButtonSettings" to="." method="_on_button_settings_mouse_entered"]
-[connection signal="pressed" from="ButtonSettings" to="." method="_on_button_settings_pressed"]
-[connection signal="mouse_entered" from="ButtonAbout" to="." method="_on_button_about_mouse_entered"]
-[connection signal="pressed" from="ButtonAbout" to="." method="_on_button_about_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/ButtonStart" to="." method="_on_button_start_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/ButtonStart" to="." method="_on_button_start_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/ButtonSettings" to="." method="_on_button_settings_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/ButtonSettings" to="." method="_on_button_settings_pressed"]
+[connection signal="mouse_entered" from="VBoxContainer/ButtonAbout" to="." method="_on_button_about_mouse_entered"]
+[connection signal="pressed" from="VBoxContainer/ButtonAbout" to="." method="_on_button_about_pressed"]
 [connection signal="mouse_entered" from="ButtonExit" to="." method="_on_button_exit_mouse_entered"]
 [connection signal="pressed" from="ButtonExit" to="." method="_on_button_exit_pressed"]
-[connection signal="timeout" from="FadeTransition/FadeTimer" to="." method="_on_fade_timer_timeout"]
