@@ -1,0 +1,25 @@
+[gd_resource type="SpriteFrames" format=3 uid="uid://jond3akw5kn2"]
+
+[ext_resource type="Texture2D" uid="uid://dcwoen65qk0dc" path="res://textures/thirdMode/cat_animation_run.png" id="1_tm3go"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pmnma"]
+atlas = ExtResource("1_tm3go")
+region = Rect2(0, 0, 596, 329)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cesn3"]
+atlas = ExtResource("1_tm3go")
+region = Rect2(596, 0, 596, 329)
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pmnma")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cesn3")
+}],
+"loop": true,
+"name": &"run",
+"speed": 5.0
+}]

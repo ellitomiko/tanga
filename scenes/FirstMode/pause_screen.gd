@@ -4,7 +4,7 @@ signal resume_pressed
 signal restart_pressed
 signal level_menu_pressed
 
-@onready var background: ColorRect = $ColorRect2
+@onready var background: TextureRect = $ColorRect2
 @onready var panel: MarginContainer = $MarginContainer
 
 var is_closing: bool = false

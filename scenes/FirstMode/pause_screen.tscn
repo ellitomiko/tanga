@@ -1,32 +1,39 @@
 [gd_scene format=3 uid="uid://cdy0rxkvx1p1d"]
 
 [ext_resource type="Script" uid="uid://b7gvfhvpmgnda" path="res://scenes/FirstMode/pause_screen.gd" id="1_qeunj"]
-[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="2_hr2n2"]
+[ext_resource type="Texture2D" uid="uid://c6jh57my07ymo" path="res://test_textures/mode1/вы прошли.png" id="2_od3sc"]
+[ext_resource type="Texture2D" uid="uid://31ug0rgkax1n" path="res://test_textures/mode1/pause.png" id="3_kkjgw"]
+[ext_resource type="Texture2D" uid="uid://cqccucl1cw7x1" path="res://test_textures/mode1/button_back.png" id="3_nbf43"]
+[ext_resource type="Texture2D" uid="uid://jsyo0e7t0rij" path="res://test_textures/mode1/Кнопка_меню.png" id="4_kkjgw"]
+[ext_resource type="Theme" uid="uid://detx5mf62lhja" path="res://NAMEfont.tres" id="4_rbucq"]
+[ext_resource type="Texture2D" uid="uid://cvtjgkv3h3mr8" path="res://test_textures/mode1/Кнопка_настройки.png" id="5_rbucq"]
+[ext_resource type="Texture2D" uid="uid://da2s5panjjljt" path="res://test_textures/mode1/Кнопка_рестарт.png" id="6_dp4cf"]
 
 [node name="PauseScreen" type="CanvasLayer" unique_id=731743010]
 script = ExtResource("1_qeunj")
 
-[node name="ColorRect2" type="ColorRect" parent="." unique_id=103433752]
+[node name="ColorRect2" type="TextureRect" parent="." unique_id=1513705928]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
-color = Color(0, 0, 0, 0.19215687)
+texture = ExtResource("2_od3sc")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1836342654]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 180.0
-offset_top = 180.0
-offset_right = -180.0
-offset_bottom = -180.0
+[node name="TextureRect" type="TextureRect" parent="." unique_id=297580078]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -519.5
+offset_top = -329.0
+offset_right = 519.5
+offset_bottom = 150.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
-color = Color(1, 1, 0.627451, 1)
+texture = ExtResource("3_kkjgw")
 
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=134984421]
 anchors_preset = 15
@@ -39,39 +46,44 @@ theme_override_constants/margin_top = 200
 theme_override_constants/margin_right = 200
 theme_override_constants/margin_bottom = 200
 
-[node name="ButtonBack" type="TextureButton" parent="MarginContainer" unique_id=854500390]
-modulate = Color(0.12941177, 1, 1, 1)
+[node name="Label" type="Label" parent="MarginContainer" unique_id=964291159]
 layout_mode = 2
-size_flags_horizontal = 0
+size_flags_horizontal = 4
 size_flags_vertical = 0
-texture_normal = ExtResource("2_hr2n2")
+theme = ExtResource("4_rbucq")
+theme_override_colors/font_color = Color(0.47058824, 0.39215687, 0.8, 1)
+text = "ПАУЗА"
+horizontal_alignment = 1
+
+[node name="ButtonBack" type="TextureButton" parent="MarginContainer" unique_id=854500390]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+texture_normal = ExtResource("3_nbf43")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=1543323502]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_constants/separation = 20
+theme_override_constants/separation = 77
 
 [node name="ButtonLevelMenu" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=1931405374]
-modulate = Color(0.12941177, 1, 1, 1)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
-texture_normal = ExtResource("2_hr2n2")
+texture_normal = ExtResource("4_kkjgw")
 
 [node name="ButtonSettings" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=836930339]
-modulate = Color(0.12941177, 1, 1, 1)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
-texture_normal = ExtResource("2_hr2n2")
+texture_normal = ExtResource("5_rbucq")
 
 [node name="ButtonRestart" type="TextureButton" parent="MarginContainer/HBoxContainer" unique_id=1707145162]
-modulate = Color(0.12941177, 1, 1, 1)
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
-texture_normal = ExtResource("2_hr2n2")
+texture_normal = ExtResource("6_dp4cf")
 
 [connection signal="pressed" from="MarginContainer/ButtonBack" to="." method="_on_button_back_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/ButtonLevelMenu" to="." method="_on_button_level_menu_pressed"]

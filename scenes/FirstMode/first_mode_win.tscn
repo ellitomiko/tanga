@@ -2,10 +2,17 @@
 
 [ext_resource type="Script" uid="uid://ccbmd0i0gfj3" path="res://scenes/FirstMode/first_mode_win.gd" id="1_36clk"]
 [ext_resource type="Texture2D" uid="uid://c6jh57my07ymo" path="res://test_textures/mode1/вы прошли.png" id="2_pt4dq"]
-[ext_resource type="Texture2D" uid="uid://bqshetf4waq4c" path="res://test_textures/mode1/Group 961.png" id="3_g7mok"]
-[ext_resource type="Texture2D" uid="uid://cjg1fei4hon0v" path="res://test_textures/mode1/Group 864.png" id="4_spq4h"]
-[ext_resource type="Texture2D" uid="uid://dhnbt11gt4pqg" path="res://test_textures/mode1/Group 861.png" id="5_73o2p"]
-[ext_resource type="Texture2D" uid="uid://c5u72qtbm8pvy" path="res://test_textures/mode1/Group 867.png" id="6_lh883"]
+[ext_resource type="Texture2D" uid="uid://oka5158lyan" path="res://test_textures/mode1/Group 1056.png" id="3_pt4dq"]
+[ext_resource type="Texture2D" uid="uid://jsyo0e7t0rij" path="res://test_textures/mode1/Кнопка_меню.png" id="4_3hm0c"]
+[ext_resource type="Texture2D" uid="uid://4fyuhyjqo341" path="res://test_textures/mode1/Кнопка_меню-2.png" id="5_f1wkb"]
+[ext_resource type="Texture2D" uid="uid://c0s3o1erlrtla" path="res://test_textures/mode1/Кнопка_меню-1.png" id="6_7vp7p"]
+[ext_resource type="Texture2D" uid="uid://cqddu8iab8ovv" path="res://test_textures/mode1/Кнопка_далее.png" id="6_73o2p"]
+[ext_resource type="Texture2D" uid="uid://da2s5panjjljt" path="res://test_textures/mode1/Кнопка_рестарт.png" id="7_6yfji"]
+[ext_resource type="Texture2D" uid="uid://brh6ob2bdvjr7" path="res://test_textures/mode1/Mouse_2.png" id="7_g7mok"]
+[ext_resource type="Texture2D" uid="uid://c3w3p3smy6uei" path="res://test_textures/mode1/Кнопка_далее-2.png" id="7_lh883"]
+[ext_resource type="Texture2D" uid="uid://yffiue0lddg0" path="res://test_textures/mode1/Кнопка_далее-1.png" id="8_4mbgs"]
+[ext_resource type="Texture2D" uid="uid://e5xbjvhtxjpo" path="res://test_textures/mode1/Кнопка_рестарт-2.png" id="8_h8vqv"]
+[ext_resource type="Texture2D" uid="uid://bryxe12tfhn52" path="res://test_textures/mode1/Кнопка_рестарт-1.png" id="9_c3tl0"]
 
 [node name="FirstModeWin" type="CanvasLayer" unique_id=170598896]
 script = ExtResource("1_36clk")
@@ -25,15 +32,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -604.0
-offset_top = -385.5
-offset_right = 604.0
-offset_bottom = 321.5
+offset_left = -519.5
+offset_top = -381.0
+offset_right = 519.5
+offset_bottom = 125.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
 mouse_filter = 2
-texture = ExtResource("3_g7mok")
+texture = ExtResource("3_pt4dq")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1478812541]
 anchors_preset = 8
@@ -41,33 +48,46 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -492.5
-offset_top = 93.5
-offset_right = 492.5
-offset_bottom = 242.5
+offset_left = -349.0
+offset_top = -110.0
+offset_right = 349.0
+offset_bottom = 37.0
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 4
-size_flags_vertical = 8
-theme_override_constants/separation = 20
+size_flags_vertical = 4
+theme_override_constants/separation = 77
 
 [node name="ButtonLevelMenu" type="TextureButton" parent="HBoxContainer" unique_id=1759423512]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
-texture_normal = ExtResource("4_spq4h")
+texture_normal = ExtResource("4_3hm0c")
+texture_pressed = ExtResource("5_f1wkb")
+texture_hover = ExtResource("6_7vp7p")
 
 [node name="ButtonRestart" type="TextureButton" parent="HBoxContainer" unique_id=304052693]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
-texture_normal = ExtResource("5_73o2p")
+texture_normal = ExtResource("7_6yfji")
+texture_pressed = ExtResource("8_h8vqv")
+texture_hover = ExtResource("9_c3tl0")
 
 [node name="ButtonNextLevel" type="TextureButton" parent="HBoxContainer" unique_id=1858716926]
 layout_mode = 2
 size_flags_horizontal = 8
 size_flags_vertical = 0
-texture_normal = ExtResource("6_lh883")
+texture_normal = ExtResource("6_73o2p")
+texture_pressed = ExtResource("7_lh883")
+texture_hover = ExtResource("8_4mbgs")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=106944752]
+offset_left = 706.0
+offset_top = 525.0
+offset_right = 1228.0
+offset_bottom = 1100.0
+texture = ExtResource("7_g7mok")
 
 [connection signal="pressed" from="HBoxContainer/ButtonLevelMenu" to="." method="_on_button_level_menu_pressed"]
 [connection signal="pressed" from="HBoxContainer/ButtonRestart" to="." method="_on_button_restart_pressed"]

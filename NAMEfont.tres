@@ -1,0 +1,7 @@
+[gd_resource type="Theme" format=3 uid="uid://detx5mf62lhja"]
+
+[ext_resource type="FontFile" uid="uid://c2eqtksu6j0g1" path="res://fonts/Unbounded-Bold.ttf" id="1_tn86r"]
+
+[resource]
+default_font = ExtResource("1_tn86r")
+default_font_size = 60

@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://bsmlvivf5s50f"]
+
+[ext_resource type="FontFile" uid="uid://cpp2wkddf4etq" path="res://fonts/MPLUSRounded1c-Black.ttf" id="1_f1tot"]
+
+[resource]
+font = ExtResource("1_f1tot")
+font_size = 34
+font_color = Color(0.3137255, 0.22745098, 0.6509804, 1)
