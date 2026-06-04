@@ -1,0 +1,94 @@
+[gd_scene format=3 uid="uid://iroyq6cbyxr2"]
+
+[ext_resource type="Script" uid="uid://cyu1lq1c3eefj" path="res://scenes/ThirdMode/equation.gd" id="1_6n02s"]
+[ext_resource type="Texture2D" uid="uid://dnxnup3ub8ft1" path="res://textures/thirdMode/equasion_background.png" id="1_keblx"]
+[ext_resource type="LabelSettings" uid="uid://bfupl3lvi4mv" path="res://textures/thirdMode/EquationFont.tres" id="2_wt2ni"]
+[ext_resource type="Texture2D" uid="uid://bplj45wmcuaa0" path="res://textures/thirdMode/form.png" id="3_f82nm"]
+[ext_resource type="FontFile" uid="uid://ctl8nld0amwl4" path="res://fonts/MPLUSRounded1c-ExtraBold.ttf" id="4_upk16"]
+[ext_resource type="Texture2D" uid="uid://cps8sghui7weq" path="res://textures/thirdMode/0.png" id="5_0orus"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jdm1a"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6n02s"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5aqpf"]
+
+[node name="Equation" type="Node2D" unique_id=272302147]
+script = ExtResource("1_6n02s")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=699261626]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -334.5
+offset_top = -118.5
+offset_right = 334.5
+offset_bottom = 118.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_keblx")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=2021935366]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Function" type="Label" parent="HBoxContainer" unique_id=1993892540]
+layout_mode = 2
+text = "func"
+label_settings = ExtResource("2_wt2ni")
+
+[node name="AngleField" type="TextureRect" parent="HBoxContainer" unique_id=1614368127]
+layout_mode = 2
+texture = ExtResource("3_f82nm")
+stretch_mode = 3
+
+[node name="LineEdit" type="LineEdit" parent="HBoxContainer/AngleField" unique_id=1671411344]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -110.0
+offset_top = -45.5
+offset_right = 110.0
+offset_bottom = 45.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.3137255, 0.22745098, 0.6509804, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 0)
+theme_override_colors/caret_color = Color(0.3137255, 0.22745098, 0.6509804, 1)
+theme_override_colors/selection_color = Color(0.49995556, 0.49995556, 0.49995556, 0)
+theme_override_constants/caret_width = 6
+theme_override_fonts/font = ExtResource("4_upk16")
+theme_override_font_sizes/font_size = 59
+theme_override_styles/normal = SubResource("StyleBoxEmpty_jdm1a")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_6n02s")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5aqpf")
+alignment = 1
+virtual_keyboard_enabled = false
+caret_blink = true
+caret_blink_interval = 0.34
+
+[node name="Equal" type="Label" parent="HBoxContainer" unique_id=1982164975]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.3137255, 0.22745098, 0.6509804, 1)
+text = "="
+label_settings = ExtResource("2_wt2ni")
+
+[node name="ValueTexture" type="TextureRect" parent="HBoxContainer" unique_id=1956704243]
+layout_mode = 2
+texture = ExtResource("5_0orus")
+stretch_mode = 3

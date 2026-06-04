@@ -1,0 +1,10 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://omdkhif4a75m"]
+
+[ext_resource type="Shader" uid="uid://b16istoclhn1d" path="res://text_vertical_gradient.gdshader" id="1_3u6qv"]
+
+[resource]
+shader = ExtResource("1_3u6qv")
+shader_parameter/top_color = Color(0.6509804, 0.56078434, 1, 1)
+shader_parameter/bottom_color = Color(0.47058824, 0.39215687, 0.8, 1)
+shader_parameter/gradient_start_y = 10.0
+shader_parameter/gradient_height = 40.0

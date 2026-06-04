@@ -1,0 +1,117 @@
+[gd_scene format=3 uid="uid://bbjxhccci4ora"]
+
+[ext_resource type="Script" uid="uid://chsnngmny6h0b" path="res://scenes/ThirdMode/third_mode_pause.gd" id="1_75fho"]
+[ext_resource type="Texture2D" uid="uid://cf6i5jucq7pa2" path="res://textures/main/cheese_background.png" id="1_u04m7"]
+[ext_resource type="Texture2D" uid="uid://ddq0uow7fiysx" path="res://textures/main/win.png" id="2_ccnf5"]
+[ext_resource type="Material" uid="uid://omdkhif4a75m" path="res://gradient_color.tres" id="3_b6e2n"]
+[ext_resource type="LabelSettings" uid="uid://53n4ey5qntnl" path="res://menus_text.tres" id="4_75fho"]
+[ext_resource type="Texture2D" uid="uid://b1kcja7hcisuj" path="res://textures/main/button_menu_normal.png" id="5_wihwp"]
+[ext_resource type="Texture2D" uid="uid://8y0wsg1dxtm6" path="res://textures/main/button_menu_pressed.png" id="6_6yqqt"]
+[ext_resource type="Texture2D" uid="uid://b0nuqnfnn365i" path="res://textures/main/button_menu_hover.png" id="7_47y2m"]
+[ext_resource type="Texture2D" uid="uid://dhugqrgfa5lju" path="res://textures/main/button_settings_normal.png" id="8_skuhm"]
+[ext_resource type="Texture2D" uid="uid://cc0go5dwndsxn" path="res://textures/main/button_settings_pressed.png" id="9_otx1q"]
+[ext_resource type="Texture2D" uid="uid://b7ed815r2ppeb" path="res://textures/main/button_settings_hover.png" id="10_2xyxl"]
+[ext_resource type="Texture2D" uid="uid://bg7wg0to3b72h" path="res://textures/main/button_restart_normal.png" id="11_yp176"]
+[ext_resource type="Texture2D" uid="uid://b2t8p7f46dong" path="res://textures/main/button_restart_pressed.png" id="12_iq1yb"]
+[ext_resource type="Texture2D" uid="uid://bj5jtrmbm7rjm" path="res://textures/main/button_restart_hover.png" id="13_bg6g4"]
+[ext_resource type="Texture2D" uid="uid://cxvigqwevlitc" path="res://textures/main/button_back_normal.png" id="14_b6e2n"]
+[ext_resource type="Texture2D" uid="uid://cr63hhh1lwr3o" path="res://textures/main/button_back_pressed.png" id="15_75fho"]
+[ext_resource type="Texture2D" uid="uid://cjemhr3k7xjg6" path="res://textures/main/button_back_hover.png" id="16_wihwp"]
+
+[node name="ThirdModePause" type="Control" unique_id=1792493708]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_75fho")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=770862796]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_u04m7")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=617969760]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -519.5
+offset_top = 256.0
+offset_right = 519.5
+offset_bottom = 506.0
+grow_horizontal = 2
+texture = ExtResource("2_ccnf5")
+
+[node name="Label" type="Label" parent="TextureRect2" unique_id=890281193]
+material = ExtResource("3_b6e2n")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -234.0
+offset_top = 162.0
+offset_right = 234.0
+offset_bottom = 76.0
+grow_horizontal = 2
+text = "ПАУЗА"
+label_settings = ExtResource("4_75fho")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextureRect2" unique_id=1042988025]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 77
+
+[node name="ButtonMenu" type="TextureButton" parent="TextureRect2/HBoxContainer" unique_id=1816679629]
+layout_mode = 2
+texture_normal = ExtResource("5_wihwp")
+texture_pressed = ExtResource("6_6yqqt")
+texture_hover = ExtResource("7_47y2m")
+
+[node name="ButtonSettings" type="TextureButton" parent="TextureRect2/HBoxContainer" unique_id=2061480499]
+layout_mode = 2
+texture_normal = ExtResource("8_skuhm")
+texture_pressed = ExtResource("9_otx1q")
+texture_hover = ExtResource("10_2xyxl")
+
+[node name="ButtonRestart" type="TextureButton" parent="TextureRect2/HBoxContainer" unique_id=600011923]
+layout_mode = 2
+texture_normal = ExtResource("11_yp176")
+texture_pressed = ExtResource("12_iq1yb")
+texture_hover = ExtResource("13_bg6g4")
+
+[node name="ButtonBack" type="TextureButton" parent="." unique_id=1442194575]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+offset_bottom = -91.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("14_b6e2n")
+texture_pressed = ExtResource("15_75fho")
+texture_hover = ExtResource("16_wihwp")
+
+[connection signal="pressed" from="TextureRect2/HBoxContainer/ButtonMenu" to="." method="_on_button_menu_pressed"]
+[connection signal="pressed" from="TextureRect2/HBoxContainer/ButtonSettings" to="." method="_on_button_settings_pressed"]
+[connection signal="pressed" from="TextureRect2/HBoxContainer/ButtonRestart" to="." method="_on_button_restart_pressed"]
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]

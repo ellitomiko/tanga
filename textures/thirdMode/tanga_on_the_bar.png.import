@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://goi1vcmwmrkl"
-path="res://.godot/imported/√2_2_correct.png-2e4c73d0aa6faa070afb5348d9e99416.ctex"
+uid="uid://0buwm8db3su2"
+path="res://.godot/imported/tanga_on_the_bar.png-9d9843209f72b7adb7693ed164dea8cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/thirdMode/√2_2_correct.png"
-dest_files=["res://.godot/imported/√2_2_correct.png-2e4c73d0aa6faa070afb5348d9e99416.ctex"]
+source_file="res://textures/thirdMode/tanga_on_the_bar.png"
+dest_files=["res://.godot/imported/tanga_on_the_bar.png-9d9843209f72b7adb7693ed164dea8cc.ctex"]
 
 [params]
 

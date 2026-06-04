@@ -285,3 +285,210 @@ var mode2levels_data = [
 	{ "id": 135, "type": "find_value", "func": "tg", "angle": 360, "value": "0" },
 	{ "id": 136, "type": "find_value", "func": "ctg", "angle": 360, "value": "no_value" }
 ]
+
+
+#ДЛЯ ТРЕТЬЕГО РЕЖИМА
+
+var current_mode3_equation: Dictionary = {}
+
+var mode3_equations_pool: Dictionary = {
+	# --- COS ---
+	1: {
+		"id": 1,
+		"function": "cos",
+		"angle": [0, 360],
+		"value": "1.png"
+	},
+	2: {
+		"id": 2,
+		"function": "cos",
+		"angle": [90, 270],
+		"value": "0.png"
+	},
+	3: {
+		"id": 3,
+		"function": "cos",
+		"angle": [180],
+		"value": "-1.png"
+	},
+	4: {
+		"id": 4,
+		"function": "cos",
+		"angle": [60, 300],
+		"value": "1_2.png"
+	},
+	5: {
+		"id": 5,
+		"function": "cos",
+		"angle": [120, 240],
+		"value": "-1_2.png"
+	},
+	6: {
+		"id": 6,
+		"function": "cos",
+		"angle": [45, 315],
+		"value": "√2_2.png"
+	},
+	7: {
+		"id": 7,
+		"function": "cos",
+		"angle": [135, 225],
+		"value": "-√2_2.png"
+	},
+	8: {
+		"id": 8,
+		"function": "cos",
+		"angle": [30, 330],
+		"value": "√3_2.png"
+	},
+	9: {
+		"id": 9,
+		"function": "cos",
+		"angle": [150, 210],
+		"value": "-√3_2.png"
+	},
+
+	# --- SIN ---
+	10: {
+		"id": 10,
+		"function": "sin",
+		"angle": [0, 180, 360],
+		"value": "0.png"
+	},
+	11: {
+		"id": 11,
+		"function": "sin",
+		"angle": [90],
+		"value": "1.png"
+	},
+	12: {
+		"id": 12,
+		"function": "sin",
+		"angle": [270],
+		"value": "-1.png"
+	},
+	13: {
+		"id": 13,
+		"function": "sin",
+		"angle": [30, 150],
+		"value": "1_2.png"
+	},
+	14: {
+		"id": 14,
+		"function": "sin",
+		"angle": [210, 330],
+		"value": "-1_2.png"
+	},
+	15: {
+		"id": 15,
+		"function": "sin",
+		"angle": [45, 135],
+		"value": "√2_2.png"
+	},
+	16: {
+		"id": 16,
+		"function": "sin",
+		"angle": [225, 315],
+		"value": "-√2_2.png"
+	},
+	17: {
+		"id": 17,
+		"function": "sin",
+		"angle": [60, 120],
+		"value": "√3_2.png"
+	},
+	18: {
+		"id": 18,
+		"function": "sin",
+		"angle": [240, 300],
+		"value": "-√3_2.png"
+	},
+
+	# --- TG ---
+	19: {
+		"id": 19,
+		"function": "tg",
+		"angle": [0, 180, 360],
+		"value": "0.png"
+	},
+	20: {
+		"id": 20,
+		"function": "tg",
+		"angle": [45, 225],
+		"value": "1.png"
+	},
+	21: {
+		"id": 21,
+		"function": "tg",
+		"angle": [135, 315],
+		"value": "-1.png"
+	},
+	22: {
+		"id": 22,
+		"function": "tg",
+		"angle": [30, 210],
+		"value": "√3_3.png"
+	},
+	23: {
+		"id": 23,
+		"function": "tg",
+		"angle": [150, 330],
+		"value": "-√3_3.png"
+	},
+	24: {
+		"id": 24,
+		"function": "tg",
+		"angle": [60, 240],
+		"value": "√3.png"
+	},
+	25: {
+		"id": 25,
+		"function": "tg",
+		"angle": [120, 300],
+		"value": "-√3.png"
+	},
+
+	# --- CTG ---
+	26: {
+		"id": 26,
+		"function": "ctg",
+		"angle": [90, 270],
+		"value": "0.png"
+	},
+	27: {
+		"id": 27,
+		"function": "ctg",
+		"angle": [45, 225],
+		"value": "1.png"
+	},
+	28: {
+		"id": 28,
+		"function": "ctg",
+		"angle": [135, 315],
+		"value": "-1.png"
+	},
+	29: {
+		"id": 29,
+		"function": "ctg",
+		"angle": [30, 210],
+		"value": "√3.png"
+	},
+	30: {
+		"id": 30,
+		"function": "ctg",
+		"angle": [150, 330],
+		"value": "-√3.png"
+	},
+	31: {
+		"id": 31,
+		"function": "ctg",
+		"angle": [60, 240],
+		"value": "√3_3.png"
+	},
+	32: {
+		"id": 32,
+		"function": "ctg",
+		"angle": [120, 300],
+		"value": "-√3_3.png"
+	}
+}

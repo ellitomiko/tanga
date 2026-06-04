@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://dp0ug3op0i0tv"]
+
+[ext_resource type="Texture2D" uid="uid://dbp6bb2uetgi5" path="res://textures/thirdMode/passage_cos.png" id="1_60up6"]
+[ext_resource type="Script" uid="uid://dleweweyb88um" path="res://scenes/ThirdMode/gate.gd" id="1_u6i4m"]
+[ext_resource type="Texture2D" uid="uid://chrbj22qbakge" path="res://textures/thirdMode/passage_cos_front.png" id="2_u6i4m"]
+[ext_resource type="Texture2D" uid="uid://dwhpmoxu85i56" path="res://textures/thirdMode/passage_cos_door.png" id="3_5ew5u"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_60up6"]
+size = Vector2(92.5, 249.5)
+
+[node name="Gate" type="Node2D" unique_id=1099699245]
+script = ExtResource("1_u6i4m")
+
+[node name="BackGate" type="Sprite2D" parent="." unique_id=1601961474]
+z_index = 1
+texture = ExtResource("1_60up6")
+
+[node name="FrontGate" type="Sprite2D" parent="." unique_id=662519722]
+z_index = 10
+position = Vector2(127, 0)
+texture = ExtResource("2_u6i4m")
+
+[node name="Door" type="Sprite2D" parent="." unique_id=368892953]
+z_index = 2
+position = Vector2(-43, 133)
+texture = ExtResource("3_5ew5u")
+
+[node name="Area2D" type="Area2D" parent="Door" unique_id=1465356426]
+position = Vector2(20.25, 31.75)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Door/Area2D" unique_id=1434049577]
+shape = SubResource("RectangleShape2D_60up6")

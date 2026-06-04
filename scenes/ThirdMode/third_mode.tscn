@@ -9,15 +9,30 @@
 [ext_resource type="Texture2D" uid="uid://ci2l3i82g280p" path="res://textures/thirdMode/start_button_normal.png" id="5_opnd5"]
 [ext_resource type="SpriteFrames" uid="uid://bqyqnli2c1rqr" path="res://textures/thirdMode/tanga_run.tres" id="6_64wap"]
 [ext_resource type="Texture2D" uid="uid://b7py1eyc0wjtg" path="res://textures/thirdMode/start_button_pressed.png" id="6_hr3hk"]
-[ext_resource type="LabelSettings" uid="uid://bsmlvivf5s50f" path="res://main_buttons_label_white.tres" id="8_208to"]
+[ext_resource type="FontFile" uid="uid://cpp2wkddf4etq" path="res://fonts/MPLUSRounded1c-Black.ttf" id="9_ll4us"]
 [ext_resource type="Texture2D" uid="uid://mda23evlv08f" path="res://textures/thirdMode/heart_container.png" id="10_ll4us"]
 [ext_resource type="SpriteFrames" uid="uid://jond3akw5kn2" path="res://textures/thirdMode/cat_run.tres" id="11_noc5j"]
 [ext_resource type="Texture2D" uid="uid://b5j0viciqmrgi" path="res://textures/thirdMode/heart.png" id="11_opnd5"]
+[ext_resource type="Texture2D" uid="uid://dnx2fqlaa4vkr" path="res://textures/thirdMode/progress_bar_purple_empty.png" id="12_208to"]
+[ext_resource type="Texture2D" uid="uid://ulte6wgdjfjl" path="res://textures/thirdMode/progress_bar_purple.png" id="13_rxxb1"]
+[ext_resource type="Texture2D" uid="uid://0buwm8db3su2" path="res://textures/thirdMode/tanga_on_the_bar.png" id="14_208to"]
 
 [sub_resource type="Theme" id="Theme_6ofvj"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_opnd5"]
+font = ExtResource("9_ll4us")
+font_size = 34
+font_color = Color(0.3137255, 0.22745098, 0.6509804, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ll4us"]
+size = Vector2(116, 160.25)
+
 [node name="ThirdMode" type="Node2D" unique_id=378650663]
 script = ExtResource("1_f0blx")
+game_speed = 900.0
+max_game_speed = 1000.0
+tanga_game_move_duration = 2.5
+cat_exit_duration = 3.0
 
 [node name="MovingObjects" type="Node2D" parent="." unique_id=803575959]
 
@@ -32,8 +47,10 @@ layout_mode = 3
 anchors_preset = 0
 size_flags_horizontal = 3
 size_flags_vertical = 6
+metadata/_edit_lock_ = true
 
 [node name="Debug" type="VBoxContainer" parent="Control" unique_id=257751081]
+visible = false
 layout_mode = 0
 offset_left = 25.0
 offset_top = 152.0
@@ -59,6 +76,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "value sqr2/2"
 
 [node name="ButtonPause" type="TextureButton" parent="Control" unique_id=370903995]
+z_index = 25
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 1.0
@@ -94,11 +112,11 @@ offset_top = 22.0
 offset_right = 57.0
 offset_bottom = 48.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.3137255, 0.22745098, 0.6509804, 1)
 text = "СТАРТ"
-label_settings = ExtResource("8_208to")
+label_settings = SubResource("LabelSettings_opnd5")
 
 [node name="HeartContainer" type="TextureRect" parent="Control" unique_id=528224440]
+z_index = 20
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -114,11 +132,11 @@ layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -38.0
+offset_left = -138.0
 offset_top = 45.0
-offset_right = 38.0
-offset_bottom = 76.0
-grow_horizontal = 2
+offset_right = 137.0
+offset_bottom = 121.0
+localize_numeral_system = false
 theme_override_constants/separation = 24
 
 [node name="Heart1" type="TextureRect" parent="Control/HeartContainer/HeartsBox" unique_id=2111653635]
@@ -134,19 +152,70 @@ layout_mode = 2
 texture = ExtResource("11_opnd5")
 stretch_mode = 1
 
+[node name="ProgressWidget" type="Control" parent="Control" unique_id=2057681855]
+layout_mode = 1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_bottom = -90.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Bar" type="TextureProgressBar" parent="Control/ProgressWidget" unique_id=764049711]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -766.5
+offset_top = -99.0
+offset_right = 766.5
+grow_horizontal = 2
+grow_vertical = 0
+max_value = 32.0
+value = 6.0
+texture_under = ExtResource("12_208to")
+texture_progress = ExtResource("13_rxxb1")
+
+[node name="Point" type="TextureRect" parent="Control/ProgressWidget/Bar" unique_id=845796377]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -935.0
+offset_top = -143.5
+offset_right = -629.0
+offset_bottom = 139.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_208to")
+
 [node name="Tanga" type="AnimatedSprite2D" parent="." unique_id=972865189]
-position = Vector2(1250, 563)
+z_index = 5
+position = Vector2(1354, 561.5)
 sprite_frames = ExtResource("6_64wap")
 animation = &"run"
 autoplay = "run"
 frame_progress = 0.16383645
 offset = Vector2(-0.2271576, 0.22717285)
 
+[node name="HitBox" type="Area2D" parent="Tanga" unique_id=1136072464]
+position = Vector2(35, -7.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tanga/HitBox" unique_id=1657415758]
+shape = SubResource("RectangleShape2D_ll4us")
+
 [node name="Cat" type="AnimatedSprite2D" parent="." unique_id=1781233944]
-position = Vector2(343, 527)
+z_index = 5
+position = Vector2(447, 525.5)
 sprite_frames = ExtResource("11_noc5j")
 animation = &"run"
 autoplay = "run"
 frame_progress = 0.1546965
 
+[connection signal="pressed" from="Control/ButtonPause" to="." method="_on_button_pause_pressed"]
 [connection signal="pressed" from="Control/ButtonStartGame" to="." method="_on_button_start_game_pressed"]

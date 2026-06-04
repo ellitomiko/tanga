@@ -1,0 +1,111 @@
+[gd_scene format=3 uid="uid://ds5hofc5r86e8"]
+
+[ext_resource type="Script" uid="uid://d3ix0pmh3rkpf" path="res://scenes/ThirdMode/third_mode_win.gd" id="1_r6wc5"]
+[ext_resource type="Texture2D" uid="uid://cf6i5jucq7pa2" path="res://textures/main/cheese_background.png" id="1_vjq3w"]
+[ext_resource type="Texture2D" uid="uid://ddq0uow7fiysx" path="res://textures/main/win.png" id="2_0a1hb"]
+[ext_resource type="Material" uid="uid://omdkhif4a75m" path="res://gradient_color.tres" id="3_12nou"]
+[ext_resource type="Texture2D" uid="uid://b3mjq8tfbs6h4" path="res://textures/main/tanga_win.png" id="4_kbu64"]
+[ext_resource type="LabelSettings" uid="uid://53n4ey5qntnl" path="res://menus_text.tres" id="4_r6wc5"]
+[ext_resource type="Texture2D" uid="uid://b1kcja7hcisuj" path="res://textures/main/button_menu_normal.png" id="5_kbcpp"]
+[ext_resource type="Texture2D" uid="uid://8y0wsg1dxtm6" path="res://textures/main/button_menu_pressed.png" id="6_cyin3"]
+[ext_resource type="Texture2D" uid="uid://b0nuqnfnn365i" path="res://textures/main/button_menu_hover.png" id="7_lc054"]
+[ext_resource type="Texture2D" uid="uid://bg7wg0to3b72h" path="res://textures/main/button_restart_normal.png" id="8_0uwic"]
+[ext_resource type="Texture2D" uid="uid://b2t8p7f46dong" path="res://textures/main/button_restart_pressed.png" id="9_yqfm6"]
+[ext_resource type="Texture2D" uid="uid://bj5jtrmbm7rjm" path="res://textures/main/button_restart_hover.png" id="10_155uy"]
+[ext_resource type="Texture2D" uid="uid://cm8k26v73smic" path="res://textures/main/button_next_normal.png" id="11_eqhba"]
+[ext_resource type="Texture2D" uid="uid://c4h6vwdamxbo7" path="res://textures/main/button_next_pressed.png" id="12_cqw3t"]
+[ext_resource type="Texture2D" uid="uid://b26yc71m1d0m2" path="res://textures/main/button_next_hover.png" id="13_ul64m"]
+
+[node name="ThirdModeWin" type="Control" unique_id=1571637975]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r6wc5")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=242135050]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_vjq3w")
+metadata/_edit_lock_ = true
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1770723780]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -519.5
+offset_top = 211.0
+offset_right = 519.5
+offset_bottom = 506.0
+grow_horizontal = 2
+texture = ExtResource("2_0a1hb")
+
+[node name="Label" type="Label" parent="TextureRect2" unique_id=2133924508]
+material = ExtResource("3_12nou")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -234.0
+offset_top = 162.0
+offset_right = 234.0
+offset_bottom = 76.0
+grow_horizontal = 2
+text = "ВЫ ПРОШЛИ!"
+label_settings = ExtResource("4_r6wc5")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextureRect2" unique_id=1600953225]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 77
+
+[node name="ButtonMenu" type="TextureButton" parent="TextureRect2/HBoxContainer" unique_id=592094475]
+layout_mode = 2
+texture_normal = ExtResource("5_kbcpp")
+texture_pressed = ExtResource("6_cyin3")
+texture_hover = ExtResource("7_lc054")
+
+[node name="ButtonRestart" type="TextureButton" parent="TextureRect2/HBoxContainer" unique_id=1844337707]
+layout_mode = 2
+texture_normal = ExtResource("8_0uwic")
+texture_pressed = ExtResource("9_yqfm6")
+texture_hover = ExtResource("10_155uy")
+
+[node name="ButtonNext" type="TextureButton" parent="TextureRect2/HBoxContainer" unique_id=2060449760]
+layout_mode = 2
+texture_normal = ExtResource("11_eqhba")
+texture_pressed = ExtResource("12_cqw3t")
+texture_hover = ExtResource("13_ul64m")
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=1888031305]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -40.0
+offset_top = -40.0
+offset_right = -18.0
+grow_horizontal = 0
+grow_vertical = 0
+texture = ExtResource("4_kbu64")
+
+[connection signal="pressed" from="TextureRect2/HBoxContainer/ButtonMenu" to="." method="_on_button_menu_pressed"]
+[connection signal="pressed" from="TextureRect2/HBoxContainer/ButtonRestart" to="." method="_on_button_restart_pressed"]
+[connection signal="pressed" from="TextureRect2/HBoxContainer/ButtonNext" to="." method="_on_button_next_pressed"]

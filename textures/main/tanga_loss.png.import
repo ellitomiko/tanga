@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhvadb23bkswt"
-path="res://.godot/imported/-√3_2-1.png-975b28039e6f70a723d7e42e034e5285.ctex"
+uid="uid://suen3jd4el24"
+path="res://.godot/imported/tanga_loss.png-26ee4d52ad57f937c9efcb8e5260d6eb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/thirdMode/-√3_2-1.png"
-dest_files=["res://.godot/imported/-√3_2-1.png-975b28039e6f70a723d7e42e034e5285.ctex"]
+source_file="res://textures/main/tanga_loss.png"
+dest_files=["res://.godot/imported/tanga_loss.png-26ee4d52ad57f937c9efcb8e5260d6eb.ctex"]
 
 [params]
 

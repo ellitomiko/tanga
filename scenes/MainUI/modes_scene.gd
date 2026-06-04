@@ -14,8 +14,8 @@ func _on_button_second_pressed() -> void:
 
 #3MODE button
 func _on_button_third_pressed() -> void:
-	get_tree().change_scene_to_file('res://scenes/third_mode.tscn')
+	get_tree().change_scene_to_file("res://scenes/ThirdMode/third_mode.tscn")
 
 #4MODE button
 func _on_button_fourth_pressed() -> void:
-	get_tree().change_scene_to_file('res://scenes/fourth_mode.tscn')
+	get_tree().change_scene_to_file("res://scenes/FourthMode/fourth_mode.tscn")

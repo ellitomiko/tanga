@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cyu7ftjqcj7ar"
-path="res://.godot/imported/-√3_2_wrong-1.png-c9bf64f473e713c525ee95a5adec073b.ctex"
+uid="uid://2tnw53t584vr"
+path="res://.godot/imported/button_level_disabled.png-6246f58ca0c4586a4e41e408a7310037.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/thirdMode/-√3_2_wrong-1.png"
-dest_files=["res://.godot/imported/-√3_2_wrong-1.png-c9bf64f473e713c525ee95a5adec073b.ctex"]
+source_file="res://textures/main/button_level_disabled.png"
+dest_files=["res://.godot/imported/button_level_disabled.png-6246f58ca0c4586a4e41e408a7310037.ctex"]
 
 [params]
 

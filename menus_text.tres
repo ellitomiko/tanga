@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://53n4ey5qntnl"]
+
+[ext_resource type="FontFile" uid="uid://c2eqtksu6j0g1" path="res://fonts/Unbounded-Bold.ttf" id="1_5ulod"]
+
+[resource]
+font = ExtResource("1_5ulod")
+font_size = 61

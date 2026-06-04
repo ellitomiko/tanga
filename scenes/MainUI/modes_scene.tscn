@@ -1,7 +1,11 @@
 [gd_scene format=3 uid="uid://dr3uvux44qfnl"]
 
 [ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_1sk5j"]
-[ext_resource type="Script" uid="uid://caqhmn136plm4" path="res://scenes/modes_scene.gd" id="1_cuq34"]
+[ext_resource type="Script" uid="uid://caqhmn136plm4" path="res://scenes/MainUI/modes_scene.gd" id="1_cuq34"]
+[ext_resource type="Texture2D" uid="uid://cf6i5jucq7pa2" path="res://textures/main/cheese_background.png" id="2_uq2ox"]
+[ext_resource type="Texture2D" uid="uid://cxvigqwevlitc" path="res://textures/main/button_back_normal.png" id="3_hpbul"]
+[ext_resource type="Texture2D" uid="uid://cr63hhh1lwr3o" path="res://textures/main/button_back_pressed.png" id="4_daa6o"]
+[ext_resource type="Texture2D" uid="uid://cjemhr3k7xjg6" path="res://textures/main/button_back_hover.png" id="5_5jqhm"]
 
 [node name="ModesScene" type="Control" unique_id=953614436]
 layout_mode = 3
@@ -12,66 +16,69 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_cuq34")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1156096960]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=242468758]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_uq2ox")
+
+[node name="ButtonBack" type="TextureButton" parent="." unique_id=718729711]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
+offset_left = -79.0
+offset_top = -168.0
+offset_right = 79.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("3_hpbul")
+texture_pressed = ExtResource("4_daa6o")
+texture_hover = ExtResource("5_5jqhm")
+
+[node name="GridContainer" type="GridContainer" parent="." unique_id=563951363]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -138.0
+offset_top = -138.0
+offset_right = 138.0
+offset_bottom = 138.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(1, 1, 0.627451, 1)
-
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1566779559]
-layout_mode = 1
-anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 20.0
-offset_top = 20.0
-offset_right = -20.0
-offset_bottom = -20.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = 20
-
-[node name="ButtonBack" type="TextureButton" parent="VBoxContainer" unique_id=718729711]
-modulate = Color(0.12941177, 1, 1, 1)
-layout_mode = 2
-texture_normal = ExtResource("1_1sk5j")
-
-[node name="GridMargin" type="MarginContainer" parent="VBoxContainer" unique_id=701051356]
-layout_mode = 2
-
-[node name="GridContainer" type="GridContainer" parent="VBoxContainer/GridMargin" unique_id=563951363]
-layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 6
 theme_override_constants/h_separation = 20
 theme_override_constants/v_separation = 20
 columns = 2
 
-[node name="ButtonFirst" type="TextureButton" parent="VBoxContainer/GridMargin/GridContainer" unique_id=658849099]
+[node name="ButtonFirst" type="TextureButton" parent="GridContainer" unique_id=658849099]
 modulate = Color(0.12941177, 1, 1, 1)
 layout_mode = 2
 texture_normal = ExtResource("1_1sk5j")
 
-[node name="ButtonSecond" type="TextureButton" parent="VBoxContainer/GridMargin/GridContainer" unique_id=430264210]
+[node name="ButtonSecond" type="TextureButton" parent="GridContainer" unique_id=430264210]
 modulate = Color(0.12941177, 1, 1, 1)
 layout_mode = 2
 texture_normal = ExtResource("1_1sk5j")
 
-[node name="ButtonThird" type="TextureButton" parent="VBoxContainer/GridMargin/GridContainer" unique_id=906672513]
+[node name="ButtonThird" type="TextureButton" parent="GridContainer" unique_id=906672513]
 modulate = Color(0.12941177, 1, 1, 1)
 layout_mode = 2
 texture_normal = ExtResource("1_1sk5j")
 
-[node name="ButtonFourth" type="TextureButton" parent="VBoxContainer/GridMargin/GridContainer" unique_id=268781923]
+[node name="ButtonFourth" type="TextureButton" parent="GridContainer" unique_id=268781923]
 modulate = Color(0.12941177, 1, 1, 1)
 layout_mode = 2
 texture_normal = ExtResource("1_1sk5j")
 
-[connection signal="pressed" from="VBoxContainer/ButtonBack" to="." method="_on_button_back_pressed"]
-[connection signal="pressed" from="VBoxContainer/GridMargin/GridContainer/ButtonFirst" to="." method="_on_button_first_pressed"]
-[connection signal="pressed" from="VBoxContainer/GridMargin/GridContainer/ButtonSecond" to="." method="_on_button_second_pressed"]
-[connection signal="pressed" from="VBoxContainer/GridMargin/GridContainer/ButtonThird" to="." method="_on_button_third_pressed"]
-[connection signal="pressed" from="VBoxContainer/GridMargin/GridContainer/ButtonFourth" to="." method="_on_button_fourth_pressed"]
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]
+[connection signal="pressed" from="GridContainer/ButtonFirst" to="." method="_on_button_first_pressed"]
+[connection signal="pressed" from="GridContainer/ButtonSecond" to="." method="_on_button_second_pressed"]
+[connection signal="pressed" from="GridContainer/ButtonThird" to="." method="_on_button_third_pressed"]
+[connection signal="pressed" from="GridContainer/ButtonFourth" to="." method="_on_button_fourth_pressed"]

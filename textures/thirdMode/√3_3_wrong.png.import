@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://goi1vcmwmrkl"
-path="res://.godot/imported/√2_2_correct.png-2e4c73d0aa6faa070afb5348d9e99416.ctex"
+uid="uid://gvqc6yc2gqjg"
+path="res://.godot/imported/√3_3_wrong.png-1ccfde137c950829008987d58f59232d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/thirdMode/√2_2_correct.png"
-dest_files=["res://.godot/imported/√2_2_correct.png-2e4c73d0aa6faa070afb5348d9e99416.ctex"]
+source_file="res://textures/thirdMode/√3_3_wrong.png"
+dest_files=["res://.godot/imported/√3_3_wrong.png-1ccfde137c950829008987d58f59232d.ctex"]
 
 [params]
 
