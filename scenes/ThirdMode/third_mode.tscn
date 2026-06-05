@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://b7ua722d63ke2"]
 
 [ext_resource type="Script" uid="uid://dbcdasb25pm2o" path="res://scenes/ThirdMode/third_mode.gd" id="1_f0blx"]
-[ext_resource type="Texture2D" uid="uid://bssfqyuurjvw3" path="res://textures/thirdMode/pause_button_normal.png" id="2_noc5j"]
+[ext_resource type="Texture2D" uid="uid://bydwnay2ummdo" path="res://textures/main/pause_button_normal.png" id="3_208to"]
 [ext_resource type="Texture2D" uid="uid://bn44ex7kcf6w" path="res://textures/thirdMode/start_button_hover.png" id="3_f0blx"]
-[ext_resource type="Texture2D" uid="uid://bi2karaq3us5s" path="res://textures/thirdMode/pause_button_pressed.png" id="3_fog0a"]
-[ext_resource type="Texture2D" uid="uid://gmpo7kib364" path="res://textures/thirdMode/pause_button_hover.png" id="4_ll4us"]
+[ext_resource type="Texture2D" uid="uid://bogu6ifuyb2is" path="res://textures/main/pause_button_pressed.png" id="4_rxxb1"]
+[ext_resource type="Texture2D" uid="uid://dwr6sqh88gy6s" path="res://textures/main/pause_button_hover.png" id="5_5ef72"]
 [ext_resource type="TileSet" uid="uid://cj6it5ruct14c" path="res://textures/thirdMode/background_tileset.tres" id="5_f0blx"]
 [ext_resource type="Texture2D" uid="uid://ci2l3i82g280p" path="res://textures/thirdMode/start_button_normal.png" id="5_opnd5"]
 [ext_resource type="SpriteFrames" uid="uid://bqyqnli2c1rqr" path="res://textures/thirdMode/tanga_run.tres" id="6_64wap"]
@@ -84,9 +84,9 @@ anchor_right = 1.0
 offset_top = 52.0
 offset_right = -36.0
 grow_horizontal = 0
-texture_normal = ExtResource("2_noc5j")
-texture_pressed = ExtResource("3_fog0a")
-texture_hover = ExtResource("4_ll4us")
+texture_normal = ExtResource("3_208to")
+texture_pressed = ExtResource("4_rxxb1")
+texture_hover = ExtResource("5_5ef72")
 
 [node name="ButtonStartGame" type="TextureButton" parent="Control" unique_id=323539117]
 layout_mode = 1
@@ -154,6 +154,7 @@ stretch_mode = 1
 
 [node name="ProgressWidget" type="Control" parent="Control" unique_id=2057681855]
 layout_mode = 1
+anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
