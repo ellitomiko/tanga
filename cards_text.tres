@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://nhnwapqk5ss6"]
+
+[ext_resource type="FontFile" uid="uid://qryr1bewxw6r" path="res://fonts/MPLUSRounded1c-Medium.ttf" id="1_2462k"]
+
+[resource]
+font = ExtResource("1_2462k")
+font_size = 38

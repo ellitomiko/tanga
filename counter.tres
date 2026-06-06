@@ -1,0 +1,8 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://bsc3hbjklschq"]
+
+[ext_resource type="FontFile" uid="uid://c2eqtksu6j0g1" path="res://fonts/Unbounded-Bold.ttf" id="1_ktwr0"]
+
+[resource]
+font = ExtResource("1_ktwr0")
+font_size = 35
+font_color = Color(0.47058824, 0.39215687, 0.8, 1)
