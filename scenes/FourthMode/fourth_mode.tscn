@@ -20,7 +20,19 @@
 [ext_resource type="Texture2D" uid="uid://dwxbna4f40ruc" path="res://textures/fourthMode/tg_ctg.png" id="17_hridh"]
 [ext_resource type="Texture2D" uid="uid://c1rhmf1h5apx2" path="res://textures/fourthMode/mian_circle.png" id="18_g23ui"]
 [ext_resource type="Texture2D" uid="uid://b6rnvwnbbvq6r" path="res://textures/fourthMode/dots.png" id="19_8pcem"]
+[ext_resource type="Texture2D" uid="uid://c6jiocdu1a85j" path="res://textures/fourthMode/0_dot.png" id="20_gl6c2"]
 [ext_resource type="Texture2D" uid="uid://docehhl1pg8x8" path="res://textures/fourthMode/1_vertical.png" id="20_yb8s4"]
+[ext_resource type="Texture2D" uid="uid://pq3q3oehv52g" path="res://textures/fourthMode/1_2_vertical.png" id="21_7b4xw"]
+[ext_resource type="Texture2D" uid="uid://ph3rst2nxnbp" path="res://textures/fourthMode/√2_2_vertical.png" id="22_hjclv"]
+[ext_resource type="Texture2D" uid="uid://b10okcyw7va8l" path="res://textures/fourthMode/√3_2_vertical.png" id="23_2wvhl"]
+[ext_resource type="Texture2D" uid="uid://csbdik1je2ixh" path="res://textures/fourthMode/1_horizontal.png" id="25_j40f2"]
+[ext_resource type="Texture2D" uid="uid://cprdvyf820ady" path="res://textures/fourthMode/√3_2_horizontal.png" id="26_5m55t"]
+[ext_resource type="Texture2D" uid="uid://de1mtuqxykx3u" path="res://textures/fourthMode/√2_2_horizontal.png" id="27_igc2v"]
+[ext_resource type="Texture2D" uid="uid://mhxap5i3mbl1" path="res://textures/fourthMode/1_2_horizontal.png" id="28_7crtv"]
+[ext_resource type="Texture2D" uid="uid://b11k0wewxgog6" path="res://textures/fourthMode/√3_3_vertical.png" id="29_vs7qa"]
+[ext_resource type="Texture2D" uid="uid://d2hhgat2skpkr" path="res://textures/fourthMode/√3_vertical.png" id="30_6tl7h"]
+[ext_resource type="Texture2D" uid="uid://p7lcvab7o8cs" path="res://textures/fourthMode/√3_horizontal.png" id="31_hjclv"]
+[ext_resource type="Texture2D" uid="uid://b5fcbanwgj5g6" path="res://textures/fourthMode/√3_3_horizontal.png" id="32_2wvhl"]
 
 [sub_resource type="Theme" id="Theme_10xxe"]
 default_font = ExtResource("13_yb8s4")
@@ -46,6 +58,7 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("2_dgn8d")
+metadata/_edit_lock_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="UI" unique_id=1398072972]
 layout_mode = 1
@@ -962,14 +975,12 @@ texture = ExtResource("12_8pcem")
 stretch_mode = 2
 
 [node name="Function" type="Label" parent="UI/Equation" unique_id=1986865343]
-visible = false
 layout_mode = 2
 theme = SubResource("Theme_10xxe")
 theme_override_colors/font_color = Color(0.47058824, 0.39215687, 0.8, 1)
 text = "sin"
 
 [node name="AngleCover" type="TextureRect" parent="UI/Equation" unique_id=1459648736]
-visible = false
 layout_mode = 2
 texture = ExtResource("12_8pcem")
 stretch_mode = 2
@@ -1051,6 +1062,7 @@ offset_bottom = 374.98
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("17_hridh")
+metadata/_edit_lock_ = true
 
 [node name="main_circle" type="TextureRect" parent="UI/circle" unique_id=675102571]
 layout_mode = 1
@@ -1066,8 +1078,10 @@ offset_bottom = 253.98001
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("18_g23ui")
+metadata/_edit_lock_ = true
 
 [node name="dots" type="TextureRect" parent="UI/circle" unique_id=1593923028]
+z_index = 6
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.49800003
@@ -1081,21 +1095,345 @@ offset_bottom = 252.98001
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("19_8pcem")
+metadata/_edit_lock_ = true
 
-[node name="sin_cos" type="Control" parent="UI/circle" unique_id=1702617428]
+[node name="AV" type="Control" parent="UI/circle" unique_id=1686480643]
+visible = false
+z_index = 10
 layout_mode = 1
 anchor_left = 0.49800003
 anchor_top = 0.505
 anchor_right = 0.49800003
 anchor_bottom = 0.505
-offset_left = -19.886017
-offset_top = -20.019989
-offset_right = 20.113983
-offset_bottom = 19.980011
+offset_left = -207.88602
+offset_top = -209.01999
+offset_right = 208.11398
+offset_bottom = 206.98001
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_lock_ = true
+
+[node name="0" type="TextureRect" parent="UI/circle/AV" unique_id=1032704939]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 182.0
+offset_top = -13.0
+offset_right = 208.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="30" type="TextureRect" parent="UI/circle/AV" unique_id=480929081]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 157.0
+offset_top = -111.0
+offset_right = 183.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="45" type="TextureRect" parent="UI/circle/AV" unique_id=660644348]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 126.0
+offset_top = -152.0
+offset_right = 152.0
+offset_bottom = -126.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="60" type="TextureRect" parent="UI/circle/AV" unique_id=882304581]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 85.0
+offset_top = -182.0
+offset_right = 111.0
+offset_bottom = -156.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="90" type="TextureRect" parent="UI/circle/AV" unique_id=617256771]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -208.0
+offset_right = 13.0
+offset_bottom = -182.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="120" type="TextureRect" parent="UI/circle/AV" unique_id=898443436]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = -182.0
+offset_right = -85.0
+offset_bottom = -156.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="135" type="TextureRect" parent="UI/circle/AV" unique_id=255187921]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -152.0
+offset_top = -152.0
+offset_right = -126.0
+offset_bottom = -126.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="150" type="TextureRect" parent="UI/circle/AV" unique_id=1114781417]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -182.0
+offset_top = -111.0
+offset_right = -156.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="180" type="TextureRect" parent="UI/circle/AV" unique_id=268906312]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -208.0
+offset_top = -13.0
+offset_right = -182.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="210" type="TextureRect" parent="UI/circle/AV" unique_id=1857305105]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -182.0
+offset_top = 85.0
+offset_right = -156.0
+offset_bottom = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="225" type="TextureRect" parent="UI/circle/AV" unique_id=1159740631]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -152.0
+offset_top = 126.0
+offset_right = -126.0
+offset_bottom = 152.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="240" type="TextureRect" parent="UI/circle/AV" unique_id=192665585]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.0
+offset_top = 157.0
+offset_right = -85.0
+offset_bottom = 183.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="270" type="TextureRect" parent="UI/circle/AV" unique_id=839897403]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = 182.0
+offset_right = 13.0
+offset_bottom = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="300" type="TextureRect" parent="UI/circle/AV" unique_id=1855341160]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 85.0
+offset_top = 157.0
+offset_right = 111.0
+offset_bottom = 183.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="315" type="TextureRect" parent="UI/circle/AV" unique_id=1875883243]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 126.0
+offset_top = 126.0
+offset_right = 152.0
+offset_bottom = 152.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="330" type="TextureRect" parent="UI/circle/AV" unique_id=619294156]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 157.0
+offset_top = 85.0
+offset_right = 183.0
+offset_bottom = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="FV" type="Control" parent="UI/circle" unique_id=1690765239]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+metadata/_edit_lock_ = true
+
+[node name="sin" type="Control" parent="UI/circle/FV" unique_id=1702617428]
+z_index = 10
+layout_mode = 1
+anchor_left = 0.49800003
+anchor_top = 0.505
+anchor_right = 0.49800003
+anchor_bottom = 0.505
+offset_left = 362.08
+offset_top = 365.8
+offset_right = 402.08
+offset_bottom = 405.8
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="sin_1" type="TextureRect" parent="UI/circle/sin_cos" unique_id=334760066]
+[node name="sin_zero" type="TextureRect" parent="UI/circle/FV/sin" unique_id=820706057]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -14.0
+offset_right = 13.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="sin_pos_1_2" type="TextureRect" parent="UI/circle/FV/sin" unique_id=913443482]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -112.0
+offset_right = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(13, 112)
+texture = ExtResource("21_7b4xw")
+
+[node name="sin_pos_sqrt2_2" type="TextureRect" parent="UI/circle/FV/sin" unique_id=1805257373]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -153.0
+offset_right = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(13, 153)
+texture = ExtResource("22_hjclv")
+
+[node name="sin_pos_sqrt3_2" type="TextureRect" parent="UI/circle/FV/sin" unique_id=869081745]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -183.0
+offset_right = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(13, 183)
+texture = ExtResource("23_2wvhl")
+
+[node name="sin_pos_1" type="TextureRect" parent="UI/circle/FV/sin" unique_id=334760066]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -1105,28 +1443,478 @@ anchor_bottom = 0.5
 offset_left = -13.0
 offset_top = -209.0
 offset_right = 13.0
-offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
+pivot_offset = Vector2(13, 209)
 texture = ExtResource("20_yb8s4")
-stretch_mode = 2
 
-[node name="sin_-1" type="TextureRect" parent="UI/circle/sin_cos" unique_id=2128216984]
+[node name="sin_neg_1_2" type="TextureRect" parent="UI/circle/FV/sin" unique_id=999365186]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -12.0
-offset_top = -209.0
-offset_right = 14.0
-offset_bottom = -1.0
+offset_left = -13.0
+offset_top = -114.0
+offset_right = 13.0
+offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 2
 rotation = 3.1415927
-pivot_offset = Vector2(12.409149, 208.073)
+pivot_offset = Vector2(13, 112)
+texture = ExtResource("21_7b4xw")
+
+[node name="sin_neg_sqrt2_2" type="TextureRect" parent="UI/circle/FV/sin" unique_id=2013935683]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -155.0
+offset_right = 13.0
+offset_bottom = -3.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(13, 153)
+texture = ExtResource("22_hjclv")
+
+[node name="sin_neg_sqrt3_2" type="TextureRect" parent="UI/circle/FV/sin" unique_id=1163884886]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -184.0
+offset_right = 13.0
+offset_bottom = -2.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(13, 183)
+texture = ExtResource("23_2wvhl")
+
+[node name="sin_neg_1" type="TextureRect" parent="UI/circle/FV/sin" unique_id=107580940]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -208.0
+offset_right = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(13, 208)
 texture = ExtResource("20_yb8s4")
+
+[node name="cos" type="Control" parent="UI/circle/FV" unique_id=1305197439]
+z_index = 10
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 128.0
+offset_top = 132.0
+offset_right = 636.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="cos_pos_1" type="TextureRect" parent="UI/circle/FV/cos" unique_id=1920240184]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -14.0
+offset_right = 208.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(0, 14)
+texture = ExtResource("25_j40f2")
+stretch_mode = 2
+
+[node name="cos_pos_sqrt3_2" type="TextureRect" parent="UI/circle/FV/cos" unique_id=424606398]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -14.0
+offset_right = 183.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(0, 14)
+texture = ExtResource("26_5m55t")
+
+[node name="cos_pos_sqrt2_2" type="TextureRect" parent="UI/circle/FV/cos" unique_id=741091311]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -14.0
+offset_right = 152.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(0, 14)
+texture = ExtResource("27_igc2v")
+
+[node name="cos_pos_1_2" type="TextureRect" parent="UI/circle/FV/cos" unique_id=1591175968]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -14.0
+offset_right = 111.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(0, 14)
+texture = ExtResource("28_7crtv")
+stretch_mode = 2
+
+[node name="cos_zero" type="TextureRect" parent="UI/circle/FV/cos" unique_id=879473321]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -14.0
+offset_right = 13.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="cos_neg_1_2" type="TextureRect" parent="UI/circle/FV/cos" unique_id=485149081]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -16.0
+offset_right = 111.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(0, 14)
+texture = ExtResource("28_7crtv")
+stretch_mode = 2
+
+[node name="cos_neg_sqrt2_2" type="TextureRect" parent="UI/circle/FV/cos" unique_id=278739550]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -16.0
+offset_right = 152.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(0, 14)
+texture = ExtResource("27_igc2v")
+
+[node name="cos_neg_sqrt3_2" type="TextureRect" parent="UI/circle/FV/cos" unique_id=811791577]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -16.0
+offset_right = 182.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(0, 14)
+texture = ExtResource("26_5m55t")
+
+[node name="cos_neg_1" type="TextureRect" parent="UI/circle/FV/cos" unique_id=48911921]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -16.0
+offset_right = 208.0
+offset_bottom = 11.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(0, 14)
+texture = ExtResource("25_j40f2")
+stretch_mode = 2
+
+[node name="tg" type="Control" parent="UI/circle/FV" unique_id=897051734]
+z_index = 5
+anchors_preset = 0
+offset_left = 148.0
+offset_top = 152.0
+offset_right = 656.0
+offset_bottom = 660.0
+
+[node name="tg_zero" type="TextureRect" parent="UI/circle/FV/tg" unique_id=1337770679]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 182.0
+offset_top = -14.0
+offset_right = 208.0
+offset_bottom = 12.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="tg_pos_sqrt3_3" type="TextureRect" parent="UI/circle/FV/tg" unique_id=957375885]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 182.0
+offset_top = -126.0
+offset_right = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(13, 126)
+texture = ExtResource("29_vs7qa")
+
+[node name="tg_pos_1" type="TextureRect" parent="UI/circle/FV/tg" unique_id=764009815]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 182.0
+offset_top = -208.0
+offset_right = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(13, 208)
+texture = ExtResource("20_yb8s4")
+
+[node name="tg_pos_sqrt3" type="TextureRect" parent="UI/circle/FV/tg" unique_id=1865382255]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 182.0
+offset_top = -352.0
+offset_right = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(13, 352)
+texture = ExtResource("30_6tl7h")
+
+[node name="tg_neg_sqrt3" type="TextureRect" parent="UI/circle/FV/tg" unique_id=224515332]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 182.00003
+offset_top = -352.0
+offset_right = 208.00003
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(13, 352)
+texture = ExtResource("30_6tl7h")
+
+[node name="tg_neg_1" type="TextureRect" parent="UI/circle/FV/tg" unique_id=70126016]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 182.0
+offset_top = -208.0
+offset_right = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(13, 208)
+texture = ExtResource("20_yb8s4")
+
+[node name="tg_neg_sqrt3_3" type="TextureRect" parent="UI/circle/FV/tg" unique_id=1092487104]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 182.0
+offset_top = -126.0
+offset_right = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(13, 126)
+texture = ExtResource("29_vs7qa")
+
+[node name="ctg" type="Control" parent="UI/circle/FV" unique_id=1121680403]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 128.0
+offset_top = 132.0
+offset_right = 636.0
+offset_bottom = 640.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ctg_zero" type="TextureRect" parent="UI/circle/FV/ctg" unique_id=118901650]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -13.0
+offset_top = -209.5
+offset_right = 13.0
+offset_bottom = -183.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_gl6c2")
+
+[node name="ctg_pos_sqrt3" type="TextureRect" parent="UI/circle/FV/ctg" unique_id=211572843]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -208.0
+offset_right = 352.0
+offset_bottom = -182.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(0, 13)
+texture = ExtResource("31_hjclv")
+stretch_mode = 2
+
+[node name="ctg_pos_1" type="TextureRect" parent="UI/circle/FV/ctg" unique_id=135993823]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -208.0
+offset_right = 208.0
+offset_bottom = -182.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(0, 13)
+texture = ExtResource("25_j40f2")
+stretch_mode = 2
+
+[node name="ctg_pos_sqrt3_3" type="TextureRect" parent="UI/circle/FV/ctg" unique_id=2050735121]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -208.0
+offset_right = 126.0
+offset_bottom = -182.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(0, 13)
+texture = ExtResource("32_2wvhl")
+stretch_mode = 2
+
+[node name="ctg_neg_sqrt3_3" type="TextureRect" parent="UI/circle/FV/ctg" unique_id=1667608017]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -208.0
+offset_right = 126.0
+offset_bottom = -182.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(0, 13)
+texture = ExtResource("32_2wvhl")
+stretch_mode = 2
+
+[node name="ctg_neg_1" type="TextureRect" parent="UI/circle/FV/ctg" unique_id=515672177]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -208.0
+offset_right = 208.0
+offset_bottom = -182.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(0, 13)
+texture = ExtResource("25_j40f2")
+stretch_mode = 2
+
+[node name="ctg_neg_sqrt3" type="TextureRect" parent="UI/circle/FV/ctg" unique_id=1583539634]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -208.0
+offset_right = 352.0
+offset_bottom = -182.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(0, 13)
+texture = ExtResource("31_hjclv")
 stretch_mode = 2
 
 [node name="Tanga" type="TextureRect" parent="UI" unique_id=973194853]
@@ -1146,6 +1934,13 @@ offset_left = 5.0
 offset_top = 6.0
 offset_right = 97.0
 offset_bottom = 136.0
+metadata/_edit_lock_ = true
+
+[node name="ID" type="Label" parent="UI/Control" unique_id=215807240]
+layout_mode = 2
+theme = SubResource("Theme_cbspt")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "ID"
 
 [node name="Type" type="Label" parent="UI/Control" unique_id=1695999132]
 layout_mode = 2

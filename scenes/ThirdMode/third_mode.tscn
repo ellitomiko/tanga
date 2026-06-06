@@ -29,7 +29,7 @@ size = Vector2(116, 160.25)
 
 [node name="ThirdMode" type="Node2D" unique_id=378650663]
 script = ExtResource("1_f0blx")
-game_speed = 900.0
+game_speed = 400.0
 max_game_speed = 1000.0
 tanga_game_move_duration = 2.5
 cat_exit_duration = 3.0
@@ -201,7 +201,7 @@ position = Vector2(1354, 561.5)
 sprite_frames = ExtResource("6_64wap")
 animation = &"run"
 autoplay = "run"
-frame_progress = 0.16383645
+frame_progress = 0.8972467
 offset = Vector2(-0.2271576, 0.22717285)
 
 [node name="HitBox" type="Area2D" parent="Tanga" unique_id=1136072464]
@@ -216,7 +216,7 @@ position = Vector2(447, 525.5)
 sprite_frames = ExtResource("11_noc5j")
 animation = &"run"
 autoplay = "run"
-frame_progress = 0.1546965
+frame_progress = 0.12348591
 
 [connection signal="pressed" from="Control/ButtonPause" to="." method="_on_button_pause_pressed"]
 [connection signal="pressed" from="Control/ButtonStartGame" to="." method="_on_button_start_game_pressed"]

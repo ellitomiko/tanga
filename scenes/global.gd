@@ -492,3 +492,160 @@ var mode3_equations_pool: Dictionary = {
 		"value": "-√3_3.png"
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const FOURTH_MODE_TASKS := [
+	# FV
+	{"id": 1, "format": "FV", "function": "sin", "angle": 0, "value": "0"},
+	{"id": 2, "format": "FV", "function": "sin", "angle": 30, "value": "1_2"},
+	{"id": 3, "format": "FV", "function": "sin", "angle": 45, "value": "sqrt2_2"},
+	{"id": 4, "format": "FV", "function": "sin", "angle": 60, "value": "sqrt3_2"},
+	{"id": 5, "format": "FV", "function": "sin", "angle": 90, "value": "1"},
+	{"id": 6, "format": "FV", "function": "sin", "angle": 120, "value": "sqrt3_2"},
+	{"id": 7, "format": "FV", "function": "sin", "angle": 135, "value": "sqrt2_2"},
+	{"id": 8, "format": "FV", "function": "sin", "angle": 150, "value": "1_2"},
+	{"id": 9, "format": "FV", "function": "sin", "angle": 180, "value": "0"},
+	{"id": 10, "format": "FV", "function": "sin", "angle": 210, "value": "neg_1_2"},
+	{"id": 11, "format": "FV", "function": "sin", "angle": 225, "value": "neg_sqrt2_2"},
+	{"id": 12, "format": "FV", "function": "sin", "angle": 240, "value": "neg_sqrt3_2"},
+	{"id": 13, "format": "FV", "function": "sin", "angle": 270, "value": "neg_1"},
+	{"id": 14, "format": "FV", "function": "sin", "angle": 300, "value": "neg_sqrt3_2"},
+	{"id": 15, "format": "FV", "function": "sin", "angle": 315, "value": "neg_sqrt2_2"},
+	{"id": 16, "format": "FV", "function": "sin", "angle": 330, "value": "neg_1_2"},
+
+	{"id": 17, "format": "FV", "function": "cos", "angle": 0, "value": "1"},
+	{"id": 18, "format": "FV", "function": "cos", "angle": 30, "value": "sqrt3_2"},
+	{"id": 19, "format": "FV", "function": "cos", "angle": 45, "value": "sqrt2_2"},
+	{"id": 20, "format": "FV", "function": "cos", "angle": 60, "value": "1_2"},
+	{"id": 21, "format": "FV", "function": "cos", "angle": 90, "value": "0"},
+	{"id": 22, "format": "FV", "function": "cos", "angle": 120, "value": "neg_1_2"},
+	{"id": 23, "format": "FV", "function": "cos", "angle": 135, "value": "neg_sqrt2_2"},
+	{"id": 24, "format": "FV", "function": "cos", "angle": 150, "value": "neg_sqrt3_2"},
+	{"id": 25, "format": "FV", "function": "cos", "angle": 180, "value": "neg_1"},
+	{"id": 26, "format": "FV", "function": "cos", "angle": 210, "value": "neg_sqrt3_2"},
+	{"id": 27, "format": "FV", "function": "cos", "angle": 225, "value": "neg_sqrt2_2"},
+	{"id": 28, "format": "FV", "function": "cos", "angle": 240, "value": "neg_1_2"},
+	{"id": 29, "format": "FV", "function": "cos", "angle": 270, "value": "0"},
+	{"id": 30, "format": "FV", "function": "cos", "angle": 300, "value": "1_2"},
+	{"id": 31, "format": "FV", "function": "cos", "angle": 315, "value": "sqrt2_2"},
+	{"id": 32, "format": "FV", "function": "cos", "angle": 330, "value": "sqrt3_2"},
+
+	{"id": 33, "format": "FV", "function": "tg", "angle": 0, "value": "0"},
+	{"id": 34, "format": "FV", "function": "tg", "angle": 30, "value": "sqrt3_3"},
+	{"id": 35, "format": "FV", "function": "tg", "angle": 45, "value": "1"},
+	{"id": 36, "format": "FV", "function": "tg", "angle": 60, "value": "sqrt3"},
+	{"id": 37, "format": "FV", "function": "tg", "angle": 90, "value": "no_answer"},
+	{"id": 38, "format": "FV", "function": "tg", "angle": 120, "value": "neg_sqrt3"},
+	{"id": 39, "format": "FV", "function": "tg", "angle": 135, "value": "neg_1"},
+	{"id": 40, "format": "FV", "function": "tg", "angle": 150, "value": "neg_sqrt3_3"},
+	{"id": 41, "format": "FV", "function": "tg", "angle": 180, "value": "0"},
+	{"id": 42, "format": "FV", "function": "tg", "angle": 210, "value": "sqrt3_3"},
+	{"id": 43, "format": "FV", "function": "tg", "angle": 225, "value": "1"},
+	{"id": 44, "format": "FV", "function": "tg", "angle": 240, "value": "sqrt3"},
+	{"id": 45, "format": "FV", "function": "tg", "angle": 270, "value": "no_answer"},
+	{"id": 46, "format": "FV", "function": "tg", "angle": 300, "value": "neg_sqrt3"},
+	{"id": 47, "format": "FV", "function": "tg", "angle": 315, "value": "neg_1"},
+	{"id": 48, "format": "FV", "function": "tg", "angle": 330, "value": "neg_sqrt3_3"},
+
+	{"id": 49, "format": "FV", "function": "ctg", "angle": 0, "value": "no_answer"},
+	{"id": 50, "format": "FV", "function": "ctg", "angle": 30, "value": "sqrt3"},
+	{"id": 51, "format": "FV", "function": "ctg", "angle": 45, "value": "1"},
+	{"id": 52, "format": "FV", "function": "ctg", "angle": 60, "value": "sqrt3_3"},
+	{"id": 53, "format": "FV", "function": "ctg", "angle": 90, "value": "0"},
+	{"id": 54, "format": "FV", "function": "ctg", "angle": 120, "value": "neg_sqrt3_3"},
+	{"id": 55, "format": "FV", "function": "ctg", "angle": 135, "value": "neg_1"},
+	{"id": 56, "format": "FV", "function": "ctg", "angle": 150, "value": "neg_sqrt3"},
+	{"id": 57, "format": "FV", "function": "ctg", "angle": 180, "value": "no_answer"},
+	{"id": 58, "format": "FV", "function": "ctg", "angle": 210, "value": "sqrt3"},
+	{"id": 59, "format": "FV", "function": "ctg", "angle": 225, "value": "1"},
+	{"id": 60, "format": "FV", "function": "ctg", "angle": 240, "value": "sqrt3_3"},
+	{"id": 61, "format": "FV", "function": "ctg", "angle": 270, "value": "0"},
+	{"id": 62, "format": "FV", "function": "ctg", "angle": 300, "value": "neg_sqrt3_3"},
+	{"id": 63, "format": "FV", "function": "ctg", "angle": 315, "value": "neg_1"},
+	{"id": 64, "format": "FV", "function": "ctg", "angle": 330, "value": "neg_sqrt3"},
+
+	# AV
+	{"id": 65, "format": "AV", "function": "sin", "angle": 0, "value": "0"},
+	{"id": 66, "format": "AV", "function": "sin", "angle": 30, "value": "1_2"},
+	{"id": 67, "format": "AV", "function": "sin", "angle": 45, "value": "sqrt2_2"},
+	{"id": 68, "format": "AV", "function": "sin", "angle": 60, "value": "sqrt3_2"},
+	{"id": 69, "format": "AV", "function": "sin", "angle": 90, "value": "1"},
+	{"id": 70, "format": "AV", "function": "sin", "angle": 120, "value": "sqrt3_2"},
+	{"id": 71, "format": "AV", "function": "sin", "angle": 135, "value": "sqrt2_2"},
+	{"id": 72, "format": "AV", "function": "sin", "angle": 150, "value": "1_2"},
+	{"id": 73, "format": "AV", "function": "sin", "angle": 180, "value": "0"},
+	{"id": 74, "format": "AV", "function": "sin", "angle": 210, "value": "neg_1_2"},
+	{"id": 75, "format": "AV", "function": "sin", "angle": 225, "value": "neg_sqrt2_2"},
+	{"id": 76, "format": "AV", "function": "sin", "angle": 240, "value": "neg_sqrt3_2"},
+	{"id": 77, "format": "AV", "function": "sin", "angle": 270, "value": "neg_1"},
+	{"id": 78, "format": "AV", "function": "sin", "angle": 300, "value": "neg_sqrt3_2"},
+	{"id": 79, "format": "AV", "function": "sin", "angle": 315, "value": "neg_sqrt2_2"},
+	{"id": 80, "format": "AV", "function": "sin", "angle": 330, "value": "neg_1_2"},
+
+	{"id": 81, "format": "AV", "function": "cos", "angle": 0, "value": "1"},
+	{"id": 82, "format": "AV", "function": "cos", "angle": 30, "value": "sqrt3_2"},
+	{"id": 83, "format": "AV", "function": "cos", "angle": 45, "value": "sqrt2_2"},
+	{"id": 84, "format": "AV", "function": "cos", "angle": 60, "value": "1_2"},
+	{"id": 85, "format": "AV", "function": "cos", "angle": 90, "value": "0"},
+	{"id": 86, "format": "AV", "function": "cos", "angle": 120, "value": "neg_1_2"},
+	{"id": 87, "format": "AV", "function": "cos", "angle": 135, "value": "neg_sqrt2_2"},
+	{"id": 88, "format": "AV", "function": "cos", "angle": 150, "value": "neg_sqrt3_2"},
+	{"id": 89, "format": "AV", "function": "cos", "angle": 180, "value": "neg_1"},
+	{"id": 90, "format": "AV", "function": "cos", "angle": 210, "value": "neg_sqrt3_2"},
+	{"id": 91, "format": "AV", "function": "cos", "angle": 225, "value": "neg_sqrt2_2"},
+	{"id": 92, "format": "AV", "function": "cos", "angle": 240, "value": "neg_1_2"},
+	{"id": 93, "format": "AV", "function": "cos", "angle": 270, "value": "0"},
+	{"id": 94, "format": "AV", "function": "cos", "angle": 300, "value": "1_2"},
+	{"id": 95, "format": "AV", "function": "cos", "angle": 315, "value": "sqrt2_2"},
+	{"id": 96, "format": "AV", "function": "cos", "angle": 330, "value": "sqrt3_2"},
+
+	{"id": 97, "format": "AV", "function": "tg", "angle": 0, "value": "0"},
+	{"id": 98, "format": "AV", "function": "tg", "angle": 30, "value": "sqrt3_3"},
+	{"id": 99, "format": "AV", "function": "tg", "angle": 45, "value": "1"},
+	{"id": 100, "format": "AV", "function": "tg", "angle": 60, "value": "sqrt3"},
+	{"id": 101, "format": "AV", "function": "tg", "angle": 90, "value": "no_answer"},
+	{"id": 102, "format": "AV", "function": "tg", "angle": 120, "value": "neg_sqrt3"},
+	{"id": 103, "format": "AV", "function": "tg", "angle": 135, "value": "neg_1"},
+	{"id": 104, "format": "AV", "function": "tg", "angle": 150, "value": "neg_sqrt3_3"},
+	{"id": 105, "format": "AV", "function": "tg", "angle": 180, "value": "0"},
+	{"id": 106, "format": "AV", "function": "tg", "angle": 210, "value": "sqrt3_3"},
+	{"id": 107, "format": "AV", "function": "tg", "angle": 225, "value": "1"},
+	{"id": 108, "format": "AV", "function": "tg", "angle": 240, "value": "sqrt3"},
+	{"id": 109, "format": "AV", "function": "tg", "angle": 270, "value": "no_answer"},
+	{"id": 110, "format": "AV", "function": "tg", "angle": 300, "value": "neg_sqrt3"},
+	{"id": 111, "format": "AV", "function": "tg", "angle": 315, "value": "neg_1"},
+	{"id": 112, "format": "AV", "function": "tg", "angle": 330, "value": "neg_sqrt3_3"},
+
+	{"id": 113, "format": "AV", "function": "ctg", "angle": 0, "value": "no_answer"},
+	{"id": 114, "format": "AV", "function": "ctg", "angle": 30, "value": "sqrt3"},
+	{"id": 115, "format": "AV", "function": "ctg", "angle": 45, "value": "1"},
+	{"id": 116, "format": "AV", "function": "ctg", "angle": 60, "value": "sqrt3_3"},
+	{"id": 117, "format": "AV", "function": "ctg", "angle": 90, "value": "0"},
+	{"id": 118, "format": "AV", "function": "ctg", "angle": 120, "value": "neg_sqrt3_3"},
+	{"id": 119, "format": "AV", "function": "ctg", "angle": 135, "value": "neg_1"},
+	{"id": 120, "format": "AV", "function": "ctg", "angle": 150, "value": "neg_sqrt3"},
+	{"id": 121, "format": "AV", "function": "ctg", "angle": 180, "value": "no_answer"},
+	{"id": 122, "format": "AV", "function": "ctg", "angle": 210, "value": "sqrt3"},
+	{"id": 123, "format": "AV", "function": "ctg", "angle": 225, "value": "1"},
+	{"id": 124, "format": "AV", "function": "ctg", "angle": 240, "value": "sqrt3_3"},
+	{"id": 125, "format": "AV", "function": "ctg", "angle": 270, "value": "0"},
+	{"id": 126, "format": "AV", "function": "ctg", "angle": 300, "value": "neg_sqrt3_3"},
+	{"id": 127, "format": "AV", "function": "ctg", "angle": 315, "value": "neg_1"},
+	{"id": 128, "format": "AV", "function": "ctg", "angle": 330, "value": "neg_sqrt3"},
+]
