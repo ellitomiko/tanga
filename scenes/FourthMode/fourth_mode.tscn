@@ -65,7 +65,7 @@ texture_normal = ExtResource("3_ex5fe")
 texture_pressed = ExtResource("4_tpfus")
 texture_hover = ExtResource("5_ron5y")
 
-[node name="ButtonPause2" type="TextureButton" parent="UI/VBoxContainer" unique_id=66315510]
+[node name="ButtonHint" type="TextureButton" parent="UI/VBoxContainer" unique_id=66315510]
 layout_mode = 2
 texture_normal = ExtResource("6_2sd1u")
 texture_pressed = ExtResource("7_hridh")
@@ -1026,118 +1026,106 @@ horizontal_alignment = 1
 [node name="circle" type="TextureRect" parent="UI" unique_id=1888437234]
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.25100002
-anchor_top = 0.43500003
-anchor_right = 0.25100002
-anchor_bottom = 0.43500003
-offset_left = -402.92004
-offset_top = -401.80005
-offset_right = 404.07996
-offset_bottom = 402.19995
+anchor_left = 0.25
+anchor_top = 0.43800002
+anchor_right = 0.25
+anchor_bottom = 0.43800002
+offset_left = -401.0
+offset_top = -405.04004
+offset_right = 406.0
+offset_bottom = 398.95996
 grow_vertical = 2
 texture = ExtResource("16_y7lqp")
 
 [node name="tg_ctg" type="TextureRect" parent="UI/circle" unique_id=1246925957]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -377.0
-offset_top = -377.0
-offset_right = 377.0
-offset_bottom = 377.0
+anchors_preset = -1
+anchor_left = 0.49800003
+anchor_top = 0.505
+anchor_right = 0.49800003
+anchor_bottom = 0.505
+offset_left = -374.88602
+offset_top = -379.02
+offset_right = 379.11398
+offset_bottom = 374.98
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("17_hridh")
 
 [node name="main_circle" type="TextureRect" parent="UI/circle" unique_id=675102571]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -256.0
-offset_top = -256.0
-offset_right = 256.0
-offset_bottom = 256.0
+anchors_preset = -1
+anchor_left = 0.49800003
+anchor_top = 0.505
+anchor_right = 0.49800003
+anchor_bottom = 0.505
+offset_left = -253.88602
+offset_top = -258.02
+offset_right = 258.11398
+offset_bottom = 253.98001
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("18_g23ui")
 
 [node name="dots" type="TextureRect" parent="UI/circle" unique_id=1593923028]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -256.0
-offset_top = -256.0
-offset_right = 256.0
-offset_bottom = 256.0
+anchors_preset = -1
+anchor_left = 0.49800003
+anchor_top = 0.505
+anchor_right = 0.49800003
+anchor_bottom = 0.505
+offset_left = -253.88602
+offset_top = -259.02
+offset_right = 258.11398
+offset_bottom = 252.98001
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("19_8pcem")
 
 [node name="sin_cos" type="Control" parent="UI/circle" unique_id=1702617428]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+anchor_left = 0.49800003
+anchor_top = 0.505
+anchor_right = 0.49800003
+anchor_bottom = 0.505
+offset_left = -19.886017
+offset_top = -20.019989
+offset_right = 20.113983
+offset_bottom = 19.980011
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="sin_1" type="TextureRect" parent="UI/circle/sin_cos" unique_id=334760066]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.45000002
-anchor_top = 0.55
-anchor_right = 0.45000002
-anchor_bottom = 0.55
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
 offset_left = -13.0
-offset_top = -208.0
+offset_top = -209.0
 offset_right = 13.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("20_yb8s4")
 stretch_mode = 2
 
-[node name="sin_2" type="TextureRect" parent="UI/circle/sin_cos" unique_id=292408756]
+[node name="sin_-1" type="TextureRect" parent="UI/circle/sin_cos" unique_id=2128216984]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.45000002
-anchor_top = 0.55
-anchor_right = 0.45000002
-anchor_bottom = 0.55
-offset_left = -13.0
-offset_top = -208.0
-offset_right = 13.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -209.0
+offset_right = 14.0
+offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("20_yb8s4")
-stretch_mode = 2
-
-[node name="sin_3" type="TextureRect" parent="UI/circle/sin_cos" unique_id=313658617]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.45000002
-anchor_top = 0.55
-anchor_right = 0.45000002
-anchor_bottom = 0.55
-offset_left = -13.0
-offset_top = -208.0
-offset_right = 13.0
-grow_horizontal = 2
-grow_vertical = 2
+rotation = 3.1415927
+pivot_offset = Vector2(12.409149, 208.073)
 texture = ExtResource("20_yb8s4")
 stretch_mode = 2
 
