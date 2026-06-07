@@ -509,6 +509,9 @@ var mode3_equations_pool: Dictionary = {
 
 
 
+# ДЛЯ ЧЕТВЁРТОГО РЕЖИМА
+
+var fourth_mode_record: int = 0
 
 const FOURTH_MODE_TASKS := [
 	# FV

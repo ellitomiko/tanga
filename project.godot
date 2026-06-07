@@ -13,7 +13,7 @@ config_version=5
 config/name="TANGA"
 run/main_scene="uid://c035y00vvw8np"
 config/features=PackedStringArray("4.6", "GL Compatibility")
-config/icon="res://icon.svg"
+config/icon="uid://dj1mck885jb3r"
 
 [audio]
 

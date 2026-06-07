@@ -12,9 +12,14 @@
 [ext_resource type="LabelSettings" uid="uid://nhnwapqk5ss6" path="res://cards_text.tres" id="7_uqk86"]
 [ext_resource type="Texture2D" uid="uid://rrykq2jrcs8x" path="res://textures/fourthMode/no_answer.png" id="8_3ofv6"]
 [ext_resource type="Texture2D" uid="uid://dvt012voevhj1" path="res://textures/main/hint_button_hover.png" id="8_g23ui"]
+[ext_resource type="Script" uid="uid://8tiwj00b0f61" path="res://scenes/FourthMode/card.gd" id="10_igc2v"]
 [ext_resource type="Texture2D" uid="uid://62ntiwrbkdw5" path="res://textures/fourthMode/card_container.png" id="12_8pcem"]
 [ext_resource type="FontFile" uid="uid://ctl8nld0amwl4" path="res://fonts/MPLUSRounded1c-ExtraBold.ttf" id="13_yb8s4"]
+[ext_resource type="Texture2D" uid="uid://cen6m4esbo25c" path="res://textures/fourthMode/button_done_normal.png" id="14_5m55t"]
+[ext_resource type="Script" uid="uid://bsad40pp0ow20" path="res://scenes/FourthMode/slot.gd" id="14_7crtv"]
 [ext_resource type="LabelSettings" uid="uid://bsc3hbjklschq" path="res://counter.tres" id="15_cd45r"]
+[ext_resource type="Texture2D" uid="uid://btyarrsi4nl82" path="res://textures/fourthMode/button_done_pressed.png" id="15_igc2v"]
+[ext_resource type="Texture2D" uid="uid://cfafqrkv5kjwf" path="res://textures/fourthMode/button_done_hover.png" id="16_7crtv"]
 [ext_resource type="Texture2D" uid="uid://dw34u6sf3s6oq" path="res://textures/fourthMode/cheese_square.png" id="16_y7lqp"]
 [ext_resource type="Texture2D" uid="uid://c7gbgwihd00up" path="res://textures/fourthMode/tanga.png" id="17_dgn8d"]
 [ext_resource type="Texture2D" uid="uid://dwxbna4f40ruc" path="res://textures/fourthMode/tg_ctg.png" id="17_hridh"]
@@ -42,6 +47,7 @@ default_font_size = 38
 
 [node name="FourthMode" type="Node2D" unique_id=541029055]
 script = ExtResource("1_yb8s4")
+metadata/_edit_horizontal_guides_ = [257.0]
 
 [node name="UI" type="Control" parent="." unique_id=656184934]
 layout_mode = 3
@@ -99,6 +105,7 @@ theme_override_constants/separation = 35
 alignment = 1
 
 [node name="Angles" type="VBoxContainer" parent="UI/RightSide" unique_id=1124782334]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 
@@ -111,6 +118,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row1/angle_0" unique_id=372062358]
 layout_mode = 1
@@ -120,9 +128,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -20.0
-offset_top = -26.0
+offset_top = -27.0
 offset_right = 20.0
-offset_bottom = 26.0
+offset_bottom = 27.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "0°"
@@ -135,6 +143,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row1/angle_30" unique_id=32879353]
 layout_mode = 1
@@ -159,6 +168,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row1/angle_45" unique_id=1083908982]
 layout_mode = 1
@@ -183,6 +193,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row1/angle_60" unique_id=1173213925]
 layout_mode = 1
@@ -211,6 +222,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row2/angle_90" unique_id=2128717581]
 layout_mode = 1
@@ -235,6 +247,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row2/angle_120" unique_id=529789180]
 layout_mode = 1
@@ -259,6 +272,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row2/angle_135" unique_id=2106029106]
 layout_mode = 1
@@ -283,6 +297,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row2/angle_150" unique_id=898929454]
 layout_mode = 1
@@ -310,6 +325,7 @@ alignment = 1
 layout_mode = 2
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row3/angle_180" unique_id=2071077309]
 layout_mode = 1
@@ -333,6 +349,7 @@ vertical_alignment = 1
 layout_mode = 2
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row3/angle_210" unique_id=43003815]
 layout_mode = 1
@@ -356,6 +373,7 @@ vertical_alignment = 1
 layout_mode = 2
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row3/angle_225" unique_id=1402533962]
 layout_mode = 1
@@ -379,6 +397,7 @@ vertical_alignment = 1
 layout_mode = 2
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row3/angle_240" unique_id=1304420622]
 layout_mode = 1
@@ -406,6 +425,7 @@ alignment = 1
 layout_mode = 2
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row4/angle_270" unique_id=95036618]
 layout_mode = 1
@@ -429,6 +449,7 @@ vertical_alignment = 1
 layout_mode = 2
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row4/angle_300" unique_id=1256887597]
 layout_mode = 1
@@ -452,6 +473,7 @@ vertical_alignment = 1
 layout_mode = 2
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row4/angle_315" unique_id=525959236]
 layout_mode = 1
@@ -475,6 +497,7 @@ vertical_alignment = 1
 layout_mode = 2
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Angles/Row4/angle_330" unique_id=1197202210]
 layout_mode = 1
@@ -495,7 +518,6 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Functions" type="VBoxContainer" parent="UI/RightSide" unique_id=514701405]
-visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 
@@ -508,6 +530,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Functions/Row1/function_cos" unique_id=2001443452]
 layout_mode = 1
@@ -517,9 +540,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -29.5
-offset_top = -31.0
+offset_top = -27.0
 offset_right = 29.5
-offset_bottom = 23.0
+offset_bottom = 27.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 43
@@ -533,6 +556,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Functions/Row1/function_sin" unique_id=456476326]
 layout_mode = 1
@@ -561,6 +585,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Functions/Row2/function_tg" unique_id=523274884]
 layout_mode = 1
@@ -586,6 +611,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Functions/Row2/function_ctg" unique_id=944562886]
 layout_mode = 1
@@ -613,13 +639,14 @@ size_flags_horizontal = 4
 layout_mode = 2
 alignment = 1
 
-[node name="value_-1" type="TextureRect" parent="UI/RightSide/Values/Row1" unique_id=1282585529]
+[node name="value_neg_1" type="TextureRect" parent="UI/RightSide/Values/Row1" unique_id=1282585529]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
-[node name="Label" type="Label" parent="UI/RightSide/Values/Row1/value_-1" unique_id=367697492]
+[node name="Label" type="Label" parent="UI/RightSide/Values/Row1/value_neg_1" unique_id=367697492]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -637,13 +664,14 @@ label_settings = ExtResource("7_uqk86")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="value_-1_2" type="TextureRect" parent="UI/RightSide/Values/Row1" unique_id=331287542]
+[node name="value_neg_1_2" type="TextureRect" parent="UI/RightSide/Values/Row1" unique_id=331287542]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
-[node name="Label" type="Label" parent="UI/RightSide/Values/Row1/value_-1_2" unique_id=1977839587]
+[node name="Label" type="Label" parent="UI/RightSide/Values/Row1/value_neg_1_2" unique_id=1977839587]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -665,6 +693,7 @@ vertical_alignment = 1
 layout_mode = 2
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Values/Row1/value_0" unique_id=1351722570]
 layout_mode = 1
@@ -689,6 +718,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Values/Row1/value_1_2" unique_id=641021030]
 layout_mode = 1
@@ -713,6 +743,7 @@ layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="Label" type="Label" parent="UI/RightSide/Values/Row1/value_1" unique_id=965502860]
 layout_mode = 1
@@ -736,13 +767,14 @@ vertical_alignment = 1
 layout_mode = 2
 alignment = 1
 
-[node name="value_-√3" type="TextureRect" parent="UI/RightSide/Values/Row2" unique_id=610381702]
+[node name="value_neg_sqrt3" type="TextureRect" parent="UI/RightSide/Values/Row2" unique_id=610381702]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
-[node name="Label" type="Label" parent="UI/RightSide/Values/Row2/value_-√3" unique_id=1704727354]
+[node name="Label" type="Label" parent="UI/RightSide/Values/Row2/value_neg_sqrt3" unique_id=1704727354]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -760,13 +792,14 @@ label_settings = ExtResource("7_uqk86")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="value_-√3_3" type="TextureRect" parent="UI/RightSide/Values/Row2" unique_id=701937213]
+[node name="value_neg_sqrt3_3" type="TextureRect" parent="UI/RightSide/Values/Row2" unique_id=701937213]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
-[node name="Label" type="Label" parent="UI/RightSide/Values/Row2/value_-√3_3" unique_id=1921171249]
+[node name="Label" type="Label" parent="UI/RightSide/Values/Row2/value_neg_sqrt3_3" unique_id=1921171249]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -788,6 +821,7 @@ vertical_alignment = 1
 layout_mode = 2
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
 [node name="TextureRect" type="TextureRect" parent="UI/RightSide/Values/Row2/value_no_answer" unique_id=1048570974]
 layout_mode = 1
@@ -804,13 +838,14 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("8_3ofv6")
 
-[node name="value_√3_3" type="TextureRect" parent="UI/RightSide/Values/Row2" unique_id=1667809057]
+[node name="value_sqrt3_3" type="TextureRect" parent="UI/RightSide/Values/Row2" unique_id=1667809057]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
-[node name="Label" type="Label" parent="UI/RightSide/Values/Row2/value_√3_3" unique_id=2011164691]
+[node name="Label" type="Label" parent="UI/RightSide/Values/Row2/value_sqrt3_3" unique_id=2011164691]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -828,13 +863,14 @@ label_settings = ExtResource("7_uqk86")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="value_√3" type="TextureRect" parent="UI/RightSide/Values/Row2" unique_id=270027343]
+[node name="value_sqrt3" type="TextureRect" parent="UI/RightSide/Values/Row2" unique_id=270027343]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
-[node name="Label" type="Label" parent="UI/RightSide/Values/Row2/value_√3" unique_id=623225106]
+[node name="Label" type="Label" parent="UI/RightSide/Values/Row2/value_sqrt3" unique_id=623225106]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -856,13 +892,14 @@ vertical_alignment = 1
 layout_mode = 2
 alignment = 1
 
-[node name="value_-√3_2" type="TextureRect" parent="UI/RightSide/Values/Row3" unique_id=1816672411]
+[node name="value_neg_sqrt3_2" type="TextureRect" parent="UI/RightSide/Values/Row3" unique_id=1816672411]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
-[node name="Label" type="Label" parent="UI/RightSide/Values/Row3/value_-√3_2" unique_id=1172818969]
+[node name="Label" type="Label" parent="UI/RightSide/Values/Row3/value_neg_sqrt3_2" unique_id=1172818969]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -880,13 +917,14 @@ label_settings = ExtResource("7_uqk86")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="value_-√2_2" type="TextureRect" parent="UI/RightSide/Values/Row3" unique_id=1366487259]
+[node name="value_neg_sqrt2_2" type="TextureRect" parent="UI/RightSide/Values/Row3" unique_id=1366487259]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
-[node name="Label" type="Label" parent="UI/RightSide/Values/Row3/value_-√2_2" unique_id=606354689]
+[node name="Label" type="Label" parent="UI/RightSide/Values/Row3/value_neg_sqrt2_2" unique_id=606354689]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -904,13 +942,14 @@ label_settings = ExtResource("7_uqk86")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="value_√2_2" type="TextureRect" parent="UI/RightSide/Values/Row3" unique_id=1035056655]
+[node name="value_sqrt2_2" type="TextureRect" parent="UI/RightSide/Values/Row3" unique_id=1035056655]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
-[node name="Label" type="Label" parent="UI/RightSide/Values/Row3/value_√2_2" unique_id=1855988116]
+[node name="Label" type="Label" parent="UI/RightSide/Values/Row3/value_sqrt2_2" unique_id=1855988116]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -928,13 +967,14 @@ label_settings = ExtResource("7_uqk86")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="value_√3_2" type="TextureRect" parent="UI/RightSide/Values/Row3" unique_id=597479072]
+[node name="value_sqrt3_2" type="TextureRect" parent="UI/RightSide/Values/Row3" unique_id=597479072]
 layout_mode = 2
 size_flags_horizontal = 4
 texture = ExtResource("6_10xxe")
 stretch_mode = 2
+script = ExtResource("10_igc2v")
 
-[node name="Label" type="Label" parent="UI/RightSide/Values/Row3/value_√3_2" unique_id=1706160747]
+[node name="Label" type="Label" parent="UI/RightSide/Values/Row3/value_sqrt3_2" unique_id=1706160747]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -968,11 +1008,13 @@ grow_vertical = 2
 theme_override_constants/separation = 15
 alignment = 1
 
-[node name="FunctionCover" type="TextureRect" parent="UI/Equation" unique_id=1419128469]
+[node name="FunctionSlot" type="TextureRect" parent="UI/Equation" unique_id=1419128469]
 layout_mode = 2
 size_flags_horizontal = 4
+size_flags_vertical = 4
 texture = ExtResource("12_8pcem")
 stretch_mode = 2
+script = ExtResource("14_7crtv")
 
 [node name="Function" type="Label" parent="UI/Equation" unique_id=1986865343]
 layout_mode = 2
@@ -980,10 +1022,12 @@ theme = SubResource("Theme_10xxe")
 theme_override_colors/font_color = Color(0.47058824, 0.39215687, 0.8, 1)
 text = "sin"
 
-[node name="AngleCover" type="TextureRect" parent="UI/Equation" unique_id=1459648736]
+[node name="AngleSlot" type="TextureRect" parent="UI/Equation" unique_id=1459648736]
 layout_mode = 2
+size_flags_vertical = 4
 texture = ExtResource("12_8pcem")
 stretch_mode = 2
+script = ExtResource("14_7crtv")
 
 [node name="Angle" type="Label" parent="UI/Equation" unique_id=1374538637]
 layout_mode = 2
@@ -997,10 +1041,23 @@ theme = SubResource("Theme_10xxe")
 theme_override_colors/font_color = Color(0.47058824, 0.39215687, 0.8, 1)
 text = "="
 
-[node name="ValueCover" type="TextureRect" parent="UI/Equation" unique_id=1042731165]
+[node name="ValueSlot" type="TextureRect" parent="UI/Equation" unique_id=1042731165]
 layout_mode = 2
+size_flags_vertical = 4
 texture = ExtResource("12_8pcem")
 stretch_mode = 2
+script = ExtResource("14_7crtv")
+
+[node name="ButtonDone" type="TextureButton" parent="UI" unique_id=1484721090]
+layout_mode = 0
+offset_left = 1518.0
+offset_top = 811.5
+offset_right = 1638.0
+offset_bottom = 906.5
+size_flags_vertical = 0
+texture_normal = ExtResource("14_5m55t")
+texture_pressed = ExtResource("15_igc2v")
+texture_hover = ExtResource("16_7crtv")
 
 [node name="COUNTER" type="Label" parent="UI" unique_id=1081316064]
 layout_mode = 1
@@ -1965,3 +2022,17 @@ layout_mode = 2
 theme = SubResource("Theme_cbspt")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "value 1/2"
+
+[node name="TransitionOverlay" type="ColorRect" parent="UI" unique_id=134606973]
+visible = false
+z_index = 20
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.3254902, 0.21960784, 0.75686276, 1)
+
+[connection signal="pressed" from="UI/ButtonDone" to="." method="_on_button_done_pressed"]

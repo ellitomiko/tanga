@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://bg2kl1a24501k"]
+
+[ext_resource type="Script" uid="uid://cwjeic55xgpvc" path="res://scenes/FourthMode/fourth_mode_loss.gd" id="1_r7t2e"]
+[ext_resource type="Texture2D" uid="uid://dsjx2gs1pc02r" path="res://textures/main/loss_purple.png" id="2_r7t2e"]
+[ext_resource type="Material" uid="uid://omdkhif4a75m" path="res://gradient_color.tres" id="3_8mqy8"]
+[ext_resource type="LabelSettings" uid="uid://53n4ey5qntnl" path="res://menus_text.tres" id="4_ib2vq"]
+[ext_resource type="Texture2D" uid="uid://b1kcja7hcisuj" path="res://textures/main/button_menu_normal.png" id="5_k2dqh"]
+[ext_resource type="Texture2D" uid="uid://8y0wsg1dxtm6" path="res://textures/main/button_menu_pressed.png" id="6_48p42"]
+[ext_resource type="Texture2D" uid="uid://b0nuqnfnn365i" path="res://textures/main/button_menu_hover.png" id="7_y4kbf"]
+[ext_resource type="Texture2D" uid="uid://bg7wg0to3b72h" path="res://textures/main/button_restart_normal.png" id="8_gvwlu"]
+[ext_resource type="Texture2D" uid="uid://b2t8p7f46dong" path="res://textures/main/button_restart_pressed.png" id="9_xvgit"]
+[ext_resource type="Texture2D" uid="uid://bj5jtrmbm7rjm" path="res://textures/main/button_restart_hover.png" id="10_wbgv0"]
+[ext_resource type="Texture2D" uid="uid://suen3jd4el24" path="res://textures/main/tanga_loss.png" id="11_nw1hm"]
+
+[node name="FourthModeLoss" type="Control" unique_id=564500333]
+z_index = 20
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r7t2e")
+
+[node name="TextureRect" type="ColorRect" parent="." unique_id=1065283734]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.3254902, 0.21960784, 0.75686276, 1)
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=111864768]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -519.5
+offset_top = 166.0
+offset_right = 519.5
+offset_bottom = 672.0
+grow_horizontal = 2
+texture = ExtResource("2_r7t2e")
+
+[node name="Label" type="Label" parent="TextureRect2" unique_id=854080094]
+material = ExtResource("3_8mqy8")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -234.0
+offset_top = 172.0
+offset_right = 234.0
+offset_bottom = 76.0
+grow_horizontal = 2
+text = "ВЫ ПРОИГРАЛИ :("
+label_settings = ExtResource("4_ib2vq")
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextureRect2" unique_id=1815206468]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+offset_bottom = -76.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 77
+
+[node name="ButtonMenu" type="TextureButton" parent="TextureRect2/HBoxContainer" unique_id=1207771561]
+layout_mode = 2
+texture_normal = ExtResource("5_k2dqh")
+texture_pressed = ExtResource("6_48p42")
+texture_hover = ExtResource("7_y4kbf")
+
+[node name="ButtonRestart" type="TextureButton" parent="TextureRect2/HBoxContainer" unique_id=418423760]
+layout_mode = 2
+texture_normal = ExtResource("8_gvwlu")
+texture_pressed = ExtResource("9_xvgit")
+texture_hover = ExtResource("10_wbgv0")
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=57044552]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -242.0
+offset_top = -511.0
+offset_right = 242.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("11_nw1hm")
+
+[connection signal="pressed" from="TextureRect2/HBoxContainer/ButtonMenu" to="." method="_on_button_menu_pressed"]
+[connection signal="pressed" from="TextureRect2/HBoxContainer/ButtonRestart" to="." method="_on_button_restart_pressed"]

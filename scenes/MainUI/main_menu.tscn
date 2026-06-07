@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://c035y00vvw8np"]
 
 [ext_resource type="Script" uid="uid://cm51jgkjttdff" path="res://scenes/MainUI/main_menu.gd" id="1_ekxnf"]
-[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_l6cm7"]
-[ext_resource type="Texture2D" uid="uid://nxcb8paemehs" path="res://textures/main/main_menu/main_menu_background.png" id="2_kpklg"]
+[ext_resource type="Texture2D" uid="uid://b14e8nl36ei47" path="res://textures/main/main_menu_background.png" id="2_tdt6j"]
 [ext_resource type="Texture2D" uid="uid://t6jelt0xca8g" path="res://textures/main/main_menu/main_name.png" id="3_e71t5"]
 [ext_resource type="Texture2D" uid="uid://c7ixcm2si7xhn" path="res://textures/main/main_menu/buttons_background.png" id="4_kpklg"]
 [ext_resource type="Texture2D" uid="uid://dlxtnf3u2ojj5" path="res://textures/main/main_menu/white_back.png" id="5_e71t5"]
@@ -12,6 +11,9 @@
 [ext_resource type="Theme" uid="uid://br1sogjcgmnt3" path="res://mainfont.tres" id="9_kpklg"]
 [ext_resource type="Texture2D" uid="uid://bnr3wveyxdomt" path="res://textures/main/main_menu/main_button_hover.png" id="9_l2x3c"]
 [ext_resource type="LabelSettings" uid="uid://cq5wadqo18sul" path="res://main_buttons_label.tres" id="10_kpklg"]
+[ext_resource type="Texture2D" uid="uid://db7tlv3skr1rx" path="res://textures/main/button_exit_normal.png" id="12_l2x3c"]
+[ext_resource type="Texture2D" uid="uid://bgeihw4p8fc08" path="res://textures/main/button_exit_pressed.png" id="13_7a6o3"]
+[ext_resource type="Texture2D" uid="uid://dreiyduuf7q6o" path="res://textures/main/button_exit_hover.png" id="14_1iljb"]
 
 [sub_resource type="Theme" id="Theme_1iljb"]
 default_font = ExtResource("5_fabgi")
@@ -31,7 +33,7 @@ script = ExtResource("1_ekxnf")
 layout_mode = 0
 offset_right = 1920.0
 offset_bottom = 1080.0
-texture = ExtResource("2_kpklg")
+texture = ExtResource("2_tdt6j")
 
 [node name="MainName" type="TextureRect" parent="." unique_id=1168549541]
 layout_mode = 1
@@ -151,18 +153,18 @@ vertical_alignment = 1
 clip_text = true
 
 [node name="ButtonExit" type="TextureButton" parent="." unique_id=231553758]
-visible = false
-modulate = Color(0.12941177, 1, 1, 1)
 layout_mode = 1
 anchors_preset = -1
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = 20.0
+offset_left = 40.0
 offset_top = -128.0
 offset_right = 128.0
-offset_bottom = -20.0
+offset_bottom = -32.0
 grow_vertical = 0
-texture_normal = ExtResource("1_l6cm7")
+texture_normal = ExtResource("12_l2x3c")
+texture_pressed = ExtResource("13_7a6o3")
+texture_hover = ExtResource("14_1iljb")
 
 [connection signal="mouse_entered" from="ButtonsBack/TextureRect/VBoxContainer/ButtonStart" to="." method="_on_button_start_mouse_entered"]
 [connection signal="pressed" from="ButtonsBack/TextureRect/VBoxContainer/ButtonStart" to="." method="_on_button_start_pressed"]

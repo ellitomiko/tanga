@@ -11,10 +11,6 @@ region = Rect2(0, 0, 376, 285)
 atlas = ExtResource("1_mymhk")
 region = Rect2(376, 0, 376, 285)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_mymhk"]
-atlas = ExtResource("1_mymhk")
-region = Rect2(0, 0, 356, 309)
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_fdut6"]
 atlas = ExtResource("1_mymhk")
 region = Rect2(356, 0, 356, 309)
@@ -61,9 +57,6 @@ animations = [{
 "texture": SubResource("AtlasTexture_k3ukr")
 }, {
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_mymhk")
-}, {
-"duration": 1.0,
 "texture": SubResource("AtlasTexture_fdut6")
 }, {
 "duration": 1.0,
@@ -77,7 +70,7 @@ animations = [{
 }],
 "loop": false,
 "name": &"fall",
-"speed": 8.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,

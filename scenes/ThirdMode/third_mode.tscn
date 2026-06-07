@@ -29,6 +29,7 @@ size = Vector2(116, 160.25)
 
 [node name="ThirdMode" type="Node2D" unique_id=378650663]
 script = ExtResource("1_f0blx")
+tanga_fall_duration = 0.7
 game_speed = 400.0
 max_game_speed = 1000.0
 tanga_game_move_duration = 2.5
@@ -199,9 +200,10 @@ texture = ExtResource("14_208to")
 z_index = 5
 position = Vector2(1354, 561.5)
 sprite_frames = ExtResource("6_64wap")
-animation = &"run"
+animation = &"fall"
 autoplay = "run"
-frame_progress = 0.8972467
+frame = 5
+frame_progress = 1.0
 offset = Vector2(-0.2271576, 0.22717285)
 
 [node name="HitBox" type="Area2D" parent="Tanga" unique_id=1136072464]

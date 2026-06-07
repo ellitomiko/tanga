@@ -1,12 +1,25 @@
 [gd_scene format=3 uid="uid://f2ciry40j27j"]
 
-[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_5p8wc"]
-[ext_resource type="Script" uid="uid://djtx4tw1x6n6f" path="res://scenes/settings.gd" id="1_gjs24"]
-[ext_resource type="Texture2D" uid="uid://b7ggs1kuc3x6d" path="res://test_textures/ButtonSmolRound_Idle.png" id="3_am25x"]
-[ext_resource type="Texture2D" uid="uid://ckso4o8fdlakh" path="res://test_textures/ButtonSmolRound_Pressed.png" id="4_4ppmf"]
-[ext_resource type="Texture2D" uid="uid://30lsgle5a7lh" path="res://test_textures/ButtonSmolRound_IdleMinus.png" id="6_1g033"]
-[ext_resource type="Texture2D" uid="uid://ctp5f6yma8mvv" path="res://test_textures/ButtonSmolRound_PressedMinus.png" id="7_01roj"]
-[ext_resource type="PackedScene" uid="uid://sf1w0fh01byc" path="res://scenes/error.tscn" id="7_83j8s"]
+[ext_resource type="Script" uid="uid://djtx4tw1x6n6f" path="res://scenes/MainUI/settings.gd" id="1_gjs24"]
+[ext_resource type="Texture2D" uid="uid://cf6i5jucq7pa2" path="res://textures/main/cheese_background.png" id="2_b5kp7"]
+[ext_resource type="Texture2D" uid="uid://bgnpl7f6w5jok" path="res://textures/main/settings.png" id="3_f2007"]
+[ext_resource type="Texture2D" uid="uid://cxvigqwevlitc" path="res://textures/main/button_back_normal.png" id="3_kemt4"]
+[ext_resource type="Material" uid="uid://omdkhif4a75m" path="res://gradient_color.tres" id="4_5515n"]
+[ext_resource type="Texture2D" uid="uid://cr63hhh1lwr3o" path="res://textures/main/button_back_pressed.png" id="4_f2007"]
+[ext_resource type="Texture2D" uid="uid://cjemhr3k7xjg6" path="res://textures/main/button_back_hover.png" id="5_hktyt"]
+[ext_resource type="LabelSettings" uid="uid://53n4ey5qntnl" path="res://menus_text.tres" id="5_lnrlg"]
+[ext_resource type="Texture2D" uid="uid://7doq74mvky7p" path="res://textures/main/button_music_on_normal.png" id="6_0yc6n"]
+[ext_resource type="PackedScene" uid="uid://sf1w0fh01byc" path="res://scenes/MainUI/error.tscn" id="7_83j8s"]
+[ext_resource type="Texture2D" uid="uid://do3vq78oco1ld" path="res://textures/main/button_music_on_ pressed.png" id="7_nteqq"]
+[ext_resource type="Texture2D" uid="uid://bdv8d4uxjuae8" path="res://textures/main/button_music_on_hover.png" id="8_3xsr8"]
+[ext_resource type="Texture2D" uid="uid://8xhgua04bl6q" path="res://textures/main/button_sound_on_normal.png" id="9_sq0xj"]
+[ext_resource type="Texture2D" uid="uid://cvt3l3glok8pu" path="res://textures/main/button_sound_on_pressed.png" id="10_pq7v6"]
+[ext_resource type="Texture2D" uid="uid://clt0og6ogcx4h" path="res://textures/main/button_sound_on_hover.png" id="11_0vi2f"]
+[ext_resource type="Texture2D" uid="uid://bkp7adqect3ck" path="res://textures/main/button_error_normal.png" id="12_2oo1o"]
+[ext_resource type="Texture2D" uid="uid://k364yb60cffj" path="res://textures/main/button_error_pressed.png" id="13_7pm0r"]
+[ext_resource type="Texture2D" uid="uid://kybc1hufm3hq" path="res://textures/main/button_error_hover.png" id="14_r4xhd"]
+[ext_resource type="Theme" uid="uid://br1sogjcgmnt3" path="res://mainfont.tres" id="15_0yc6n"]
+[ext_resource type="LabelSettings" uid="uid://cq5wadqo18sul" path="res://main_buttons_label.tres" id="16_nteqq"]
 
 [node name="Settings" type="Control" unique_id=1294501319]
 layout_mode = 3
@@ -18,96 +31,114 @@ grow_vertical = 2
 script = ExtResource("1_gjs24")
 metadata/_edit_lock_ = true
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=647678335]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(1, 1, 0.627451, 1)
-metadata/_edit_lock_ = true
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1526227153]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_b5kp7")
 
-[node name="ButtonBack" type="TextureButton" parent="." unique_id=1078974352]
-modulate = Color(0.12941177, 1, 1, 1)
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=2030807117]
 layout_mode = 1
 anchors_preset = -1
-offset_left = 20.0
-offset_top = 20.0
-offset_right = 128.0
-offset_bottom = 128.0
-scale = Vector2(0.7, 0.7)
-texture_normal = ExtResource("1_5p8wc")
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -417.5
+offset_top = 111.0
+offset_right = 417.5
+offset_bottom = 687.0
+grow_horizontal = 2
+texture = ExtResource("3_f2007")
 
-[node name="ButtonError" type="TextureButton" parent="." unique_id=174708696]
-modulate = Color(0.12941177, 1, 1, 1)
+[node name="Label2" type="Label" parent="TextureRect2" unique_id=1038397235]
+material = ExtResource("4_5515n")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -343.5
+offset_top = 168.0
+offset_right = 343.5
+offset_bottom = 248.0
+grow_horizontal = 2
+text = "НАСТРОЙКИ"
+label_settings = ExtResource("5_lnrlg")
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect2" unique_id=1365518550]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -125.0
+offset_top = 274.0
+offset_right = 125.0
+offset_bottom = 272.0
+grow_horizontal = 2
+theme_override_constants/separation = 45
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextureRect2/VBoxContainer" unique_id=1567914310]
+layout_mode = 2
+theme_override_constants/separation = 45
+
+[node name="ButtonMusic" type="TextureButton" parent="TextureRect2/VBoxContainer/HBoxContainer" unique_id=430536223]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("6_0yc6n")
+texture_pressed = ExtResource("7_nteqq")
+texture_hover = ExtResource("8_3xsr8")
+
+[node name="ButtonSound" type="TextureButton" parent="TextureRect2/VBoxContainer/HBoxContainer" unique_id=71744453]
+layout_mode = 2
+toggle_mode = true
+texture_normal = ExtResource("9_sq0xj")
+texture_pressed = ExtResource("10_pq7v6")
+texture_hover = ExtResource("11_0vi2f")
+
+[node name="ButtonError" type="TextureButton" parent="TextureRect2/VBoxContainer" unique_id=174708696]
+layout_mode = 2
+texture_normal = ExtResource("12_2oo1o")
+texture_pressed = ExtResource("13_7pm0r")
+texture_hover = ExtResource("14_r4xhd")
+
+[node name="Label" type="Label" parent="TextureRect2/VBoxContainer/ButtonError" unique_id=1098079165]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_top = -30.5
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("15_0yc6n")
+text = "Сообщить об ошибке"
+label_settings = ExtResource("16_nteqq")
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="ButtonBack" type="TextureButton" parent="." unique_id=1078974352]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -64.0
-offset_top = -128.0
-offset_right = 64.0
-offset_bottom = -93.0
+offset_left = -79.0
+offset_top = -168.0
+offset_right = 79.0
+offset_bottom = -70.0
 grow_horizontal = 2
 grow_vertical = 0
-texture_normal = ExtResource("1_5p8wc")
-
-[node name="ButtonMusic" type="TextureButton" parent="." unique_id=430536223]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.31500003
-anchor_top = 0.37300003
-anchor_right = 0.31500003
-anchor_bottom = 0.37300003
-offset_left = -61.80005
-offset_top = -69.84003
-offset_right = 61.19995
-offset_bottom = 70.15997
-grow_horizontal = 2
-grow_vertical = 2
-toggle_mode = true
-texture_normal = ExtResource("3_am25x")
-texture_pressed = ExtResource("4_4ppmf")
-
-[node name="ButtonSound" type="TextureButton" parent="." unique_id=71744453]
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.587
-anchor_top = 0.36400002
-anchor_right = 0.587
-anchor_bottom = 0.36400002
-offset_left = -56.04004
-offset_top = -66.120026
-offset_right = 66.95996
-offset_bottom = 73.879974
-grow_horizontal = 2
-grow_vertical = 2
-toggle_mode = true
-texture_normal = ExtResource("6_1g033")
-texture_pressed = ExtResource("7_01roj")
-
-[node name="Label" type="Label" parent="." unique_id=1089164976]
-modulate = Color(0.09411765, 0.09411765, 1, 1)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -82.5
-offset_top = 40.0
-offset_right = 82.5
-offset_bottom = 42.0
-grow_horizontal = 2
-theme_override_font_sizes/font_size = 30
-text = "Настройки"
+texture_normal = ExtResource("3_kemt4")
+texture_pressed = ExtResource("4_f2007")
+texture_hover = ExtResource("5_hktyt")
 
 [node name="Error" parent="." unique_id=1431724330 instance=ExtResource("7_83j8s")]
 visible = false
 layout_mode = 1
 
+[connection signal="toggled" from="TextureRect2/VBoxContainer/HBoxContainer/ButtonMusic" to="." method="_on_button_music_toggled"]
+[connection signal="toggled" from="TextureRect2/VBoxContainer/HBoxContainer/ButtonSound" to="." method="_on_button_sound_toggled"]
+[connection signal="pressed" from="TextureRect2/VBoxContainer/ButtonError" to="." method="_on_button_error_pressed"]
 [connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]
-[connection signal="pressed" from="ButtonError" to="." method="_on_button_error_pressed"]
-[connection signal="toggled" from="ButtonMusic" to="." method="_on_button_music_toggled"]
-[connection signal="toggled" from="ButtonSound" to="." method="_on_button_sound_toggled"]
