@@ -1,7 +1,18 @@
 [gd_scene format=3 uid="uid://dguqup4p7ydfx"]
 
-[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_hx3vx"]
-[ext_resource type="Script" uid="uid://dwv7xccmj3kbc" path="res://scenes/about.gd" id="1_j4mam"]
+[ext_resource type="Script" uid="uid://dwv7xccmj3kbc" path="res://scenes/MainUI/about.gd" id="1_j4mam"]
+[ext_resource type="Texture2D" uid="uid://cf6i5jucq7pa2" path="res://textures/main/cheese_background.png" id="2_2mow7"]
+[ext_resource type="Texture2D" uid="uid://jfrpndg40p0c" path="res://textures/main/about.png" id="3_r20l8"]
+[ext_resource type="Material" uid="uid://omdkhif4a75m" path="res://gradient_color.tres" id="4_3oqtf"]
+[ext_resource type="LabelSettings" uid="uid://53n4ey5qntnl" path="res://menus_text.tres" id="5_xursg"]
+[ext_resource type="FontFile" uid="uid://qryr1bewxw6r" path="res://fonts/MPLUSRounded1c-Medium.ttf" id="6_dqmmi"]
+[ext_resource type="Texture2D" uid="uid://cxvigqwevlitc" path="res://textures/main/button_back_normal.png" id="7_itadg"]
+[ext_resource type="Texture2D" uid="uid://cr63hhh1lwr3o" path="res://textures/main/button_back_pressed.png" id="8_2vsc8"]
+[ext_resource type="Texture2D" uid="uid://cjemhr3k7xjg6" path="res://textures/main/button_back_hover.png" id="9_2moo5"]
+
+[sub_resource type="Theme" id="Theme_151ua"]
+default_font = ExtResource("6_dqmmi")
+default_font_size = 28
 
 [node name="About" type="Control" unique_id=579549483]
 layout_mode = 3
@@ -12,56 +23,69 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_j4mam")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=65649437]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(1, 1, 0.627451, 1)
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1931550346]
+layout_mode = 0
+offset_right = 1920.0
+offset_bottom = 1080.0
+texture = ExtResource("2_2mow7")
 
-[node name="ButtonBack" type="TextureButton" parent="." unique_id=103679879]
-modulate = Color(0.12941177, 1, 1, 1)
-layout_mode = 1
-anchors_preset = -1
-offset_left = 20.0
-offset_top = 20.0
-offset_right = 128.0
-offset_bottom = 128.0
-scale = Vector2(0.7, 0.7)
-texture_normal = ExtResource("1_hx3vx")
-
-[node name="Label" type="Label" parent="." unique_id=2022019973]
-modulate = Color(0.09411765, 0.09411765, 1, 1)
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1900886602]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.078
 anchor_right = 0.5
-anchor_bottom = 0.078
-offset_left = -42.0
-offset_top = -17.240005
-offset_right = 47.0
-offset_bottom = 24.759995
+offset_left = -658.5
+offset_top = 90.0
+offset_right = 658.5
+offset_bottom = 861.0
 grow_horizontal = 2
-grow_vertical = 2
-theme_override_font_sizes/font_size = 30
-text = "О нас"
+texture = ExtResource("3_r20l8")
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=234842944]
+[node name="Label" type="Label" parent="TextureRect2" unique_id=1587880040]
+material = ExtResource("4_3oqtf")
+layout_mode = 1
+anchors_preset = -1
+offset_left = 73.0
+offset_top = 173.0
+offset_right = 687.0
+offset_bottom = 80.0
+text = "ИНФОРМАЦИЯ
+ОБ ИГРЕ "
+label_settings = ExtResource("5_xursg")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextureRect2" unique_id=234842944]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.156
 anchor_top = 0.245
 anchor_right = 0.156
 anchor_bottom = 0.245
-offset_left = -2.5200195
-offset_top = -12.600006
-offset_right = 1035.48
-offset_bottom = 489.4
-theme_override_colors/default_color = Color(0.10802444, 0.7055569, 0.7355578, 1)
-theme_override_font_sizes/normal_font_size = 28
-text = "Основная цель игры — упростить восприятие  и освоение тригонометрических функций за счёт визуализации, интерактивности и игровых механик. В отличие от традиционных методов обучения,  игра предлагает пользователю не просто изучать формулы, а взаимодействовать с ними  в динамической и наглядной форме."
+offset_left = -138.95201
+offset_top = 151.105
+offset_right = 583.048
+offset_bottom = 475.10498
+theme = SubResource("Theme_151ua")
+theme_override_colors/default_color = Color(0.34509805, 0.34509805, 0.34509805, 1)
+theme_override_constants/line_separation = -5
+text = "Tanga — это игра о мышке, которая изучает тригонометрию и помогает игроку разобраться с углами, функциями и тригонометрическим кругом.
+Вместо обычного заучивания формул игра предлагает выполнять задания, двигаться по уровням и постепенно понимать, как связаны угол, функция и её значение.
+Проект создан в рамках выпускной квалификационной работы."
+
+[node name="ButtonBack" type="TextureButton" parent="." unique_id=103679879]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -64.0
+offset_top = -128.0
+offset_right = 64.0
+offset_bottom = -40.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("7_itadg")
+texture_pressed = ExtResource("8_2vsc8")
+texture_hover = ExtResource("9_2moo5")
 
 [connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]

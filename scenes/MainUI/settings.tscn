@@ -9,8 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://cjemhr3k7xjg6" path="res://textures/main/button_back_hover.png" id="5_hktyt"]
 [ext_resource type="LabelSettings" uid="uid://53n4ey5qntnl" path="res://menus_text.tres" id="5_lnrlg"]
 [ext_resource type="Texture2D" uid="uid://7doq74mvky7p" path="res://textures/main/button_music_on_normal.png" id="6_0yc6n"]
+[ext_resource type="Texture2D" uid="uid://b7xhl7aq8kwgk" path="res://textures/main/button_music_off_pressed.png" id="7_0yc6n"]
 [ext_resource type="PackedScene" uid="uid://sf1w0fh01byc" path="res://scenes/MainUI/error.tscn" id="7_83j8s"]
-[ext_resource type="Texture2D" uid="uid://do3vq78oco1ld" path="res://textures/main/button_music_on_ pressed.png" id="7_nteqq"]
 [ext_resource type="Texture2D" uid="uid://bdv8d4uxjuae8" path="res://textures/main/button_music_on_hover.png" id="8_3xsr8"]
 [ext_resource type="Texture2D" uid="uid://8xhgua04bl6q" path="res://textures/main/button_sound_on_normal.png" id="9_sq0xj"]
 [ext_resource type="Texture2D" uid="uid://cvt3l3glok8pu" path="res://textures/main/button_sound_on_pressed.png" id="10_pq7v6"]
@@ -84,7 +84,7 @@ theme_override_constants/separation = 45
 layout_mode = 2
 toggle_mode = true
 texture_normal = ExtResource("6_0yc6n")
-texture_pressed = ExtResource("7_nteqq")
+texture_pressed = ExtResource("7_0yc6n")
 texture_hover = ExtResource("8_3xsr8")
 
 [node name="ButtonSound" type="TextureButton" parent="TextureRect2/VBoxContainer/HBoxContainer" unique_id=71744453]

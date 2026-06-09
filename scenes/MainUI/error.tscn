@@ -1,87 +1,158 @@
 [gd_scene format=3 uid="uid://sf1w0fh01byc"]
 
-[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_mv2uk"]
-[ext_resource type="Script" uid="uid://bc88ldkl73ypv" path="res://scenes/error.gd" id="1_vc1wo"]
+[ext_resource type="Script" uid="uid://bc88ldkl73ypv" path="res://scenes/MainUI/error.gd" id="1_vc1wo"]
+[ext_resource type="Texture2D" uid="uid://cf6i5jucq7pa2" path="res://textures/main/cheese_background.png" id="2_5iyld"]
+[ext_resource type="Texture2D" uid="uid://ckeowss6okrfo" path="res://textures/main/error.png" id="3_7kp38"]
+[ext_resource type="Material" uid="uid://omdkhif4a75m" path="res://gradient_color.tres" id="4_xq3lj"]
+[ext_resource type="LabelSettings" uid="uid://53n4ey5qntnl" path="res://menus_text.tres" id="5_3lhrq"]
+[ext_resource type="Texture2D" uid="uid://y3e80komrbi" path="res://textures/main/button_send_normal.png" id="6_s7j0k"]
+[ext_resource type="Texture2D" uid="uid://bsj1kn787p6lv" path="res://textures/main/button_send_pressed.png" id="7_0lgsc"]
+[ext_resource type="Texture2D" uid="uid://chptmtwcvjqii" path="res://textures/main/button_send_hover.png" id="8_t7kyc"]
+[ext_resource type="Theme" uid="uid://br1sogjcgmnt3" path="res://mainfont.tres" id="9_p8iq1"]
+[ext_resource type="FontFile" uid="uid://cpp2wkddf4etq" path="res://fonts/MPLUSRounded1c-Black.ttf" id="10_qirih"]
+[ext_resource type="Texture2D" uid="uid://ddoe4luce4nro" path="res://textures/main/message_background.png" id="11_ap3vs"]
+[ext_resource type="FontFile" uid="uid://ctl8nld0amwl4" path="res://fonts/MPLUSRounded1c-ExtraBold.ttf" id="12_qdfl0"]
+[ext_resource type="Texture2D" uid="uid://cxvigqwevlitc" path="res://textures/main/button_back_normal.png" id="13_xs75s"]
+[ext_resource type="Texture2D" uid="uid://cr63hhh1lwr3o" path="res://textures/main/button_back_pressed.png" id="14_6i6re"]
+[ext_resource type="Texture2D" uid="uid://cjemhr3k7xjg6" path="res://textures/main/button_back_hover.png" id="15_gb3bs"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sl0h0"]
+font = ExtResource("10_qirih")
+font_size = 45
+
+[sub_resource type="Theme" id="Theme_dj6p6"]
+default_font = ExtResource("12_qdfl0")
+default_font_size = 25
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_j8utm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7rx4q"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_70s2d"]
 
 [node name="Error" type="Control" unique_id=1431724330]
 layout_mode = 3
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -800.0
-offset_top = -400.0
-offset_right = 800.0
-offset_bottom = 400.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_vc1wo")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=890761620]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=670428406]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.9999998, 0.9850767, 0.22091076, 1)
+texture = ExtResource("2_5iyld")
 
-[node name="ButtonBack" type="TextureButton" parent="." unique_id=2016650571]
-modulate = Color(0.12941177, 1, 1, 1)
-layout_mode = 1
-anchors_preset = -1
-offset_left = 20.0
-offset_top = 20.0
-offset_right = 128.0
-offset_bottom = 128.0
-scale = Vector2(0.7, 0.7)
-texture_normal = ExtResource("1_mv2uk")
-
-[node name="ButtonSendRequest" type="TextureButton" parent="." unique_id=1182396136]
-modulate = Color(0.12941177, 1, 1, 1)
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -128.0
-offset_top = -128.0
-offset_right = -400.0
-offset_bottom = -10.0
-grow_horizontal = 0
-grow_vertical = 0
-texture_normal = ExtResource("1_mv2uk")
-
-[node name="Label" type="Label" parent="." unique_id=396410008]
-modulate = Color(0.09411765, 0.09411765, 1, 1)
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1422740797]
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
-offset_top = 40.0
+offset_left = -553.0
+offset_top = 63.0
+offset_right = 553.0
+offset_bottom = 707.0
 grow_horizontal = 2
-theme_override_font_sizes/font_size = 30
-text = "Сообщить об ошибке"
+texture = ExtResource("3_7kp38")
 
-[node name="TextEdit" type="TextEdit" parent="." unique_id=991994811]
-modulate = Color(0.34509805, 1, 1, 1)
+[node name="Label" type="Label" parent="TextureRect2" unique_id=38561403]
+material = ExtResource("4_xq3lj")
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
 anchor_right = 0.5
+offset_left = -343.5
+offset_top = 145.0
+offset_right = 343.5
+offset_bottom = 218.0
+grow_horizontal = 2
+text = "СООБЩИТЬ ОБ ОШИБКЕ"
+label_settings = ExtResource("5_3lhrq")
+horizontal_alignment = 1
+
+[node name="ButtonSendRequest" type="TextureButton" parent="TextureRect2" unique_id=1182396136]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -243.5
+offset_top = -128.0
+offset_right = 243.5
+offset_bottom = -75.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("6_s7j0k")
+texture_pressed = ExtResource("7_0lgsc")
+texture_hover = ExtResource("8_t7kyc")
+
+[node name="Label" type="Label" parent="TextureRect2/ButtonSendRequest" unique_id=1262304423]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -400.0
-offset_top = -250.0
-offset_right = 400.0
-offset_bottom = 250.0
+offset_top = -40.5
+offset_bottom = 23.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_font_sizes/font_size = 30
+theme = ExtResource("9_p8iq1")
+text = "Отправить"
+label_settings = SubResource("LabelSettings_sl0h0")
+horizontal_alignment = 1
+vertical_alignment = 1
+clip_text = true
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect2" unique_id=1770628092]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -511.0
+offset_top = 246.0
+offset_right = 511.0
+offset_bottom = 209.0
+grow_horizontal = 2
+texture = ExtResource("11_ap3vs")
+
+[node name="TextEdit" type="TextEdit" parent="TextureRect2/TextureRect" unique_id=991994811]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 30.0
+offset_top = 18.0
+offset_right = 992.0
+offset_bottom = 175.0
+theme = SubResource("Theme_dj6p6")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_placeholder_color = Color(0.48235294, 0.47843137, 0.47843137, 1)
+theme_override_styles/normal = SubResource("StyleBoxEmpty_j8utm")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7rx4q")
+theme_override_styles/read_only = SubResource("StyleBoxEmpty_70s2d")
 placeholder_text = "Введите проблему..."
 virtual_keyboard_enabled = false
 
+[node name="ButtonBack" type="TextureButton" parent="." unique_id=2016650571]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -79.0
+offset_top = -168.0
+offset_right = 79.0
+offset_bottom = -70.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("13_xs75s")
+texture_pressed = ExtResource("14_6i6re")
+texture_hover = ExtResource("15_gb3bs")
+
+[connection signal="pressed" from="TextureRect2/ButtonSendRequest" to="." method="_on_button_send_request_pressed"]
 [connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]
-[connection signal="pressed" from="ButtonSendRequest" to="." method="_on_button_send_request_pressed"]

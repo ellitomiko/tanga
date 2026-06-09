@@ -1,7 +1,15 @@
 [gd_scene format=3 uid="uid://bybitcil5iwup"]
 
-[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_6it4k"]
-[ext_resource type="Script" uid="uid://hg4v6qmpj2q2" path="res://scenes/second_mode_select.gd" id="1_8a7iy"]
+[ext_resource type="Script" uid="uid://hg4v6qmpj2q2" path="res://scenes/SecondMode/second_mode_select.gd" id="1_8a7iy"]
+[ext_resource type="Texture2D" uid="uid://cf6i5jucq7pa2" path="res://textures/main/cheese_background.png" id="2_w03wq"]
+[ext_resource type="Texture2D" uid="uid://dmdlkcadnxn5m" path="res://textures/main/button_modes_2_normal.png" id="3_4af2i"]
+[ext_resource type="Texture2D" uid="uid://ruu76vjyr2ov" path="res://textures/main/button_modes_2_press.png" id="4_30sut"]
+[ext_resource type="Texture2D" uid="uid://cxvigqwevlitc" path="res://textures/main/button_back_normal.png" id="4_rds0l"]
+[ext_resource type="Texture2D" uid="uid://ca1ncm1rxd73i" path="res://textures/main/button_modes_2_hover.png" id="5_usuim"]
+[ext_resource type="Texture2D" uid="uid://cr63hhh1lwr3o" path="res://textures/main/button_back_pressed.png" id="5_xuv5r"]
+[ext_resource type="Texture2D" uid="uid://cjemhr3k7xjg6" path="res://textures/main/button_back_hover.png" id="6_5iavf"]
+[ext_resource type="Material" uid="uid://omdkhif4a75m" path="res://gradient_color.tres" id="6_sdjyn"]
+[ext_resource type="LabelSettings" uid="uid://53n4ey5qntnl" path="res://menus_text.tres" id="7_rnpw5"]
 
 [node name="SecondModeSelect" type="Control" unique_id=1383160602]
 layout_mode = 3
@@ -12,51 +20,87 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_8a7iy")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=212352025]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1829920308]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(1, 1, 0.627451, 1)
+texture = ExtResource("2_w03wq")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1296599034]
+[node name="ModesRow" type="HBoxContainer" parent="." unique_id=1249133929]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 20.0
-offset_top = 20.0
-offset_right = -20.0
-offset_bottom = -20.0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -752.0
+offset_top = 360.0
+offset_right = 752.0
+offset_bottom = 282.0
 grow_horizontal = 2
-grow_vertical = 2
-
-[node name="ButtonBack" type="TextureButton" parent="VBoxContainer" unique_id=118727607]
-modulate = Color(0.12941177, 1, 1, 1)
-layout_mode = 2
-texture_normal = ExtResource("1_6it4k")
-
-[node name="RowMargin" type="MarginContainer" parent="VBoxContainer" unique_id=1363392103]
-layout_mode = 2
-
-[node name="ModesRow" type="HBoxContainer" parent="VBoxContainer/RowMargin" unique_id=1249133929]
-layout_mode = 2
 size_flags_horizontal = 4
-theme_override_constants/separation = 30
+theme_override_constants/separation = 50
 alignment = 1
 
-[node name="ButtonNormalMode" type="TextureButton" parent="VBoxContainer/RowMargin/ModesRow" unique_id=1881011233]
-modulate = Color(0.12941177, 1, 1, 1)
+[node name="ButtonNormalMode" type="TextureButton" parent="ModesRow" unique_id=1881011233]
 layout_mode = 2
-texture_normal = ExtResource("1_6it4k")
+texture_normal = ExtResource("3_4af2i")
+texture_pressed = ExtResource("4_30sut")
+texture_hover = ExtResource("5_usuim")
 
-[node name="ButtonEndlessMode" type="TextureButton" parent="VBoxContainer/RowMargin/ModesRow" unique_id=1830753920]
-modulate = Color(0.12941177, 1, 1, 1)
+[node name="Label" type="Label" parent="ModesRow/ButtonNormalMode" unique_id=1345704330]
+material = ExtResource("6_sdjyn")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -209.5
+offset_top = 59.0
+offset_right = 209.5
+offset_bottom = 211.0
+grow_horizontal = 2
+text = "ОБЫЧНЫЙ
+РЕЖИМ"
+label_settings = ExtResource("7_rnpw5")
+horizontal_alignment = 1
+
+[node name="ButtonEndlessMode" type="TextureButton" parent="ModesRow" unique_id=1830753920]
 layout_mode = 2
-texture_normal = ExtResource("1_6it4k")
+texture_normal = ExtResource("3_4af2i")
+texture_pressed = ExtResource("4_30sut")
+texture_hover = ExtResource("5_usuim")
 
-[connection signal="pressed" from="VBoxContainer/ButtonBack" to="." method="_on_button_back_pressed"]
-[connection signal="pressed" from="VBoxContainer/RowMargin/ModesRow/ButtonNormalMode" to="." method="_on_button_normal_mode_pressed"]
-[connection signal="pressed" from="VBoxContainer/RowMargin/ModesRow/ButtonEndlessMode" to="." method="_on_button_endless_mode_pressed"]
+[node name="Label" type="Label" parent="ModesRow/ButtonEndlessMode" unique_id=920253663]
+material = ExtResource("6_sdjyn")
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -209.5
+offset_top = 59.0
+offset_right = 209.5
+offset_bottom = 211.0
+grow_horizontal = 2
+text = "БЕСКОНЕЧНЫЙ
+РЕЖИМ"
+label_settings = ExtResource("7_rnpw5")
+horizontal_alignment = 1
+
+[node name="ButtonBack" type="TextureButton" parent="." unique_id=118727607]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_bottom = -185.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("4_rds0l")
+texture_pressed = ExtResource("5_xuv5r")
+texture_hover = ExtResource("6_5iavf")
+
+[connection signal="pressed" from="ModesRow/ButtonNormalMode" to="." method="_on_button_normal_mode_pressed"]
+[connection signal="pressed" from="ModesRow/ButtonEndlessMode" to="." method="_on_button_endless_mode_pressed"]
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]

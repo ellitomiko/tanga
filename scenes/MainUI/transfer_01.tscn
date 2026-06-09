@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://ba424tkex5v8e"]
 
 [ext_resource type="Script" uid="uid://me7uhi2a53k7" path="res://scenes/MainUI/transfer_01.gd" id="1_nrsh3"]
-[ext_resource type="Texture2D" uid="uid://c5ib5kdo20i0b" path="res://textures/main/кадр 1.png" id="2_kgrpo"]
-[ext_resource type="Texture2D" uid="uid://okowsh5qpf04" path="res://textures/main/кадр 2.png" id="3_ks2lh"]
-[ext_resource type="Texture2D" uid="uid://by6mvrc4nli6o" path="res://textures/main/кадр 3.png" id="4_k8rtq"]
+[ext_resource type="Texture2D" uid="uid://ir2d7r4xsfb7" path="res://textures/main/transfers/frame1_1.png" id="2_kgrpo"]
+[ext_resource type="Texture2D" uid="uid://lw11unp7a0o5" path="res://textures/main/transfers/frame1_2.png" id="3_ks2lh"]
+[ext_resource type="Texture2D" uid="uid://chmsifje1rbv2" path="res://textures/main/transfers/frame1_3.png" id="4_k8rtq"]
 [ext_resource type="Theme" uid="uid://br1sogjcgmnt3" path="res://mainfont.tres" id="6_0r1xf"]
 
 [node name="Transfer01" type="Control" unique_id=882375215]

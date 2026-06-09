@@ -1,73 +1,69 @@
 [gd_scene format=3 uid="uid://db17yrwpekw5g"]
 
-[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_5hgqv"]
 [ext_resource type="Script" uid="uid://cjy3a4jlba1gs" path="res://scenes/SecondMode/second_mode.gd" id="1_jopi1"]
-[ext_resource type="Texture2D" uid="uid://p7gnm1t2s4l2" path="res://test_textures/mode2/Frame 123.png" id="2_juuw0"]
-[ext_resource type="Texture2D" uid="uid://btb70qep6dlol" path="res://test_textures/mode2/link1.png" id="3_38o57"]
-[ext_resource type="Texture2D" uid="uid://relyvwuuc3bx" path="res://test_textures/mode1/Group 878.png" id="3_juuw0"]
-[ext_resource type="Texture2D" uid="uid://buesg5yygwlfu" path="res://test_textures/mode2/ButtonCircleCCW.png" id="3_ujg3q"]
-[ext_resource type="Texture2D" uid="uid://gpaqna4jhmyn" path="res://test_textures/mode2/ButtonCircleCW.png" id="4_53ctk"]
-[ext_resource type="Texture2D" uid="uid://cry7i5e51agf5" path="res://test_textures/mode2/link2.png" id="4_i3k4g"]
-[ext_resource type="Texture2D" uid="uid://mmfgli8s68ig" path="res://test_textures/mode2/ButtonNoAnswer.png" id="5_2byp0"]
-[ext_resource type="Texture2D" uid="uid://r13m7610wnbh" path="res://test_textures/mode2/link3.png" id="5_ujg3q"]
-[ext_resource type="Texture2D" uid="uid://cqurm7q3cpmy4" path="res://test_textures/mode2/tgctg_axis.png" id="6_53ctk"]
-[ext_resource type="Texture2D" uid="uid://c1fpt5rlpgnug" path="res://test_textures/mode2/circle.png" id="7_dnmx4"]
-[ext_resource type="Texture2D" uid="uid://bp8q7s8grukme" path="res://test_textures/mode2/quater_lines.png" id="8_2byp0"]
-[ext_resource type="Texture2D" uid="uid://w8vahjrspdq8" path="res://test_textures/mode2/tg_connector_1.png" id="9_uml81"]
-[ext_resource type="Texture2D" uid="uid://bwbew868m6y36" path="res://test_textures/mode2/ctg_tg_connector_2.png" id="10_2pjt2"]
-[ext_resource type="Texture2D" uid="uid://cqsoxif3philw" path="res://test_textures/mode2/tg_connector_3.png" id="11_7t2b2"]
-[ext_resource type="Texture2D" uid="uid://b3qnchrrhkvg7" path="res://test_textures/mode2/ctg_connector_1.png" id="12_juuw0"]
-[ext_resource type="Texture2D" uid="uid://dvvllgspkggsw" path="res://test_textures/mode2/ctg_connector_3.png" id="13_ersj0"]
-[ext_resource type="Texture2D" uid="uid://75gvsgi41h6d" path="res://test_textures/mode2/answer_0.png" id="14_ee6yn"]
-[ext_resource type="Texture2D" uid="uid://fh4jhqj54ahh" path="res://test_textures/mode2/answer_1.png" id="15_cobwy"]
-[ext_resource type="Texture2D" uid="uid://cycqaf2u5jce5" path="res://test_textures/mode2/answer_1_2.png" id="16_0om8d"]
-[ext_resource type="Texture2D" uid="uid://78gj6fg3vu5" path="res://test_textures/mode2/answer_sqr2_2.png" id="17_3bcne"]
-[ext_resource type="Texture2D" uid="uid://bqmo6fc6686ry" path="res://test_textures/mode2/answer_sqr3_2.png" id="18_fdj2n"]
-[ext_resource type="Texture2D" uid="uid://b7codpvdpw1w5" path="res://test_textures/mode2/answer_1_sqr3.png" id="19_r3135"]
-[ext_resource type="Texture2D" uid="uid://bpadf87fobu1u" path="res://test_textures/mode2/answer_sqr3.png" id="20_jepjo"]
-[ext_resource type="Texture2D" uid="uid://cqvke82tas3th" path="res://test_textures/mode2/mouse2level.png" id="23_53ctk"]
-[ext_resource type="Texture2D" uid="uid://dwbiaa0me6oag" path="res://test_textures/mode2/center_connector.png" id="23_dnmx4"]
-[ext_resource type="Texture2D" uid="uid://b7ggs1kuc3x6d" path="res://test_textures/ButtonSmolRound_Idle.png" id="26_uml81"]
+[ext_resource type="Texture2D" uid="uid://e57oytv34at5" path="res://textures/secondMode/button_CCW_normal.png" id="2_j1dvd"]
+[ext_resource type="Texture2D" uid="uid://blilc72uqco5x" path="res://textures/secondMode/chesse_back.png" id="2_lhmlj"]
+[ext_resource type="Texture2D" uid="uid://be84qedbi1fa3" path="res://textures/secondMode/background.png" id="2_viysw"]
+[ext_resource type="Texture2D" uid="uid://durti1qj4m63i" path="res://textures/secondMode/button_CCW_pressed.png" id="3_pk121"]
+[ext_resource type="Texture2D" uid="uid://gioexjwe82kl" path="res://textures/secondMode/button_CCW_hover.png" id="4_178mn"]
+[ext_resource type="Texture2D" uid="uid://chxsqncqedrec" path="res://textures/secondMode/button_CW_normal.png" id="5_xxwvb"]
+[ext_resource type="Texture2D" uid="uid://bydwnay2ummdo" path="res://textures/main/pause_button_normal.png" id="6_e3e6x"]
+[ext_resource type="Texture2D" uid="uid://cpr4ygqlvb3eb" path="res://textures/secondMode/button_CW_pressed.png" id="6_lhmlj"]
+[ext_resource type="Texture2D" uid="uid://c1kusvnrqji4i" path="res://textures/secondMode/button_CW_hover.png" id="7_ghc18"]
+[ext_resource type="Texture2D" uid="uid://bogu6ifuyb2is" path="res://textures/main/pause_button_pressed.png" id="7_uu6so"]
+[ext_resource type="Texture2D" uid="uid://dwr6sqh88gy6s" path="res://textures/main/pause_button_hover.png" id="8_knvka"]
+[ext_resource type="Texture2D" uid="uid://5jjg51wkfk3i" path="res://textures/secondMode/circle/cricle_axes.png" id="9_38o57"]
+[ext_resource type="Texture2D" uid="uid://cw87qnp3m7gj1" path="res://textures/main/hint_button_normal.png" id="9_j1dvd"]
+[ext_resource type="Texture2D" uid="uid://dk8083sqjsb6o" path="res://textures/secondMode/circle/axes_names.png" id="10_i3k4g"]
+[ext_resource type="Texture2D" uid="uid://dxfd0b880kyri" path="res://textures/main/hint_button_pressed.png" id="10_pk121"]
+[ext_resource type="Texture2D" uid="uid://dvt012voevhj1" path="res://textures/main/hint_button_hover.png" id="11_178mn"]
+[ext_resource type="Texture2D" uid="uid://dqr8obxm13hae" path="res://textures/main/mouse_progressbar.png" id="11_i3k4g"]
+[ext_resource type="Texture2D" uid="uid://dikwtgcvpt1ox" path="res://textures/main/mouse_upview.png" id="11_ujg3q"]
+[ext_resource type="Texture2D" uid="uid://cvcf7ls24b37q" path="res://textures/secondMode/circle/1_horizontal_normal.png" id="12_3vtcn"]
+[ext_resource type="Texture2D" uid="uid://csltaly6g8yw5" path="res://textures/secondMode/circle/dot.png" id="13_2gum8"]
+[ext_resource type="Texture2D" uid="uid://jca6xxb1v642" path="res://textures/secondMode/circle/30_150_210_330.png" id="14_rp5vk"]
+[ext_resource type="Texture2D" uid="uid://g3itk553i8rl" path="res://textures/secondMode/circle/1_2_vertical_normal.png" id="15_6enqt"]
+[ext_resource type="Texture2D" uid="uid://ipd07t2palvc" path="res://textures/secondMode/circle/sqr3_2_horizontal_normal.png" id="16_5i7w0"]
+[ext_resource type="Texture2D" uid="uid://dnx2fqlaa4vkr" path="res://textures/thirdMode/progress_bar_purple_empty.png" id="16_ghc18"]
+[ext_resource type="Texture2D" uid="uid://ulte6wgdjfjl" path="res://textures/thirdMode/progress_bar_purple.png" id="17_38o57"]
+[ext_resource type="Texture2D" uid="uid://dmmbjqb6vodt" path="res://textures/secondMode/circle/45_135_225_315.png" id="17_jy1cs"]
+[ext_resource type="Texture2D" uid="uid://c5fc6bvdh6i44" path="res://textures/secondMode/circle/sqr2_2_vertical_normal.png" id="18_6enqt"]
+[ext_resource type="Texture2D" uid="uid://b6yasexj5nqt6" path="res://textures/secondMode/circle/60_120_240_300.png" id="18_yvtmu"]
+[ext_resource type="Texture2D" uid="uid://uv3atm28fecn" path="res://textures/secondMode/circle/sqr2_2_horizontal_normal.png" id="19_5i7w0"]
+[ext_resource type="Texture2D" uid="uid://tsqmumpa2wkf" path="res://textures/secondMode/circle/1_2_horizontal_normal.png" id="19_wmlv4"]
+[ext_resource type="Texture2D" uid="uid://c3cns5catq6i6" path="res://textures/secondMode/circle/sqr3_2_vertical_normal.png" id="20_aw1q8"]
+[ext_resource type="Texture2D" uid="uid://dc47t24r8mafi" path="res://textures/secondMode/circle/tg_ctg_30_150.png" id="21_5kriy"]
+[ext_resource type="Texture2D" uid="uid://ctn6xyofu84h7" path="res://textures/secondMode/circle/tg_ctg_45_135_315.png" id="22_jbx2c"]
+[ext_resource type="Texture2D" uid="uid://dps1i3kflagmp" path="res://textures/secondMode/circle/tg_ctg_60_300.png" id="23_h6tsj"]
+[ext_resource type="Texture2D" uid="uid://ckgpu1gwctpeh" path="res://textures/secondMode/circle/1_vertical_normal.png" id="23_jy1cs"]
+[ext_resource type="Texture2D" uid="uid://bm30g1liqrujx" path="res://textures/secondMode/circle/tg_120.png" id="24_y0er0"]
+[ext_resource type="Texture2D" uid="uid://cx3pamckpfpi7" path="res://textures/secondMode/circle/tg_ctg_330.png" id="25_rmg8q"]
+[ext_resource type="Texture2D" uid="uid://bny7jr762q8am" path="res://textures/secondMode/circle/sqr3_3_vertical_normal.png" id="25_wmlv4"]
+[ext_resource type="Texture2D" uid="uid://mhjw5c2klyx7" path="res://textures/secondMode/circle/sqr3_horizontal_normal.png" id="26_aw1q8"]
+[ext_resource type="Texture2D" uid="uid://rbguof3goqbb" path="res://textures/secondMode/circle/tg_ctg_210.png" id="26_v7yb1"]
+[ext_resource type="Texture2D" uid="uid://r6fxg7p38mkw" path="res://textures/secondMode/circle/tg_ctg_225.png" id="27_b6gcb"]
+[ext_resource type="Texture2D" uid="uid://cqh20bmce2dkw" path="res://textures/secondMode/circle/tg_ctg_240.png" id="28_a0xpv"]
+[ext_resource type="Texture2D" uid="uid://boq0fld2ydoiv" path="res://textures/secondMode/circle/sqr3_vertical_normal.png" id="29_5kriy"]
 [ext_resource type="Theme" uid="uid://drtxptosfvx06" path="res://scenes/main.tres" id="29_juuw0"]
-[ext_resource type="Texture2D" uid="uid://c76ctilxmtavb" path="res://test_textures/mode2/Прогресс_бар_белый_фиолетовый.png" id="30_ee6yn"]
-[ext_resource type="Texture2D" uid="uid://byvf71gg1twnj" path="res://test_textures/mode2/Прогресс_бар_фиолетовый.png" id="31_cobwy"]
-
-[sub_resource type="Theme" id="Theme_ersj0"]
+[ext_resource type="Texture2D" uid="uid://cg0dw2jwtte4b" path="res://textures/secondMode/circle/sqr3_3_horizontal_normal.png" id="30_jbx2c"]
+[ext_resource type="Material" uid="uid://omdkhif4a75m" path="res://gradient_color.tres" id="46_5kriy"]
+[ext_resource type="FontFile" uid="uid://c2eqtksu6j0g1" path="res://fonts/Unbounded-Bold.ttf" id="47_jbx2c"]
+[ext_resource type="Texture2D" uid="uid://vxt34hvk7x78" path="res://textures/secondMode/fill_background.png" id="49_h6tsj"]
+[ext_resource type="Texture2D" uid="uid://bxipw4p2jk534" path="res://textures/secondMode/values/0.png" id="50_y0er0"]
+[ext_resource type="Texture2D" uid="uid://ot2n1y72qgk1" path="res://textures/secondMode/button_2nd_mode_normal.png" id="51_a0xpv"]
+[ext_resource type="Texture2D" uid="uid://bssnxi0o8by2w" path="res://textures/secondMode/button_2nd_mode_pressed.png" id="52_bkpsq"]
+[ext_resource type="Texture2D" uid="uid://dys1kluu8kfk5" path="res://textures/secondMode/button_2nd_mode_hover.png" id="53_wcdxa"]
+[ext_resource type="Theme" uid="uid://br1sogjcgmnt3" path="res://mainfont.tres" id="54_vd0vt"]
 
 [sub_resource type="Theme" id="Theme_ujg3q"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_uml81"]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2pjt2"]
-height = 522.11
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_7t2b2"]
-height = 268.6
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_juuw0"]
-height = 377.96
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ersj0"]
-height = 457.24
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ee6yn"]
-height = 303.4
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cobwy"]
-height = 899.89
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0om8d"]
-texture = ExtResource("30_ee6yn")
-axis_stretch_horizontal = 1
-axis_stretch_vertical = 1
-
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3bcne"]
-texture = ExtResource("31_cobwy")
-axis_stretch_horizontal = 1
-axis_stretch_vertical = 1
+[sub_resource type="LabelSettings" id="LabelSettings_h6tsj"]
+font = ExtResource("47_jbx2c")
+font_size = 51
 
 [node name="SecondMode" type="Node2D" unique_id=1266931056]
 script = ExtResource("1_jopi1")
+metadata/_edit_horizontal_guides_ = [49.0]
 
 [node name="UI" type="Control" parent="." unique_id=1619222131]
 layout_mode = 3
@@ -78,129 +74,23 @@ offset_right = 1920.0
 offset_bottom = 1080.0
 grow_horizontal = 2
 grow_vertical = 2
-metadata/_edit_lock_ = true
 
-[node name="ColorRect" type="ColorRect" parent="UI" unique_id=7533008]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.8666667, 1, 0.57254905, 1)
-metadata/_edit_lock_ = true
-
-[node name="HBoxContainer2" type="HBoxContainer" parent="UI" unique_id=807256249]
+[node name="Background" type="TextureRect" parent="UI" unique_id=2063771460]
 layout_mode = 0
-offset_left = 1346.0
-offset_top = 232.0
-offset_right = 1546.0
-offset_bottom = 285.0
-metadata/_edit_group_ = true
-
-[node name="Function" type="Label" parent="UI/HBoxContainer2" unique_id=1348400829]
-layout_mode = 2
-theme = SubResource("Theme_ersj0")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "sin"
-
-[node name="AngleCover" type="TextureRect" parent="UI/HBoxContainer2" unique_id=103567926]
-layout_mode = 2
-texture = ExtResource("2_juuw0")
-
-[node name="Degree" type="Label" parent="UI/HBoxContainer2" unique_id=853201393]
-layout_mode = 2
-theme = SubResource("Theme_ersj0")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "°"
-
-[node name="Equal" type="Label" parent="UI/HBoxContainer2" unique_id=751217111]
-layout_mode = 2
-theme = SubResource("Theme_ersj0")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "="
-
-[node name="ValueCover" type="TextureRect" parent="UI/HBoxContainer2" unique_id=911193575]
-layout_mode = 2
-texture = ExtResource("2_juuw0")
-
-[node name="HBoxContainer3" type="HBoxContainer" parent="UI" unique_id=22256973]
-layout_mode = 0
-offset_left = 1347.0
-offset_top = 328.0
-offset_right = 1547.0
-offset_bottom = 381.0
-metadata/_edit_group_ = true
-
-[node name="Function" type="Label" parent="UI/HBoxContainer3" unique_id=794151277]
-layout_mode = 2
-theme = SubResource("Theme_ersj0")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "sin"
-
-[node name="Angle" type="Label" parent="UI/HBoxContainer3" unique_id=495504124]
-layout_mode = 2
-theme = SubResource("Theme_ersj0")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "60"
-
-[node name="Degree" type="Label" parent="UI/HBoxContainer3" unique_id=1244431380]
-layout_mode = 2
-theme = SubResource("Theme_ersj0")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "°"
-
-[node name="Equal" type="Label" parent="UI/HBoxContainer3" unique_id=200028671]
-layout_mode = 2
-theme = SubResource("Theme_ersj0")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "="
-
-[node name="ValueCover" type="TextureRect" parent="UI/HBoxContainer3" unique_id=1171071138]
-layout_mode = 2
-texture = ExtResource("2_juuw0")
-
-[node name="HBoxContainer" type="VBoxContainer" parent="UI" unique_id=1406377355]
-layout_mode = 0
-offset_left = 1753.0
-offset_top = 40.0
-offset_right = 1855.0
-offset_bottom = 148.0
-
-[node name="ButtonPause" type="TextureButton" parent="UI/HBoxContainer" unique_id=169980622]
-layout_mode = 2
-texture_normal = ExtResource("3_juuw0")
-
-[node name="NormalModeDone" type="TextureButton" parent="UI/HBoxContainer" unique_id=1300192804]
-visible = false
-modulate = Color(0.12941177, 1, 1, 1)
-layout_mode = 2
-texture_normal = ExtResource("1_5hgqv")
-
-[node name="ButtonCCW" type="TextureButton" parent="UI" unique_id=1582780494]
-layout_mode = 0
-offset_left = 251.0
-offset_top = 801.0
-offset_right = 431.0
-offset_bottom = 988.0
-texture_normal = ExtResource("3_ujg3q")
-
-[node name="ButtonCW" type="TextureButton" parent="UI" unique_id=1201055459]
-layout_mode = 0
-offset_left = 525.0
-offset_top = 800.0
-offset_right = 705.0
-offset_bottom = 987.0
-texture_normal = ExtResource("4_53ctk")
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_viysw")
 
 [node name="Control" type="VBoxContainer" parent="UI" unique_id=81322296]
+z_index = 10
 layout_mode = 0
-offset_left = 25.0
-offset_top = 152.0
-offset_right = 93.0
-offset_bottom = 282.0
+offset_left = 98.0
+offset_top = 89.0
+offset_right = 205.0
+offset_bottom = 220.0
+metadata/_edit_group_ = true
 
-[node name="Type" type="Label" parent="UI/Control" unique_id=724064560]
+[node name="ID" type="Label" parent="UI/Control" unique_id=724064560]
 layout_mode = 2
 theme = SubResource("Theme_ujg3q")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -230,840 +120,1880 @@ theme = SubResource("Theme_ujg3q")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = "current_angle"
 
-[node name="ButtonNoAnswer" type="TextureButton" parent="UI" unique_id=256603793]
-layout_mode = 0
-offset_left = 1235.0
-offset_top = 844.0
-offset_right = 1362.0
-offset_bottom = 979.0
-texture_normal = ExtResource("5_2byp0")
-
-[node name="ObjectsCircle" type="Node2D" parent="." unique_id=2042816511]
-position = Vector2(313, 175)
-scale = Vector2(0.5, 0.5)
-metadata/_edit_group_ = true
-
-[node name="Outline" type="Node2D" parent="ObjectsCircle" unique_id=1426074019]
-position = Vector2(801, 658)
-
-[node name="Links" type="Node2D" parent="ObjectsCircle/Outline" unique_id=1626890630]
-
-[node name="Link30" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=1340056831]
-position = Vector2(220, -126)
-texture = ExtResource("3_38o57")
-
-[node name="Link45" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=1245269930]
-position = Vector2(176, -180)
-texture = ExtResource("4_i3k4g")
-
-[node name="Link60" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=2055606451]
-position = Vector2(122, -222)
-texture = ExtResource("5_ujg3q")
-
-[node name="Link120" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=1365005526]
-position = Vector2(-129, -222)
-texture = ExtResource("5_ujg3q")
-flip_h = true
-
-[node name="Link135" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=1528014319]
-position = Vector2(-182, -182)
-texture = ExtResource("4_i3k4g")
-flip_h = true
-
-[node name="Link150" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=2043903988]
-position = Vector2(-224, -126)
-texture = ExtResource("3_38o57")
-flip_h = true
-
-[node name="Link210" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=99087385]
-position = Vector2(-226.5, 128)
-texture = ExtResource("3_38o57")
-flip_h = true
-flip_v = true
-
-[node name="Link225" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=2137000065]
-position = Vector2(-184.5, 181)
-texture = ExtResource("4_i3k4g")
-flip_h = true
-flip_v = true
-
-[node name="Link240" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=1415658142]
-position = Vector2(-131.5, 222)
-texture = ExtResource("5_ujg3q")
-flip_h = true
-flip_v = true
-
-[node name="Link300" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=620244957]
-position = Vector2(123, 222)
-texture = ExtResource("5_ujg3q")
-flip_v = true
-
-[node name="Link315" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=474325238]
-position = Vector2(179, 181)
-texture = ExtResource("4_i3k4g")
-flip_v = true
-
-[node name="Link330" type="Sprite2D" parent="ObjectsCircle/Outline/Links" unique_id=1043544136]
-position = Vector2(216, 128)
-texture = ExtResource("3_38o57")
-flip_v = true
-
-[node name="TgctgAxis" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1906414626]
-position = Vector2(0, -4)
-texture = ExtResource("6_53ctk")
-
-[node name="Circle" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1121911207]
-texture = ExtResource("7_dnmx4")
-
-[node name="Quater1Lines" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1669811109]
-position = Vector2(214, -219)
-texture = ExtResource("8_2byp0")
-
-[node name="Quater2Lines" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1690069079]
-position = Vector2(-222, -219)
-texture = ExtResource("8_2byp0")
-flip_h = true
-
-[node name="Quater3Lines" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1799942445]
-position = Vector2(-222, 220)
-texture = ExtResource("8_2byp0")
-flip_h = true
-flip_v = true
-
-[node name="Quater4Lines" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1343024026]
-position = Vector2(214, 217)
-texture = ExtResource("8_2byp0")
-flip_v = true
-
-[node name="TgConnector1" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=786491310]
-position = Vector2(660, -377)
-texture = ExtResource("9_uml81")
-
-[node name="TgConnector-1" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=298217855]
-position = Vector2(-668, -377)
-texture = ExtResource("9_uml81")
-flip_h = true
-
-[node name="TgConnector-2" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1444965811]
-position = Vector2(-434, -432)
-texture = ExtResource("10_2pjt2")
-flip_h = true
-
-[node name="TgConnector3" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=392498367]
-position = Vector2(262, -471)
-texture = ExtResource("11_7t2b2")
-
-[node name="TgConnector-3" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=622321589]
-position = Vector2(-269, -471)
-texture = ExtResource("11_7t2b2")
-flip_h = true
-
-[node name="CtgConnector1" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1168544260]
-position = Vector2(373, -665)
-texture = ExtResource("12_juuw0")
-
-[node name="CtgConnector-1" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=909819640]
-position = Vector2(373, 663)
-texture = ExtResource("12_juuw0")
-flip_v = true
-
-[node name="CtgConnector3" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=520865403]
-position = Vector2(471, -270)
-texture = ExtResource("13_ersj0")
-
-[node name="CtgConnector-2" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=423225412]
-position = Vector2(428, 432)
-texture = ExtResource("10_2pjt2")
-flip_v = true
-
-[node name="CtgConnector-3" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=1489259115]
-position = Vector2(471, 269)
-texture = ExtResource("13_ersj0")
-flip_v = true
-
-[node name="CtgTgConnector2" type="Sprite2D" parent="ObjectsCircle/Outline" unique_id=20458850]
-position = Vector2(428, -433)
-texture = ExtResource("10_2pjt2")
-
-[node name="Value" type="Node2D" parent="ObjectsCircle" unique_id=45698603]
-z_index = 2
-
-[node name="0" type="Node2D" parent="ObjectsCircle/Value" unique_id=1363186230]
-
-[node name="0_sin_0" type="Area2D" parent="ObjectsCircle/Value/0" unique_id=1407337317]
-position = Vector2(798, 655)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/0/0_sin_0" unique_id=968087545]
-texture = ExtResource("14_ee6yn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/0/0_sin_0" unique_id=1959895534]
-scale = Vector2(2.8236532, 2.8236532)
-shape = SubResource("CircleShape2D_uml81")
-
-[node name="0_sin_180" type="Area2D" parent="ObjectsCircle/Value/0" unique_id=526739754]
-position = Vector2(798, 655)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/0/0_sin_180" unique_id=1895479403]
-texture = ExtResource("14_ee6yn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/0/0_sin_180" unique_id=1888356907]
-scale = Vector2(2.8236532, 2.8236532)
-shape = SubResource("CircleShape2D_uml81")
-
-[node name="0_sin_360" type="Area2D" parent="ObjectsCircle/Value/0" unique_id=1861885995]
-position = Vector2(798, 655)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/0/0_sin_360" unique_id=1686669776]
-texture = ExtResource("14_ee6yn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/0/0_sin_360" unique_id=620171924]
-scale = Vector2(2.8236532, 2.8236532)
-shape = SubResource("CircleShape2D_uml81")
-
-[node name="0_cos_90" type="Area2D" parent="ObjectsCircle/Value/0" unique_id=570561878]
-position = Vector2(798, 655)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/0/0_cos_90" unique_id=1428609755]
-texture = ExtResource("14_ee6yn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/0/0_cos_90" unique_id=942993348]
-scale = Vector2(2.8236532, 2.8236532)
-shape = SubResource("CircleShape2D_uml81")
-
-[node name="0_cos_270" type="Area2D" parent="ObjectsCircle/Value/0" unique_id=1467670487]
-position = Vector2(798, 655)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/0/0_cos_270" unique_id=104120894]
-texture = ExtResource("14_ee6yn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/0/0_cos_270" unique_id=719447131]
-scale = Vector2(2.8236532, 2.8236532)
-shape = SubResource("CircleShape2D_uml81")
-
-[node name="0_tg_0" type="Area2D" parent="ObjectsCircle/Value/0" unique_id=1123026804]
-position = Vector2(798, 158)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/0/0_tg_0" unique_id=278483611]
-texture = ExtResource("14_ee6yn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/0/0_tg_0" unique_id=929576795]
-scale = Vector2(2.8236532, 2.8236532)
-shape = SubResource("CircleShape2D_uml81")
-
-[node name="0_tg_180" type="Area2D" parent="ObjectsCircle/Value/0" unique_id=1896745134]
-position = Vector2(798, 158)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/0/0_tg_180" unique_id=1543840687]
-texture = ExtResource("14_ee6yn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/0/0_tg_180" unique_id=1070060546]
-scale = Vector2(2.8236532, 2.8236532)
-shape = SubResource("CircleShape2D_uml81")
-
-[node name="0_tg_360" type="Area2D" parent="ObjectsCircle/Value/0" unique_id=2080774766]
-position = Vector2(798, 158)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/0/0_tg_360" unique_id=1633416173]
-texture = ExtResource("14_ee6yn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/0/0_tg_360" unique_id=1579328128]
-scale = Vector2(2.8236532, 2.8236532)
-shape = SubResource("CircleShape2D_uml81")
-
-[node name="0_ctg_90" type="Area2D" parent="ObjectsCircle/Value/0" unique_id=676832716]
-position = Vector2(1301, 658)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/0/0_ctg_90" unique_id=764775844]
-texture = ExtResource("14_ee6yn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/0/0_ctg_90" unique_id=784466737]
-scale = Vector2(2.8236532, 2.8236532)
-shape = SubResource("CircleShape2D_uml81")
-
-[node name="0_ctg_270" type="Area2D" parent="ObjectsCircle/Value/0" unique_id=963662091]
-position = Vector2(1301, 658)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/0/0_ctg_270" unique_id=457709403]
-texture = ExtResource("14_ee6yn")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/0/0_ctg_270" unique_id=1584419860]
-scale = Vector2(2.8236532, 2.8236532)
-shape = SubResource("CircleShape2D_uml81")
-
-[node name="1" type="Node2D" parent="ObjectsCircle/Value" unique_id=82028043]
-
-[node name="1_sin_90" type="Area2D" parent="ObjectsCircle/Value/1" unique_id=1865189762]
-position = Vector2(799, 404)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1/1_sin_90" unique_id=1676516469]
-texture = ExtResource("15_cobwy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1/1_sin_90" unique_id=1869789827]
-shape = SubResource("CapsuleShape2D_2pjt2")
-
-[node name="1_cos_0" type="Area2D" parent="ObjectsCircle/Value/1" unique_id=127108206]
-position = Vector2(1051, 657)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1/1_cos_0" unique_id=1152283417]
-texture = ExtResource("15_cobwy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1/1_cos_0" unique_id=985883356]
-shape = SubResource("CapsuleShape2D_2pjt2")
-
-[node name="1_cos_360" type="Area2D" parent="ObjectsCircle/Value/1" unique_id=1775164175]
-position = Vector2(1051, 657)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1/1_cos_360" unique_id=1910283144]
-texture = ExtResource("15_cobwy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1/1_cos_360" unique_id=863042907]
-shape = SubResource("CapsuleShape2D_2pjt2")
-
-[node name="1_tg_45" type="Area2D" parent="ObjectsCircle/Value/1" unique_id=2093399983]
-position = Vector2(1303, 404)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1/1_tg_45" unique_id=146641126]
-texture = ExtResource("15_cobwy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1/1_tg_45" unique_id=434900525]
-shape = SubResource("CapsuleShape2D_2pjt2")
-
-[node name="1_tg_225" type="Area2D" parent="ObjectsCircle/Value/1" unique_id=1825856593]
-position = Vector2(1303, 404)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1/1_tg_225" unique_id=1988534602]
-texture = ExtResource("15_cobwy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1/1_tg_225" unique_id=299671119]
-shape = SubResource("CapsuleShape2D_2pjt2")
-
-[node name="1_ctg_45" type="Area2D" parent="ObjectsCircle/Value/1" unique_id=122805687]
-position = Vector2(1051, 151)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1/1_ctg_45" unique_id=1552288337]
-texture = ExtResource("15_cobwy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1/1_ctg_45" unique_id=710702849]
-shape = SubResource("CapsuleShape2D_2pjt2")
-
-[node name="1_ctg_225" type="Area2D" parent="ObjectsCircle/Value/1" unique_id=515354236]
-position = Vector2(1051, 151)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1/1_ctg_225" unique_id=1512463815]
-texture = ExtResource("15_cobwy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1/1_ctg_225" unique_id=1040448897]
-shape = SubResource("CapsuleShape2D_2pjt2")
-
-[node name="-1_sin_270" type="Area2D" parent="ObjectsCircle/Value/1" unique_id=894793069]
-position = Vector2(799, 912)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1/-1_sin_270" unique_id=1987487966]
-texture = ExtResource("15_cobwy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1/-1_sin_270" unique_id=1659290703]
-shape = SubResource("CapsuleShape2D_2pjt2")
-
-[node name="-1_cos_180" type="Area2D" parent="ObjectsCircle/Value/1" unique_id=2144086921]
-position = Vector2(546, 657)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1/-1_cos_180" unique_id=1592614308]
-texture = ExtResource("15_cobwy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1/-1_cos_180" unique_id=1767014514]
-shape = SubResource("CapsuleShape2D_2pjt2")
-
-[node name="-1_tg_135" type="Area2D" parent="ObjectsCircle/Value/1" unique_id=2122079911]
-position = Vector2(1303, 909)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1/-1_tg_135" unique_id=1204366740]
-texture = ExtResource("15_cobwy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1/-1_tg_135" unique_id=148456608]
-shape = SubResource("CapsuleShape2D_2pjt2")
-
-[node name="-1_tg_315" type="Area2D" parent="ObjectsCircle/Value/1" unique_id=1140713875]
-position = Vector2(1303, 909)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1/-1_tg_315" unique_id=591482328]
-texture = ExtResource("15_cobwy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1/-1_tg_315" unique_id=2094034604]
-shape = SubResource("CapsuleShape2D_2pjt2")
-
-[node name="-1_ctg_135" type="Area2D" parent="ObjectsCircle/Value/1" unique_id=641386496]
-position = Vector2(544, 151)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1/-1_ctg_135" unique_id=108497288]
-texture = ExtResource("15_cobwy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1/-1_ctg_135" unique_id=571387153]
-shape = SubResource("CapsuleShape2D_2pjt2")
-
-[node name="-1_ctg_315" type="Area2D" parent="ObjectsCircle/Value/1" unique_id=394876193]
-position = Vector2(544, 151)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1/-1_ctg_315" unique_id=2045691911]
-texture = ExtResource("15_cobwy")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1/-1_ctg_315" unique_id=2034426547]
-shape = SubResource("CapsuleShape2D_2pjt2")
-
-[node name="1_2" type="Node2D" parent="ObjectsCircle/Value" unique_id=2042152814]
-
-[node name="1_2_sin_30" type="Area2D" parent="ObjectsCircle/Value/1_2" unique_id=863988360]
-position = Vector2(1237, 533)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_2/1_2_sin_30" unique_id=875986318]
-texture = ExtResource("16_0om8d")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_2/1_2_sin_30" unique_id=376284839]
-shape = SubResource("CapsuleShape2D_7t2b2")
-
-[node name="1_2_sin_150" type="Area2D" parent="ObjectsCircle/Value/1_2" unique_id=378793517]
-position = Vector2(357, 533)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_2/1_2_sin_150" unique_id=284395788]
-texture = ExtResource("16_0om8d")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_2/1_2_sin_150" unique_id=1885661367]
-shape = SubResource("CapsuleShape2D_7t2b2")
-
-[node name="-1_2_sin_210" type="Area2D" parent="ObjectsCircle/Value/1_2" unique_id=1463831136]
-position = Vector2(357, 780)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_2/-1_2_sin_210" unique_id=591571595]
-texture = ExtResource("16_0om8d")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_2/-1_2_sin_210" unique_id=1323439542]
-shape = SubResource("CapsuleShape2D_7t2b2")
-
-[node name="-1_2_sin_330" type="Area2D" parent="ObjectsCircle/Value/1_2" unique_id=536990816]
-position = Vector2(1237, 780)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_2/-1_2_sin_330" unique_id=1923021192]
-texture = ExtResource("16_0om8d")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_2/-1_2_sin_330" unique_id=1049828065]
-shape = SubResource("CapsuleShape2D_7t2b2")
-
-[node name="1_2_cos_60" type="Area2D" parent="ObjectsCircle/Value/1_2" unique_id=375275457]
-position = Vector2(923, 217)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_2/1_2_cos_60" unique_id=655128856]
-texture = ExtResource("16_0om8d")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_2/1_2_cos_60" unique_id=1020354397]
-shape = SubResource("CapsuleShape2D_7t2b2")
-
-[node name="-1_2_cos_120" type="Area2D" parent="ObjectsCircle/Value/1_2" unique_id=2003478011]
-position = Vector2(671, 217)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_2/-1_2_cos_120" unique_id=2130469752]
-texture = ExtResource("16_0om8d")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_2/-1_2_cos_120" unique_id=1502233661]
-shape = SubResource("CapsuleShape2D_7t2b2")
-
-[node name="-1_2_cos_240" type="Area2D" parent="ObjectsCircle/Value/1_2" unique_id=528813389]
-position = Vector2(671, 1095)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_2/-1_2_cos_240" unique_id=2045890562]
-texture = ExtResource("16_0om8d")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_2/-1_2_cos_240" unique_id=1605275298]
-shape = SubResource("CapsuleShape2D_7t2b2")
-
-[node name="1_2_cos_300" type="Area2D" parent="ObjectsCircle/Value/1_2" unique_id=1126779899]
-position = Vector2(923, 1095)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_2/1_2_cos_300" unique_id=576768663]
-texture = ExtResource("16_0om8d")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_2/1_2_cos_300" unique_id=825334865]
-shape = SubResource("CapsuleShape2D_7t2b2")
-
-[node name="sqr2_2" type="Node2D" parent="ObjectsCircle/Value" unique_id=260351111]
-
-[node name="sqr2_2_sin_45" type="Area2D" parent="ObjectsCircle/Value/sqr2_2" unique_id=71247021]
-position = Vector2(1158, 477)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr2_2/sqr2_2_sin_45" unique_id=1088371509]
-texture = ExtResource("17_3bcne")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr2_2/sqr2_2_sin_45" unique_id=2130931835]
-shape = SubResource("CapsuleShape2D_juuw0")
-
-[node name="sqr2_2_sin_135" type="Area2D" parent="ObjectsCircle/Value/sqr2_2" unique_id=879251019]
-position = Vector2(440, 477)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr2_2/sqr2_2_sin_135" unique_id=244693040]
-texture = ExtResource("17_3bcne")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr2_2/sqr2_2_sin_135" unique_id=1152323914]
-shape = SubResource("CapsuleShape2D_juuw0")
-
-[node name="-sqr2_2_sin_225" type="Area2D" parent="ObjectsCircle/Value/sqr2_2" unique_id=856174928]
-position = Vector2(440, 835)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr2_2/-sqr2_2_sin_225" unique_id=246254616]
-texture = ExtResource("17_3bcne")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr2_2/-sqr2_2_sin_225" unique_id=956436333]
-shape = SubResource("CapsuleShape2D_juuw0")
-
-[node name="-sqr2_2_sin_315" type="Area2D" parent="ObjectsCircle/Value/sqr2_2" unique_id=393028499]
-position = Vector2(1158, 835)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr2_2/-sqr2_2_sin_315" unique_id=1316606847]
-texture = ExtResource("17_3bcne")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr2_2/-sqr2_2_sin_315" unique_id=753344561]
-shape = SubResource("CapsuleShape2D_juuw0")
-
-[node name="sqr2_2_cos_45" type="Area2D" parent="ObjectsCircle/Value/sqr2_2" unique_id=1301493956]
-position = Vector2(978, 296)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr2_2/sqr2_2_cos_45" unique_id=1914815943]
-texture = ExtResource("17_3bcne")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr2_2/sqr2_2_cos_45" unique_id=1536145752]
-shape = SubResource("CapsuleShape2D_juuw0")
-
-[node name="-sqr2_2_cos_135" type="Area2D" parent="ObjectsCircle/Value/sqr2_2" unique_id=1274806524]
-position = Vector2(618, 296)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr2_2/-sqr2_2_cos_135" unique_id=1685184097]
-texture = ExtResource("17_3bcne")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr2_2/-sqr2_2_cos_135" unique_id=2079751966]
-shape = SubResource("CapsuleShape2D_juuw0")
-
-[node name="-sqr2_2_cos_225" type="Area2D" parent="ObjectsCircle/Value/sqr2_2" unique_id=1993039884]
-position = Vector2(618, 1014)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr2_2/-sqr2_2_cos_225" unique_id=1731611249]
-texture = ExtResource("17_3bcne")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr2_2/-sqr2_2_cos_225" unique_id=44938334]
-shape = SubResource("CapsuleShape2D_juuw0")
-
-[node name="sqr2_2_cos_315" type="Area2D" parent="ObjectsCircle/Value/sqr2_2" unique_id=2056567991]
-position = Vector2(977, 1014)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr2_2/sqr2_2_cos_315" unique_id=624959503]
-texture = ExtResource("17_3bcne")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr2_2/sqr2_2_cos_315" unique_id=1698081070]
-shape = SubResource("CapsuleShape2D_juuw0")
-
-[node name="sqr3_2" type="Node2D" parent="ObjectsCircle/Value" unique_id=917559040]
-
-[node name="sqr3_2_sin_60" type="Area2D" parent="ObjectsCircle/Value/sqr3_2" unique_id=945427349]
-position = Vector2(1049, 435)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3_2/sqr3_2_sin_60" unique_id=1795512587]
-texture = ExtResource("18_fdj2n")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3_2/sqr3_2_sin_60" unique_id=1632540638]
-shape = SubResource("CapsuleShape2D_ersj0")
-
-[node name="sqr3_2_sin_120" type="Area2D" parent="ObjectsCircle/Value/sqr3_2" unique_id=1286109618]
-position = Vector2(545, 435)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3_2/sqr3_2_sin_120" unique_id=818694642]
-texture = ExtResource("18_fdj2n")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3_2/sqr3_2_sin_120" unique_id=482760406]
-shape = SubResource("CapsuleShape2D_ersj0")
-
-[node name="-sqr3_2_sin_240" type="Area2D" parent="ObjectsCircle/Value/sqr3_2" unique_id=745059204]
-position = Vector2(545, 876)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3_2/-sqr3_2_sin_240" unique_id=1811116829]
-texture = ExtResource("18_fdj2n")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3_2/-sqr3_2_sin_240" unique_id=1984031120]
-shape = SubResource("CapsuleShape2D_ersj0")
-
-[node name="-sqr3_2_sin_300" type="Area2D" parent="ObjectsCircle/Value/sqr3_2" unique_id=639688469]
-position = Vector2(1049, 876)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3_2/-sqr3_2_sin_300" unique_id=907627939]
-texture = ExtResource("18_fdj2n")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3_2/-sqr3_2_sin_300" unique_id=2057475725]
-shape = SubResource("CapsuleShape2D_ersj0")
-
-[node name="sqr3_2_cos_30" type="Area2D" parent="ObjectsCircle/Value/sqr3_2" unique_id=529032422]
-position = Vector2(1017, 406)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3_2/sqr3_2_cos_30" unique_id=1426079231]
-texture = ExtResource("18_fdj2n")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3_2/sqr3_2_cos_30" unique_id=199017415]
-shape = SubResource("CapsuleShape2D_ersj0")
-
-[node name="sqr3_2_cos_330" type="Area2D" parent="ObjectsCircle/Value/sqr3_2" unique_id=1927835867]
-position = Vector2(1017, 912)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3_2/sqr3_2_cos_330" unique_id=975056153]
-texture = ExtResource("18_fdj2n")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3_2/sqr3_2_cos_330" unique_id=1866841897]
-shape = SubResource("CapsuleShape2D_ersj0")
-
-[node name="-sqr3_2_cos_150" type="Area2D" parent="ObjectsCircle/Value/sqr3_2" unique_id=1822081679]
-position = Vector2(579, 406)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3_2/-sqr3_2_cos_150" unique_id=1484557707]
-texture = ExtResource("18_fdj2n")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3_2/-sqr3_2_cos_150" unique_id=701347181]
-shape = SubResource("CapsuleShape2D_ersj0")
-
-[node name="-sqr3_2_cos_210" type="Area2D" parent="ObjectsCircle/Value/sqr3_2" unique_id=379345492]
-position = Vector2(579, 912)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3_2/-sqr3_2_cos_210" unique_id=1426039487]
-texture = ExtResource("18_fdj2n")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3_2/-sqr3_2_cos_210" unique_id=362792247]
-shape = SubResource("CapsuleShape2D_ersj0")
-
-[node name="1_sqr3" type="Node2D" parent="ObjectsCircle/Value" unique_id=1785820706]
-
-[node name="1_sqr3_tg_30" type="Area2D" parent="ObjectsCircle/Value/1_sqr3" unique_id=1809628917]
-position = Vector2(1305, 510)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_sqr3/1_sqr3_tg_30" unique_id=295958365]
-texture = ExtResource("19_r3135")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_sqr3/1_sqr3_tg_30" unique_id=2103254401]
-shape = SubResource("CapsuleShape2D_ee6yn")
-
-[node name="1_sqr3_tg_210" type="Area2D" parent="ObjectsCircle/Value/1_sqr3" unique_id=1905219835]
-position = Vector2(1305, 510)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_sqr3/1_sqr3_tg_210" unique_id=308962800]
-texture = ExtResource("19_r3135")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_sqr3/1_sqr3_tg_210" unique_id=395253508]
-shape = SubResource("CapsuleShape2D_ee6yn")
-
-[node name="-1_sqr3_tg_150" type="Area2D" parent="ObjectsCircle/Value/1_sqr3" unique_id=1299913838]
-position = Vector2(1305, 802)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_sqr3/-1_sqr3_tg_150" unique_id=227076844]
-texture = ExtResource("19_r3135")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_sqr3/-1_sqr3_tg_150" unique_id=1819023732]
-shape = SubResource("CapsuleShape2D_ee6yn")
-
-[node name="-1_sqr3_tg_330" type="Area2D" parent="ObjectsCircle/Value/1_sqr3" unique_id=1220891552]
-position = Vector2(1305, 802)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_sqr3/-1_sqr3_tg_330" unique_id=1737564946]
-texture = ExtResource("19_r3135")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_sqr3/-1_sqr3_tg_330" unique_id=1173009134]
-shape = SubResource("CapsuleShape2D_ee6yn")
-
-[node name="1_sqr3_ctg_60" type="Area2D" parent="ObjectsCircle/Value/1_sqr3" unique_id=2101488537]
-position = Vector2(939, 153)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_sqr3/1_sqr3_ctg_60" unique_id=2087389769]
-texture = ExtResource("19_r3135")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_sqr3/1_sqr3_ctg_60" unique_id=745313215]
-shape = SubResource("CapsuleShape2D_ee6yn")
-
-[node name="1_sqr3_ctg_240" type="Area2D" parent="ObjectsCircle/Value/1_sqr3" unique_id=1800307390]
-position = Vector2(939, 153)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_sqr3/1_sqr3_ctg_240" unique_id=1600603558]
-texture = ExtResource("19_r3135")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_sqr3/1_sqr3_ctg_240" unique_id=1584421479]
-shape = SubResource("CapsuleShape2D_ee6yn")
-
-[node name="-1_sqr3_ctg_120" type="Area2D" parent="ObjectsCircle/Value/1_sqr3" unique_id=812447326]
-position = Vector2(657, 153)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_sqr3/-1_sqr3_ctg_120" unique_id=712280629]
-texture = ExtResource("19_r3135")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_sqr3/-1_sqr3_ctg_120" unique_id=356674559]
-shape = SubResource("CapsuleShape2D_ee6yn")
-
-[node name="-1_sqr3_ctg_300" type="Area2D" parent="ObjectsCircle/Value/1_sqr3" unique_id=822783797]
-position = Vector2(657, 153)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/1_sqr3/-1_sqr3_ctg_300" unique_id=71989236]
-texture = ExtResource("19_r3135")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/1_sqr3/-1_sqr3_ctg_300" unique_id=25706743]
-shape = SubResource("CapsuleShape2D_ee6yn")
-
-[node name="sqr3" type="Node2D" parent="ObjectsCircle/Value" unique_id=1733142947]
-
-[node name="sqr3_tg_60" type="Area2D" parent="ObjectsCircle/Value/sqr3" unique_id=1927644168]
-position = Vector2(1302, 213)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3/sqr3_tg_60" unique_id=521447434]
-texture = ExtResource("20_jepjo")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3/sqr3_tg_60" unique_id=1727412088]
-shape = SubResource("CapsuleShape2D_cobwy")
-
-[node name="sqr3_tg_240" type="Area2D" parent="ObjectsCircle/Value/sqr3" unique_id=129774003]
-position = Vector2(1302, 213)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3/sqr3_tg_240" unique_id=647032721]
-texture = ExtResource("20_jepjo")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3/sqr3_tg_240" unique_id=1319767786]
-shape = SubResource("CapsuleShape2D_cobwy")
-
-[node name="-sqr3_tg_120" type="Area2D" parent="ObjectsCircle/Value/sqr3" unique_id=1204348471]
-position = Vector2(1302, 1100)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3/-sqr3_tg_120" unique_id=1850544132]
-texture = ExtResource("20_jepjo")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3/-sqr3_tg_120" unique_id=251993132]
-shape = SubResource("CapsuleShape2D_cobwy")
-
-[node name="-sqr3_tg_300" type="Area2D" parent="ObjectsCircle/Value/sqr3" unique_id=599430634]
-position = Vector2(1302, 1100)
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3/-sqr3_tg_300" unique_id=492311141]
-texture = ExtResource("20_jepjo")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3/-sqr3_tg_300" unique_id=348199223]
-shape = SubResource("CapsuleShape2D_cobwy")
-
-[node name="sqr3_ctg_30" type="Area2D" parent="ObjectsCircle/Value/sqr3" unique_id=1334056933]
-position = Vector2(1241, 152)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3/sqr3_ctg_30" unique_id=990291469]
-texture = ExtResource("20_jepjo")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3/sqr3_ctg_30" unique_id=1796331655]
-shape = SubResource("CapsuleShape2D_cobwy")
-
-[node name="sqr3_ctg_210" type="Area2D" parent="ObjectsCircle/Value/sqr3" unique_id=457015835]
-position = Vector2(1241, 152)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3/sqr3_ctg_210" unique_id=2127444839]
-texture = ExtResource("20_jepjo")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3/sqr3_ctg_210" unique_id=364995016]
-shape = SubResource("CapsuleShape2D_cobwy")
-
-[node name="-sqr3_ctg_150" type="Area2D" parent="ObjectsCircle/Value/sqr3" unique_id=1575146351]
-position = Vector2(354, 152)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3/-sqr3_ctg_150" unique_id=301927190]
-texture = ExtResource("20_jepjo")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3/-sqr3_ctg_150" unique_id=1296059885]
-shape = SubResource("CapsuleShape2D_cobwy")
-
-[node name="-sqr3_ctg_330" type="Area2D" parent="ObjectsCircle/Value/sqr3" unique_id=1867408273]
-position = Vector2(354, 152)
-rotation = 1.5707964
-
-[node name="Sprite2D" type="Sprite2D" parent="ObjectsCircle/Value/sqr3/-sqr3_ctg_330" unique_id=686513803]
-texture = ExtResource("20_jepjo")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ObjectsCircle/Value/sqr3/-sqr3_ctg_330" unique_id=505129369]
-shape = SubResource("CapsuleShape2D_cobwy")
-
-[node name="Mouse" type="Node2D" parent="." unique_id=1942172095]
-position = Vector2(712, 504)
-scale = Vector2(0.5, 0.5)
-
-[node name="CenterConnector" type="Sprite2D" parent="Mouse" unique_id=749505180]
+[node name="CheeseBlock" type="TextureRect" parent="UI" unique_id=553090017]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 70.0
+offset_top = 50.0
+offset_right = 962.0
+offset_bottom = 798.0
+texture = ExtResource("2_lhmlj")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="UI/CheeseBlock" unique_id=1958716258]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -235.0
+offset_top = -110.0
+offset_right = 235.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 25
+alignment = 1
+
+[node name="ButtonCCW" type="TextureButton" parent="UI/CheeseBlock/HBoxContainer" unique_id=1582780494]
+layout_mode = 2
+texture_normal = ExtResource("2_j1dvd")
+texture_pressed = ExtResource("3_pk121")
+texture_hover = ExtResource("4_178mn")
+
+[node name="ButtonCW" type="TextureButton" parent="UI/CheeseBlock/HBoxContainer" unique_id=1201055459]
+layout_mode = 2
+texture_normal = ExtResource("5_xxwvb")
+texture_pressed = ExtResource("6_lhmlj")
+texture_hover = ExtResource("7_ghc18")
+
+[node name="Circle" type="TextureRect" parent="UI/CheeseBlock" unique_id=1354685375]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -311.5
+offset_top = 28.0
+offset_right = 311.5
+offset_bottom = 621.0
+grow_horizontal = 2
+texture = ExtResource("9_38o57")
+metadata/_edit_lock_ = true
+
+[node name="Axes" type="TextureRect" parent="UI/CheeseBlock/Circle" unique_id=17711517]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -388.0
+offset_bottom = 385.0
+grow_horizontal = 0
+texture = ExtResource("10_i3k4g")
+metadata/_edit_lock_ = true
+
+[node name="Mouse" type="TextureRect" parent="UI/CheeseBlock/Circle" unique_id=1598315888]
+z_index = 5
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.483
+anchor_top = 0.518
+anchor_right = 0.483
+anchor_bottom = 0.518
+offset_left = 125.591
+offset_top = -30.678009
+offset_right = 185.591
+offset_bottom = 49.32199
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(-126, 31)
+texture = ExtResource("11_ujg3q")
+stretch_mode = 2
+
+[node name="Angles_sin_cos" type="Control" parent="UI/CheeseBlock/Circle" unique_id=349880631]
+visible = false
+layout_mode = 1
+anchor_left = 0.48200002
+anchor_top = 0.51900005
+anchor_right = 0.48200002
+anchor_bottom = 0.51900005
+offset_left = -155.78601
+offset_top = -156.29904
+offset_right = 156.21399
+offset_bottom = 155.70096
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(156, 156)
+metadata/_edit_lock_ = true
+
+[node name="0" type="Control" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=966069352]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="cos_1" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/0" unique_id=1250498718]
 z_index = 1
-position = Vector2(-0.6134033, 0)
-rotation = 1.5707964
-texture = ExtResource("23_dnmx4")
-offset = Vector2(-0.08947754, -254.1134)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -5.0
+offset_right = 156.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_3vtcn")
+stretch_mode = 2
 
-[node name="Tanga2" type="Sprite2D" parent="Mouse" unique_id=1688527020]
-z_index = 3
-scale = Vector2(2, 2)
-texture = ExtResource("23_53ctk")
-offset = Vector2(253, 1)
+[node name="sin_0" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/0" unique_id=1796640993]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
 
-[node name="ButtonSmolRoundIdle" type="TextureButton" parent="." unique_id=273884688]
-offset_left = 1747.0
-offset_top = 889.0
-offset_right = 1870.0
-offset_bottom = 1029.0
-texture_normal = ExtResource("26_uml81")
+[node name="30" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=1257047431]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -82.0
+offset_right = 138.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(6, 82)
+texture = ExtResource("14_rp5vk")
 
-[node name="Node2D" type="Node2D" parent="." unique_id=80687874]
-position = Vector2(1286, 539)
-scale = Vector2(1.2602766, 1.3816996)
+[node name="sin_1_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/30" unique_id=1789245644]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 63.0
+offset_top = -39.5
+offset_right = 75.0
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_6enqt")
+stretch_mode = 2
 
-[node name="ButtonHoveredTextBegin" type="Sprite2D" parent="." unique_id=469478059]
-modulate = Color(1, 1, 0.6627451, 1)
-position = Vector2(1469, 657)
-scale = Vector2(7.740742, 3.9629629)
-texture = ExtResource("2_juuw0")
-metadata/_edit_group_ = true
+[node name="cos_sqr3_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/30" unique_id=550884446]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -67.5
+offset_top = -43.5
+offset_right = 71.0
+offset_bottom = -33.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("16_5i7w0")
+stretch_mode = 2
 
-[node name="Equal" type="Label" parent="ButtonHoveredTextBegin" unique_id=702687773]
-offset_left = -21.703333
-offset_top = -10.345796
-offset_right = 23.296667
-offset_bottom = 13.654204
+[node name="45" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=2095497843]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -5.0
+offset_top = -113.0
+offset_right = 114.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("17_jy1cs")
+
+[node name="sin_sqr2_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/45" unique_id=1163767576]
+z_index = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -9.0
+offset_top = -56.0
+offset_right = 3.0
+offset_bottom = 54.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("18_6enqt")
+stretch_mode = 2
+
+[node name="cos_sqr2_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/45" unique_id=1591775144]
+z_index = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -56.0
+offset_right = 57.5
+offset_bottom = 10.0
+grow_horizontal = 2
+texture = ExtResource("19_5i7w0")
+stretch_mode = 2
+
+[node name="60" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=2069098969]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -138.0
+offset_right = 83.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18_yvtmu")
+
+[node name="cos_1_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/60" unique_id=89306630]
+z_index = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -40.5
+offset_right = 39.5
+offset_bottom = 10.0
+grow_horizontal = 2
+texture = ExtResource("19_wmlv4")
+stretch_mode = 2
+
+[node name="sin_sqr3_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/60" unique_id=1433597693]
+z_index = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -69.5
+offset_right = 2.0
+offset_bottom = 65.5
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("20_aw1q8")
+stretch_mode = 2
+
+[node name="90" type="Control" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=673707740]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="sin_1" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/90" unique_id=1336670392]
+z_index = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -6.0
+offset_right = 6.0
+offset_bottom = 156.0
+grow_horizontal = 2
+texture = ExtResource("23_jy1cs")
+stretch_mode = 2
+
+[node name="cos_0" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/90" unique_id=815774302]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.0
+offset_top = -10.0
+offset_right = 9.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="120" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=1915683761]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.0
+offset_top = -138.0
+offset_right = 3.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18_yvtmu")
+flip_h = true
+
+[node name="cos_neg_1_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/120" unique_id=996273290]
+z_index = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -38.5
+offset_right = 41.5
+offset_bottom = 10.0
+grow_horizontal = 2
+texture = ExtResource("19_wmlv4")
+stretch_mode = 2
+
+[node name="sin_sqr3_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/120" unique_id=602114073]
+z_index = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -69.5
+offset_right = 12.0
+offset_bottom = 65.5
+grow_vertical = 2
+texture = ExtResource("20_aw1q8")
+stretch_mode = 2
+
+[node name="135" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=1163862261]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -116.0
+offset_top = -113.0
+offset_right = 3.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("17_jy1cs")
+flip_h = true
+
+[node name="sin_sqr2_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/135" unique_id=209653304]
+z_index = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -55.0
+offset_right = 12.0
+offset_bottom = 55.0
+grow_vertical = 2
+texture = ExtResource("18_6enqt")
+stretch_mode = 2
+
+[node name="cos_neg_sqr2_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/135" unique_id=698748065]
+z_index = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -55.0
+offset_right = 58.5
+offset_bottom = 10.0
+grow_horizontal = 2
+texture = ExtResource("19_5i7w0")
+stretch_mode = 2
+
+[node name="150" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=64368880]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = -82.0
+offset_right = 4.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(6, 82)
+texture = ExtResource("14_rp5vk")
+flip_h = true
+
+[node name="sin_1_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/150" unique_id=1307664394]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -71.0
+offset_top = -39.5
+offset_right = -59.0
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_6enqt")
+stretch_mode = 2
+
+[node name="cos_neg_sqr3_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/150" unique_id=656232937]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -68.5
+offset_top = -43.5
+offset_right = 70.0
+offset_bottom = -33.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("16_5i7w0")
+stretch_mode = 2
+
+[node name="180" type="Control" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=1377423860]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="cos_neg_1" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/180" unique_id=743859073]
+z_index = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -1.0
+offset_top = -5.0
+offset_right = 155.0
+offset_bottom = 5.0
+grow_vertical = 2
+texture = ExtResource("12_3vtcn")
+stretch_mode = 2
+
+[node name="sin_0" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/180" unique_id=1965007052]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.0
+offset_top = -10.0
+offset_right = 9.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="210" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=926758104]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -140.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 83.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(6, 82)
+texture = ExtResource("14_rp5vk")
+flip_h = true
+flip_v = true
+
+[node name="sin_neg_1_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/210" unique_id=1066237080]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -71.0
+offset_top = -39.5
+offset_right = -59.0
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_6enqt")
+stretch_mode = 2
+
+[node name="cos_neg_sqr3_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/210" unique_id=2102663373]
+z_index = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -67.25
+offset_top = -11.0
+offset_right = 71.25
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("16_5i7w0")
+stretch_mode = 2
+
+[node name="225" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=379723292]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -115.0
+offset_top = -5.0
+offset_right = 4.0
+offset_bottom = 114.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("17_jy1cs")
+flip_h = true
+flip_v = true
+
+[node name="sin_neg_sqr2_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/225" unique_id=1056671624]
+z_index = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -1.0
+offset_top = -55.0
+offset_right = 11.0
+offset_bottom = 55.0
+grow_vertical = 2
+texture = ExtResource("18_6enqt")
+stretch_mode = 2
+
+[node name="cos_neg_sqr2_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/225" unique_id=1179010446]
+z_index = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -54.75
+offset_top = -9.0
+offset_right = 58.75
+offset_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("19_5i7w0")
+stretch_mode = 2
+
+[node name="240" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=701158822]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.0
+offset_top = -5.0
+offset_right = 3.0
+offset_bottom = 139.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18_yvtmu")
+flip_h = true
+flip_v = true
+
+[node name="cos_neg_1_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/240" unique_id=876374352]
+z_index = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -39.0
+offset_top = -10.0
+offset_right = 41.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("19_wmlv4")
+stretch_mode = 2
+
+[node name="sin_neg_sqr3_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/240" unique_id=2077365348]
+z_index = 1
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -67.5
+offset_right = 12.0
+offset_bottom = 67.5
+grow_vertical = 2
+texture = ExtResource("20_aw1q8")
+stretch_mode = 2
+
+[node name="270" type="Control" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=332924057]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="sin_neg_1" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/270" unique_id=1715988004]
+z_index = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -6.0
+offset_top = -156.0
+offset_right = 6.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("23_jy1cs")
+stretch_mode = 2
+
+[node name="cos_0" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/270" unique_id=193229614]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.0
+offset_top = -10.0
+offset_right = 9.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="300" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=688767669]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -5.0
+offset_right = 81.0
+offset_bottom = 139.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18_yvtmu")
+flip_v = true
+
+[node name="cos_1_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/300" unique_id=48501180]
+z_index = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -39.0
+offset_top = -10.0
+offset_right = 41.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("19_wmlv4")
+stretch_mode = 2
+
+[node name="sin_neg_sqr3_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/300" unique_id=1709379530]
+z_index = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -67.5
+offset_right = 4.0
+offset_bottom = 67.5
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("20_aw1q8")
+stretch_mode = 2
+
+[node name="315" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=61682807]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -4.0
+offset_right = 113.0
+offset_bottom = 115.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("17_jy1cs")
+flip_v = true
+
+[node name="sin_neg_sqr2_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/315" unique_id=1877852224]
+z_index = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -56.0
+offset_right = 4.0
+offset_bottom = 54.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("18_6enqt")
+stretch_mode = 2
+
+[node name="cos_sqr2_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/315" unique_id=1139708107]
+z_index = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -54.75
+offset_top = -10.0
+offset_right = 58.75
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("19_5i7w0")
+stretch_mode = 2
+
+[node name="330" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos" unique_id=1268609347]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -5.0
+offset_right = 138.0
+offset_bottom = 82.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(6, 82)
+texture = ExtResource("14_rp5vk")
+flip_v = true
+
+[node name="sin_neg_1_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/330" unique_id=341816226]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 63.0
+offset_top = -39.5
+offset_right = 75.0
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_6enqt")
+stretch_mode = 2
+
+[node name="cos_sqr3_2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_sin_cos/330" unique_id=1390054781]
+z_index = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -67.25
+offset_top = -10.0
+offset_right = 71.25
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("16_5i7w0")
+stretch_mode = 2
+
+[node name="Angles_tg_ctg" type="Control" parent="UI/CheeseBlock/Circle" unique_id=125710443]
+visible = false
+layout_mode = 1
+anchor_left = 0.48200002
+anchor_top = 0.51900005
+anchor_right = 0.48200002
+anchor_bottom = 0.51900005
+offset_left = -155.78601
+offset_top = -156.29904
+offset_right = 156.21399
+offset_bottom = 155.70096
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(156, 156)
+metadata/_edit_lock_ = true
+
+[node name="0_180" type="Control" parent="UI/CheeseBlock/Circle/Angles_tg_ctg" unique_id=1173079945]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = -20.0
+offset_bottom = 20.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="tg_0" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/0_180" unique_id=1156845277]
+z_index = 1
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -24.0
+offset_top = -28.0
+offset_right = 25.0
+offset_bottom = 23.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+
+[node name="30" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg" unique_id=2121151484]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -7.0
+offset_top = -159.0
+offset_right = 272.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("21_5kriy")
+
+[node name="tg_sqr3_3" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/30" unique_id=128850623]
+z_index = 1
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 17.5
+offset_top = -96.0
+offset_right = 29.5
+offset_bottom = -6.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("25_wmlv4")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/30/tg_sqr3_3" unique_id=630756635]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.0
+offset_top = -55.0
+offset_right = 9.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="ctg_sqr3" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/30" unique_id=1221789024]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -133.5
+offset_top = -2.0
+offset_right = 139.0
+offset_bottom = 8.0
+grow_horizontal = 2
+texture = ExtResource("26_aw1q8")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/30/ctg_sqr3" unique_id=13644033]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -10.0
+offset_right = 5.0
+offset_bottom = 10.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="45" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg" unique_id=617496621]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -158.0
+offset_right = 159.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("22_jbx2c")
+
+[node name="tg_1" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/45" unique_id=568310619]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -9.0
+offset_top = -80.5
+offset_right = 3.0
+offset_bottom = 75.5
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("23_jy1cs")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/45/tg_1" unique_id=1672030126]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -11.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="ctg_1" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/45" unique_id=1834514267]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -77.5
+offset_top = -3.0
+offset_right = 80.5
+offset_bottom = 7.0
+grow_horizontal = 2
+texture = ExtResource("12_3vtcn")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/45/ctg_1" unique_id=905858578]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -10.0
+offset_right = 8.0
+offset_bottom = 10.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="60" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg" unique_id=1863011783]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -271.0
+offset_right = 159.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_h6tsj")
+
+[node name="tg_sqr3" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/60" unique_id=2030329238]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -9.0
+offset_top = -138.5
+offset_right = 3.0
+offset_bottom = 131.5
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("29_5kriy")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/60/tg_sqr3" unique_id=1066459137]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -11.0
+offset_top = -9.0
+offset_right = 10.0
+offset_bottom = 11.0
+grow_horizontal = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="ctg_sqr3_3" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/60" unique_id=195121413]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -77.5
+offset_top = -29.5
+offset_right = 14.5
+offset_bottom = -19.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("30_jbx2c")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/60/ctg_sqr3_3" unique_id=1579133965]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -11.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="90_270" type="Control" parent="UI/CheeseBlock/Circle/Angles_tg_ctg" unique_id=1435718684]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+
+[node name="ctg_0" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/90_270" unique_id=553285715]
+z_index = 1
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -24.5
+offset_top = -25.0
+offset_right = 24.5
+offset_bottom = 26.0
+grow_horizontal = 2
+texture = ExtResource("13_2gum8")
+
+[node name="120_300" type="Control" parent="UI/CheeseBlock/Circle/Angles_tg_ctg" unique_id=743916039]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/120_300" unique_id=449795607]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -95.0
+offset_top = -159.0
+offset_right = 4.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("24_y0er0")
+
+[node name="TextureRect2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/120_300" unique_id=1160217116]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -5.0
+offset_right = 159.0
+offset_bottom = 274.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_h6tsj")
+flip_v = true
+
+[node name="tg_neg_sqr3" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/120_300" unique_id=291714974]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 150.0
+offset_right = 162.0
+offset_bottom = 270.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("29_5kriy")
+stretch_mode = 2
+flip_h = true
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/120_300/tg_neg_sqr3" unique_id=335333476]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -11.0
+offset_top = -12.5
+offset_right = 10.0
+offset_bottom = 8.5
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="ctg_neg_sqr3_3" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/120_300" unique_id=242148946]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -90.0
+offset_top = -161.0
+offset_right = 2.0
+offset_bottom = -151.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("30_jbx2c")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/120_300/ctg_neg_sqr3_3" unique_id=460874803]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -11.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="135_315" type="Control" parent="UI/CheeseBlock/Circle/Angles_tg_ctg" unique_id=1328989505]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/135_315" unique_id=1468143351]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -161.0
+offset_top = -158.0
+offset_right = 4.0
+offset_bottom = 7.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("22_jbx2c")
+flip_h = true
+
+[node name="TextureRect2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/135_315" unique_id=1162475067]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -3.0
+offset_right = 159.0
+offset_bottom = 162.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("22_jbx2c")
+flip_h = true
+
+[node name="tg_neg_1" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/135_315" unique_id=1031065008]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 150.0
+offset_right = 162.0
+offset_bottom = 156.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_jy1cs")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/135_315/tg_neg_1" unique_id=47625979]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -11.0
+offset_top = -11.0
+offset_right = 10.0
+offset_bottom = 9.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="ctg_neg_1" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/135_315" unique_id=1362801801]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -157.0
+offset_top = -161.0
+offset_right = 1.0
+offset_bottom = -151.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_3vtcn")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/135_315/ctg_neg_1" unique_id=1145474767]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -12.5
+offset_top = -10.0
+offset_right = 9.5
+offset_bottom = 10.0
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="150_330" type="Control" parent="UI/CheeseBlock/Circle/Angles_tg_ctg" unique_id=1973251487]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/150_330" unique_id=1163521334]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -273.0
+offset_top = -159.0
+offset_right = 6.0
+offset_bottom = 6.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("21_5kriy")
+flip_h = true
+
+[node name="TextureRect2" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/150_330" unique_id=2039108415]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -6.0
+offset_top = -4.0
+offset_right = 159.0
+offset_bottom = 95.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("25_rmg8q")
+
+[node name="tg_neg_sqr3_3" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/150_330" unique_id=1876651019]
+z_index = 1
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 150.0
+offset_right = 162.0
+offset_bottom = 90.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("25_wmlv4")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/150_330/tg_neg_sqr3_3" unique_id=987736706]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -11.0
+offset_top = -10.0
+offset_right = 9.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 0
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="ctg_neg_sqr3" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/150_330" unique_id=1965483357]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -271.0
+offset_top = -161.0
+offset_bottom = -151.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("26_aw1q8")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/150_330/ctg_neg_sqr3" unique_id=696276375]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = -5.0
+offset_top = -11.0
+offset_right = 18.0
+offset_bottom = 9.0
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="210" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg" unique_id=1486286298]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -139.0
+offset_top = -160.5
+offset_right = 275.0
+offset_bottom = 82.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("26_v7yb1")
+
+[node name="tg_sqr3_3" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/210" unique_id=302988408]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 82.0
+offset_top = -52.0
+offset_right = 94.0
+offset_bottom = 38.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("25_wmlv4")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/210/tg_sqr3_3" unique_id=1180492094]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -11.0
+offset_top = -55.0
+offset_right = 9.0
+offset_bottom = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="ctg_sqr3" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/210" unique_id=58294932]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -69.0
+offset_top = -1.5
+offset_right = 203.5
+offset_bottom = 8.5
+grow_horizontal = 2
+texture = ExtResource("26_aw1q8")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/210/ctg_sqr3" unique_id=1554089483]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -10.0
+offset_right = 5.0
+offset_bottom = 10.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="225" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg" unique_id=76550235]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -114.0
+offset_top = -161.0
+offset_right = 161.0
+offset_bottom = 114.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("27_b6gcb")
+
+[node name="tg_1" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/225" unique_id=585788483]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -11.0
+offset_top = -132.5
+offset_right = 1.0
+offset_bottom = 23.5
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("23_jy1cs")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/225/tg_1" unique_id=1150266509]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -11.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="ctg_1" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/225" unique_id=1407367001]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -24.5
+offset_right = 133.5
+offset_bottom = 10.0
+grow_horizontal = 2
+texture = ExtResource("12_3vtcn")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/225/ctg_1" unique_id=1282455202]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -12.0
+offset_top = -10.0
+offset_right = 8.0
+offset_bottom = 10.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="240" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg" unique_id=977295662]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -83.0
+offset_top = -273.0
+offset_right = 160.0
+offset_bottom = 141.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("28_a0xpv")
+
+[node name="tg_sqr3" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/240" unique_id=700756988]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -204.0
+offset_right = 2.0
+offset_bottom = 66.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("29_5kriy")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/240/tg_sqr3" unique_id=777491322]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -11.0
+offset_top = -9.0
+offset_right = 10.0
+offset_bottom = 11.0
+grow_horizontal = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="ctg_sqr3_3" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/240" unique_id=1462383017]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.5
+offset_top = -95.0
+offset_right = 52.5
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("30_jbx2c")
+stretch_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="UI/CheeseBlock/Circle/Angles_tg_ctg/240/ctg_sqr3_3" unique_id=493498905]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -11.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 0
+grow_vertical = 2
+texture = ExtResource("13_2gum8")
+stretch_mode = 2
+
+[node name="RightSide" type="Control" parent="UI" unique_id=561015130]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -888.0
+offset_top = 48.0
+offset_right = -234.0
+offset_bottom = 845.0
+grow_horizontal = 0
+
+[node name="Label2" type="Label" parent="UI/RightSide" unique_id=1790099970]
+material = ExtResource("46_5kriy")
+layout_mode = 1
+anchors_preset = -1
+offset_left = 80.0
+offset_top = 23.0
+offset_right = 413.0
+offset_bottom = 87.0
+text = "НАЙДИТЕ"
+label_settings = SubResource("LabelSettings_h6tsj")
+
+[node name="EquationReference" type="HBoxContainer" parent="UI/RightSide" unique_id=1882256017]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 80.0
+offset_top = 124.0
+offset_right = 618.0
+offset_bottom = 23.0
+theme_override_constants/separation = 16
+
+[node name="Function" type="Label" parent="UI/RightSide/EquationReference" unique_id=616764653]
+layout_mode = 2
 theme = ExtResource("29_juuw0")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 10
-text = "ответить"
+theme_override_colors/font_color = Color(0.47058824, 0.39215687, 0.8, 1)
+text = "func"
 
-[node name="ProgressBar" type="ProgressBar" parent="." unique_id=1306275150]
-offset_left = 269.0
-offset_top = 1140.0
-offset_right = 1803.0
-offset_bottom = 1238.0
-theme_override_styles/background = SubResource("StyleBoxTexture_0om8d")
-theme_override_styles/fill = SubResource("StyleBoxTexture_3bcne")
-step = 1.0
-value = 50.0
-show_percentage = false
+[node name="Angle" type="TextureRect" parent="UI/RightSide/EquationReference" unique_id=394309199]
+layout_mode = 2
+texture = ExtResource("49_h6tsj")
 
-[connection signal="pressed" from="UI/HBoxContainer/ButtonPause" to="." method="_on_button_pause_pressed"]
-[connection signal="pressed" from="UI/HBoxContainer/NormalModeDone" to="." method="_on_normal_mode_done_pressed"]
-[connection signal="pressed" from="UI/ButtonCCW" to="." method="_on_button_ccw_pressed"]
-[connection signal="pressed" from="UI/ButtonCW" to="." method="_on_button_cw_pressed"]
-[connection signal="pressed" from="ButtonSmolRoundIdle" to="." method="_on_button_smol_round_idle_pressed"]
+[node name="Equal" type="Label" parent="UI/RightSide/EquationReference" unique_id=2114386742]
+layout_mode = 2
+theme = ExtResource("29_juuw0")
+theme_override_colors/font_color = Color(0.47058824, 0.39215687, 0.8, 1)
+text = "="
+
+[node name="Value" type="TextureRect" parent="UI/RightSide/EquationReference" unique_id=1070827728]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("50_y0er0")
+stretch_mode = 2
+
+[node name="EquationFinal" type="HBoxContainer" parent="UI/RightSide" unique_id=1823485111]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 80.0
+offset_top = 303.0
+offset_right = 123.0
+offset_bottom = 123.0
+theme_override_constants/separation = 16
+
+[node name="FunctionSlot" type="TextureRect" parent="UI/RightSide/EquationFinal" unique_id=48187332]
+layout_mode = 2
+texture = ExtResource("49_h6tsj")
+
+[node name="AngleSlot" type="Label" parent="UI/RightSide/EquationFinal" unique_id=1402026582]
+layout_mode = 2
+theme = ExtResource("29_juuw0")
+theme_override_colors/font_color = Color(0.47058824, 0.39215687, 0.8, 1)
+text = "0°"
+
+[node name="Equal" type="Label" parent="UI/RightSide/EquationFinal" unique_id=926686523]
+layout_mode = 2
+theme = ExtResource("29_juuw0")
+theme_override_colors/font_color = Color(0.47058824, 0.39215687, 0.8, 1)
+text = "="
+
+[node name="ValueSlot" type="TextureRect" parent="UI/RightSide/EquationFinal" unique_id=1253133601]
+layout_mode = 2
+texture = ExtResource("49_h6tsj")
+
+[node name="ButtonAnswer" type="TextureButton" parent="UI/RightSide" unique_id=1245258533]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -206.5
+offset_top = -92.0
+offset_right = 206.5
+offset_bottom = -117.0
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("51_a0xpv")
+texture_pressed = ExtResource("52_bkpsq")
+texture_hover = ExtResource("53_wcdxa")
+
+[node name="Label" type="Label" parent="UI/RightSide/ButtonAnswer" unique_id=986208811]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_top = -27.0
+offset_right = 66.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("54_vd0vt")
+theme_override_font_sizes/font_size = 28
+text = "Ответить"
+
+[node name="ButtonNoAnswer" type="TextureButton" parent="UI/RightSide" unique_id=83037395]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -206.5
+offset_top = -92.0
+offset_right = 206.5
+grow_horizontal = 2
+grow_vertical = 0
+texture_normal = ExtResource("51_a0xpv")
+texture_pressed = ExtResource("52_bkpsq")
+texture_hover = ExtResource("53_wcdxa")
+
+[node name="Label" type="Label" parent="UI/RightSide/ButtonNoAnswer" unique_id=2041623586]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -66.0
+offset_top = -27.0
+offset_right = 66.0
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("54_vd0vt")
+theme_override_font_sizes/font_size = 28
+text = "Нет ответа"
+
+[node name="ProgressWidget" type="Control" parent="UI" unique_id=362544520]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+grow_vertical = 0
+
+[node name="Bar" type="TextureProgressBar" parent="UI/ProgressWidget" unique_id=1741913573]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 70.0
+offset_top = -99.0
+offset_right = 1533.0
+offset_bottom = -64.0
+grow_vertical = 0
+max_value = 32.0
+value = 6.0
+texture_under = ExtResource("16_ghc18")
+texture_progress = ExtResource("17_38o57")
+
+[node name="Point" type="TextureRect" parent="UI/ProgressWidget/Bar" unique_id=1053908351]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -935.0
+offset_top = -143.5
+offset_right = -629.0
+offset_bottom = 139.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_i3k4g")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI" unique_id=903532858]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -149.0
+offset_top = 90.0
+offset_right = -47.0
+offset_bottom = 326.0
+grow_horizontal = 0
+theme_override_constants/separation = 20
+
+[node name="ButtonPause" type="TextureButton" parent="UI/VBoxContainer" unique_id=1221646942]
+layout_mode = 2
+texture_normal = ExtResource("6_e3e6x")
+texture_pressed = ExtResource("7_uu6so")
+texture_hover = ExtResource("8_knvka")
+
+[node name="ButtonHint" type="TextureButton" parent="UI/VBoxContainer" unique_id=1453139264]
+layout_mode = 2
+texture_normal = ExtResource("9_j1dvd")
+texture_pressed = ExtResource("10_pk121")
+texture_hover = ExtResource("11_178mn")
+
+[connection signal="pressed" from="UI/CheeseBlock/HBoxContainer/ButtonCCW" to="." method="_on_button_ccw_pressed"]
+[connection signal="pressed" from="UI/CheeseBlock/HBoxContainer/ButtonCW" to="." method="_on_button_cw_pressed"]

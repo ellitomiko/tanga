@@ -1,8 +1,20 @@
 [gd_scene format=3 uid="uid://bcwv1lyvgcpcn"]
 
-[ext_resource type="Texture2D" uid="uid://rebqiejis3fu" path="res://icon.svg" id="1_dml4m"]
 [ext_resource type="Script" uid="uid://cmbk21obour64" path="res://scenes/FirstMode/first_mode_levels.gd" id="1_yydtg"]
-[ext_resource type="Texture2D" uid="uid://7y872lpm13aw" path="res://test_textures/Group 832.png" id="6_jayyj"]
+[ext_resource type="Texture2D" uid="uid://dx5xqpmi1jhum" path="res://textures/main/net_background.png" id="2_qbsxg"]
+[ext_resource type="Texture2D" uid="uid://dc656nlfio8x2" path="res://textures/main/levels.png" id="3_bnsiv"]
+[ext_resource type="Texture2D" uid="uid://obeww3gpiajs" path="res://textures/main/button_previous_normal.png" id="4_b0rno"]
+[ext_resource type="Texture2D" uid="uid://bbx38p1h2ul6q" path="res://textures/main/button_previous_pressed.png" id="5_3tql4"]
+[ext_resource type="Texture2D" uid="uid://dowji1jb13cy7" path="res://textures/main/button_previous_hover.png" id="6_kg1qv"]
+[ext_resource type="Texture2D" uid="uid://cm8k26v73smic" path="res://textures/main/button_next_normal.png" id="7_02luo"]
+[ext_resource type="Texture2D" uid="uid://c4h6vwdamxbo7" path="res://textures/main/button_next_pressed.png" id="8_op7ar"]
+[ext_resource type="Texture2D" uid="uid://b26yc71m1d0m2" path="res://textures/main/button_next_hover.png" id="9_tinhf"]
+[ext_resource type="Texture2D" uid="uid://c2qq7tnegq3ru" path="res://textures/main/button_back_purple_normal.png" id="10_vacnd"]
+[ext_resource type="Texture2D" uid="uid://cr63hhh1lwr3o" path="res://textures/main/button_back_pressed.png" id="11_10n8s"]
+[ext_resource type="Texture2D" uid="uid://cpfhhxjpo35wj" path="res://textures/main/button_back_purple_hover.png" id="12_cptew"]
+[ext_resource type="Texture2D" uid="uid://ecnndd4h3ksn" path="res://textures/main/button_video_purple_normal.png" id="13_magc5"]
+[ext_resource type="Texture2D" uid="uid://v7inju3eb3g5" path="res://textures/main/button_video_pressed.png" id="14_mpq2k"]
+[ext_resource type="Texture2D" uid="uid://dip63tnhoyj2s" path="res://textures/main/button_video_purple_hover.png" id="15_kc821"]
 
 [node name="FirstModeLevels" type="Control" unique_id=1910592087]
 layout_mode = 3
@@ -13,67 +25,90 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yydtg")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=785322310]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(1, 1, 0.627451, 1)
+[node name="TextureRect" type="TextureRect" parent="." unique_id=121351929]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_qbsxg")
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=37106664]
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=745564176]
 layout_mode = 1
 anchors_preset = -1
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 20.0
-offset_top = 20.0
-offset_right = -20.0
-offset_bottom = -20.0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -672.5
+offset_top = 210.0
+offset_right = 672.5
+offset_bottom = 621.0
 grow_horizontal = 2
-grow_vertical = 2
+texture = ExtResource("3_bnsiv")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1759915116]
-layout_mode = 2
-theme_override_constants/separation = 30
-
-[node name="TopBar" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=1508454735]
-layout_mode = 2
-
-[node name="ButtonBack" type="TextureButton" parent="MarginContainer/VBoxContainer/TopBar" unique_id=1100254131]
-modulate = Color(0.12941177, 1, 1, 1)
-layout_mode = 2
-texture_normal = ExtResource("1_dml4m")
-
-[node name="GridMargin" type="MarginContainer" parent="MarginContainer/VBoxContainer" unique_id=1720289506]
-layout_mode = 2
-theme_override_constants/margin_top = -60
-
-[node name="GridContainer" type="GridContainer" parent="MarginContainer/VBoxContainer/GridMargin" unique_id=1598558187]
-layout_mode = 2
+[node name="GridContainer" type="GridContainer" parent="TextureRect2" unique_id=1598558187]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 60.0
+offset_top = 60.0
 size_flags_horizontal = 4
-theme_override_constants/h_separation = 20
-theme_override_constants/v_separation = 20
+theme_override_constants/h_separation = 30
+theme_override_constants/v_separation = 30
 columns = 5
 
-[node name="BottomBar" type="HBoxContainer" parent="MarginContainer/VBoxContainer" unique_id=420606201]
-layout_mode = 2
+[node name="BottomBar" type="HBoxContainer" parent="." unique_id=420606201]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -245.0
+offset_top = -115.0
+offset_right = 245.0
+offset_bottom = -60.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 75
 
-[node name="ButtonPrev" type="TextureButton" parent="MarginContainer/VBoxContainer/BottomBar" unique_id=233527697]
-modulate = Color(0.12941177, 1, 1, 1)
+[node name="ButtonPrev" type="TextureButton" parent="BottomBar" unique_id=233527697]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
-texture_normal = ExtResource("6_jayyj")
+texture_normal = ExtResource("4_b0rno")
+texture_pressed = ExtResource("5_3tql4")
+texture_hover = ExtResource("6_kg1qv")
 
-[node name="ButtonNext" type="TextureButton" parent="MarginContainer/VBoxContainer/BottomBar" unique_id=206245406]
-modulate = Color(0.12941177, 1, 1, 1)
+[node name="ButtonNext" type="TextureButton" parent="BottomBar" unique_id=206245406]
 layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 4
-texture_normal = ExtResource("6_jayyj")
+texture_normal = ExtResource("7_02luo")
+texture_pressed = ExtResource("8_op7ar")
+texture_hover = ExtResource("9_tinhf")
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/TopBar/ButtonBack" to="." method="_on_button_back_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/BottomBar/ButtonPrev" to="." method="_on_button_prev_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/BottomBar/ButtonNext" to="." method="_on_button_next_pressed"]
+[node name="ButtonBack" type="TextureButton" parent="." unique_id=1100254131]
+layout_mode = 1
+anchors_preset = -1
+offset_left = 48.0
+offset_top = 48.0
+offset_right = 158.0
+offset_bottom = 168.0
+texture_normal = ExtResource("10_vacnd")
+texture_pressed = ExtResource("11_10n8s")
+texture_hover = ExtResource("12_cptew")
+
+[node name="ButtonVideo" type="TextureButton" parent="." unique_id=1043066000]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -158.0
+offset_top = 48.0
+offset_right = -48.0
+offset_bottom = 168.0
+grow_horizontal = 0
+texture_normal = ExtResource("13_magc5")
+texture_pressed = ExtResource("14_mpq2k")
+texture_hover = ExtResource("15_kc821")
+
+[connection signal="pressed" from="BottomBar/ButtonPrev" to="." method="_on_button_prev_pressed"]
+[connection signal="pressed" from="BottomBar/ButtonNext" to="." method="_on_button_next_pressed"]
+[connection signal="pressed" from="ButtonBack" to="." method="_on_button_back_pressed"]

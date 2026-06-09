@@ -3,5 +3,6 @@
 [ext_resource type="FontFile" uid="uid://c2eqtksu6j0g1" path="res://fonts/Unbounded-Bold.ttf" id="1_5ulod"]
 
 [resource]
+line_spacing = -10.0
 font = ExtResource("1_5ulod")
 font_size = 61

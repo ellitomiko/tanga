@@ -52,7 +52,7 @@ offset_top = 172.0
 offset_right = 234.0
 offset_bottom = 76.0
 grow_horizontal = 2
-text = "ВЫ ПРОИГРАЛИ"
+text = "ВЫ ПРОИГРАЛИ :("
 label_settings = ExtResource("4_s6u2i")
 horizontal_alignment = 1
 
@@ -69,7 +69,7 @@ offset_right = 20.0
 offset_bottom = -76.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_constants/separation = 77
+theme_override_constants/separation = 50
 
 [node name="ButtonMenu" type="TextureButton" parent="TextureRect2/HBoxContainer" unique_id=155136455]
 layout_mode = 2

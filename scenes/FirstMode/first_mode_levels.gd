@@ -1,12 +1,12 @@
 extends Control
 
-@onready var grid: GridContainer = $MarginContainer/VBoxContainer/GridMargin/GridContainer
-@onready var button_prev = $MarginContainer/VBoxContainer/BottomBar/ButtonPrev
-@onready var button_next = $MarginContainer/VBoxContainer/BottomBar/ButtonNext
+@onready var grid: GridContainer = $TextureRect2/GridContainer
+@onready var button_prev = $BottomBar/ButtonPrev
+@onready var button_next = $BottomBar/ButtonNext
 const LEVEL_BUTTON_SCENE = preload('res://scenes/FirstMode/level_button.tscn')
 
 var current_page: int = 0
-var levels_per_page: int = 20
+var levels_per_page: int = 15
 
 #BACK button
 func _on_button_back_pressed() -> void:

@@ -1,44 +1,48 @@
 [gd_scene format=3 uid="uid://cl3o3pna42pnp"]
 
 [ext_resource type="Script" uid="uid://bnnqd30tl5myp" path="res://scenes/FirstMode/level_button.gd" id="1_6g3el"]
-[ext_resource type="Texture2D" uid="uid://eyn386eouicu" path="res://test_textures/ButtonLevel1_Idle.png" id="2_ium1h"]
-[ext_resource type="Texture2D" uid="uid://bs5ebycn12r0" path="res://test_textures/ButtonLevel1_Pressed.png" id="3_nfgsp"]
-[ext_resource type="Texture2D" uid="uid://ddll15obgjhqe" path="res://test_textures/ButtonLevel1_Hovered.png" id="4_b0rp6"]
+[ext_resource type="Texture2D" uid="uid://dop45mfysdvuo" path="res://textures/main/button_level_normal.png" id="2_78otm"]
+[ext_resource type="Texture2D" uid="uid://ccxvkn6dtas6s" path="res://textures/main/button_level_pressed.png" id="3_q0uey"]
+[ext_resource type="Texture2D" uid="uid://c5fff7s4tdcl" path="res://textures/main/button_level_hover.png" id="4_g6ef0"]
+[ext_resource type="LabelSettings" uid="uid://53n4ey5qntnl" path="res://menus_text.tres" id="5_d0kwc"]
+[ext_resource type="Texture2D" uid="uid://2tnw53t584vr" path="res://textures/main/button_level_disabled.png" id="5_q0uey"]
 
 [node name="LevelButton" type="Control" unique_id=1320403800]
-custom_minimum_size = Vector2(187, 180)
+custom_minimum_size = Vector2(221, 148)
 layout_mode = 3
-anchor_right = 0.098000005
-anchor_bottom = 0.16700001
-offset_right = -1.1600037
-offset_bottom = -0.36001587
+anchor_right = 0.115
+anchor_bottom = 0.13700001
+offset_right = 0.19999695
+offset_bottom = 0.039993286
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_6g3el")
 
 [node name="ButtonMain" type="TextureButton" parent="." unique_id=1180725020]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-texture_normal = ExtResource("2_ium1h")
-texture_pressed = ExtResource("3_nfgsp")
-texture_hover = ExtResource("4_b0rp6")
+offset_right = 221.0
+offset_bottom = 147.0
+texture_normal = ExtResource("2_78otm")
+texture_pressed = ExtResource("3_q0uey")
+texture_hover = ExtResource("4_g6ef0")
+texture_disabled = ExtResource("5_q0uey")
 
-[node name="LabelNumber" type="Label" parent="." unique_id=1535160936]
+[node name="LabelNumber" type="Label" parent="ButtonMain" unique_id=1535160936]
 layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -28.0
+offset_top = 32.0
+offset_right = 28.0
+offset_bottom = 76.0
 grow_horizontal = 2
-grow_vertical = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_shadow_color = Color(0, 0, 0, 0)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 100
 text = "0"
+label_settings = ExtResource("5_d0kwc")
 horizontal_alignment = 1
 vertical_alignment = 1
 

@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://b5j0viciqmrgi" path="res://textures/thirdMode/heart.png" id="11_opnd5"]
 [ext_resource type="Texture2D" uid="uid://dnx2fqlaa4vkr" path="res://textures/thirdMode/progress_bar_purple_empty.png" id="12_208to"]
 [ext_resource type="Texture2D" uid="uid://ulte6wgdjfjl" path="res://textures/thirdMode/progress_bar_purple.png" id="13_rxxb1"]
-[ext_resource type="Texture2D" uid="uid://0buwm8db3su2" path="res://textures/thirdMode/tanga_on_the_bar.png" id="14_208to"]
+[ext_resource type="Texture2D" uid="uid://dqr8obxm13hae" path="res://textures/main/mouse_progressbar.png" id="14_208to"]
 
 [sub_resource type="Theme" id="Theme_6ofvj"]
 
@@ -30,8 +30,8 @@ size = Vector2(116, 160.25)
 [node name="ThirdMode" type="Node2D" unique_id=378650663]
 script = ExtResource("1_f0blx")
 tanga_fall_duration = 0.7
-game_speed = 400.0
-max_game_speed = 1000.0
+game_speed = 150.0
+max_game_speed = 800.0
 tanga_game_move_duration = 2.5
 cat_exit_duration = 3.0
 
